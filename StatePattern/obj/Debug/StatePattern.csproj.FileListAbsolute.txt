@@ -1,0 +1,17 @@
+C:\Users\tilekaks\OneDrive - Tieto Corporation\Projects\Design Pattern\DesignPattern\StatePattern\bin\Debug\StatePattern.exe.config
+C:\Users\tilekaks\OneDrive - Tieto Corporation\Projects\Design Pattern\DesignPattern\StatePattern\bin\Debug\StatePattern.exe
+C:\Users\tilekaks\OneDrive - Tieto Corporation\Projects\Design Pattern\DesignPattern\StatePattern\bin\Debug\StatePattern.pdb
+C:\Users\tilekaks\OneDrive - Tieto Corporation\Projects\Design Pattern\DesignPattern\StatePattern\obj\Debug\StatePattern.exe
+C:\Users\tilekaks\OneDrive - Tieto Corporation\Projects\Design Pattern\DesignPattern\StatePattern\obj\Debug\StatePattern.pdb
+C:\Users\tilekaks\OneDrive - Tieto Corporation\Projects\Design Pattern\DesignPattern\StatePattern\obj\Debug\StatePattern.csprojAssemblyReference.cache
+C:\Users\tilekaks\OneDrive - Tieto Corporation\Projects\Design Pattern - Copy\DesignPattern\StatePattern\bin\Debug\StatePattern.exe.config
+C:\Users\tilekaks\OneDrive - Tieto Corporation\Projects\Design Pattern - Copy\DesignPattern\StatePattern\bin\Debug\StatePattern.exe
+C:\Users\tilekaks\OneDrive - Tieto Corporation\Projects\Design Pattern - Copy\DesignPattern\StatePattern\bin\Debug\StatePattern.pdb
+C:\Users\tilekaks\OneDrive - Tieto Corporation\Projects\Design Pattern - Copy\DesignPattern\StatePattern\obj\Debug\StatePattern.csprojAssemblyReference.cache
+C:\Users\tilekaks\OneDrive - Tieto Corporation\Projects\Design Pattern - Copy\DesignPattern\StatePattern\obj\Debug\StatePattern.exe
+C:\Users\tilekaks\OneDrive - Tieto Corporation\Projects\Design Pattern - Copy\DesignPattern\StatePattern\obj\Debug\StatePattern.pdb
+C:\Users\tilekaks\OneDrive - Tieto Corporation\Projects\DesignPattern\StatePattern\bin\Debug\StatePattern.exe.config
+C:\Users\tilekaks\OneDrive - Tieto Corporation\Projects\DesignPattern\StatePattern\bin\Debug\StatePattern.exe
+C:\Users\tilekaks\OneDrive - Tieto Corporation\Projects\DesignPattern\StatePattern\bin\Debug\StatePattern.pdb
+C:\Users\tilekaks\OneDrive - Tieto Corporation\Projects\DesignPattern\StatePattern\obj\Debug\StatePattern.exe
+C:\Users\tilekaks\OneDrive - Tieto Corporation\Projects\DesignPattern\StatePattern\obj\Debug\StatePattern.pdb

@@ -1,0 +1,78 @@
+﻿
+<html>
+<head>
+
+    <meta charset="utf-8" />
+    <title>Problem Statement for ATM machine transactions </title>
+</head>
+<body>
+
+    <table id="customers">
+        <tr>
+            <th>All Actions</th>
+            <th>Card Not Inserted [State 1]</th>
+            <th>Inserted Card [State 2]</th>
+            <th>Card Block [State 3]</th>
+        </tr>
+        <tr>
+            <td>insert the card</td>
+            <td>YES</td>
+            <td>NO</td>
+            <td>YES</td>
+        </tr>
+        <tr>
+            <td>eject the card</td>
+            <td>NO</td>
+            <td>YES</td>
+            <td>YES</td>
+        </tr>
+        <tr>
+            <td>enter PIN</td>
+            <td>NO</td>
+            <td>YES</td>
+            <td>NO</td>
+        </tr>
+        <tr>
+            <td>withdraw money</td>
+            <td>NO</td>
+            <td>YES</td>
+            <td>NO</td>
+        </tr>
+    </table>
+</body>
+</html>
+
+<div>
+    <b>not sure</b> <br />
+    <span> yes - new </span> <br />
+    <span> no - this </span>
+</div>
+<style>
+    #customers {
+        font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+        border-collapse: collapse;
+        width: 60%;
+    }
+
+        #customers td, #customers th {
+            border: 1px solid #ddd;
+            padding: 8px;
+        }
+
+        #customers tr:nth-child(even) {
+            background-color: #f2f2f2;
+        }
+
+        #customers tr:hover {
+            background-color: #ddd;
+        }
+
+        #customers th {
+            padding-top: 12px;
+            padding-bottom: 12px;
+            text-align: left;
+            background-color: #4CAF50;
+            color: white;
+        }
+</style>
+

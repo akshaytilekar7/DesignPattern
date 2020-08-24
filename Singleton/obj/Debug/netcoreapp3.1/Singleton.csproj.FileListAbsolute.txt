@@ -1,0 +1,48 @@
+C:\Users\tilekaks\OneDrive - Tieto Corporation\Projects\Design Pattern\DesignPattern\Singleton\bin\Debug\netcoreapp3.1\Singleton.exe
+C:\Users\tilekaks\OneDrive - Tieto Corporation\Projects\Design Pattern\DesignPattern\Singleton\bin\Debug\netcoreapp3.1\Singleton.deps.json
+C:\Users\tilekaks\OneDrive - Tieto Corporation\Projects\Design Pattern\DesignPattern\Singleton\bin\Debug\netcoreapp3.1\Singleton.runtimeconfig.json
+C:\Users\tilekaks\OneDrive - Tieto Corporation\Projects\Design Pattern\DesignPattern\Singleton\bin\Debug\netcoreapp3.1\Singleton.runtimeconfig.dev.json
+C:\Users\tilekaks\OneDrive - Tieto Corporation\Projects\Design Pattern\DesignPattern\Singleton\bin\Debug\netcoreapp3.1\Singleton.dll
+C:\Users\tilekaks\OneDrive - Tieto Corporation\Projects\Design Pattern\DesignPattern\Singleton\bin\Debug\netcoreapp3.1\Singleton.pdb
+C:\Users\tilekaks\OneDrive - Tieto Corporation\Projects\Design Pattern\DesignPattern\Singleton\bin\Debug\netcoreapp3.1\xunit.abstractions.dll
+C:\Users\tilekaks\OneDrive - Tieto Corporation\Projects\Design Pattern\DesignPattern\Singleton\bin\Debug\netcoreapp3.1\xunit.assert.dll
+C:\Users\tilekaks\OneDrive - Tieto Corporation\Projects\Design Pattern\DesignPattern\Singleton\bin\Debug\netcoreapp3.1\xunit.core.dll
+C:\Users\tilekaks\OneDrive - Tieto Corporation\Projects\Design Pattern\DesignPattern\Singleton\bin\Debug\netcoreapp3.1\xunit.execution.dotnet.dll
+C:\Users\tilekaks\OneDrive - Tieto Corporation\Projects\Design Pattern\DesignPattern\Singleton\obj\Debug\netcoreapp3.1\Singleton.csprojAssemblyReference.cache
+C:\Users\tilekaks\OneDrive - Tieto Corporation\Projects\Design Pattern\DesignPattern\Singleton\obj\Debug\netcoreapp3.1\Singleton.AssemblyInfoInputs.cache
+C:\Users\tilekaks\OneDrive - Tieto Corporation\Projects\Design Pattern\DesignPattern\Singleton\obj\Debug\netcoreapp3.1\Singleton.AssemblyInfo.cs
+C:\Users\tilekaks\OneDrive - Tieto Corporation\Projects\Design Pattern\DesignPattern\Singleton\obj\Debug\netcoreapp3.1\Singleton.csproj.CopyComplete
+C:\Users\tilekaks\OneDrive - Tieto Corporation\Projects\Design Pattern\DesignPattern\Singleton\obj\Debug\netcoreapp3.1\Singleton.dll
+C:\Users\tilekaks\OneDrive - Tieto Corporation\Projects\Design Pattern\DesignPattern\Singleton\obj\Debug\netcoreapp3.1\Singleton.pdb
+C:\Users\tilekaks\OneDrive - Tieto Corporation\Projects\Design Pattern - Copy\DesignPattern\Singleton\bin\Debug\netcoreapp3.1\Singleton.exe
+C:\Users\tilekaks\OneDrive - Tieto Corporation\Projects\Design Pattern - Copy\DesignPattern\Singleton\bin\Debug\netcoreapp3.1\Singleton.deps.json
+C:\Users\tilekaks\OneDrive - Tieto Corporation\Projects\Design Pattern - Copy\DesignPattern\Singleton\bin\Debug\netcoreapp3.1\Singleton.runtimeconfig.json
+C:\Users\tilekaks\OneDrive - Tieto Corporation\Projects\Design Pattern - Copy\DesignPattern\Singleton\bin\Debug\netcoreapp3.1\Singleton.runtimeconfig.dev.json
+C:\Users\tilekaks\OneDrive - Tieto Corporation\Projects\Design Pattern - Copy\DesignPattern\Singleton\bin\Debug\netcoreapp3.1\Singleton.dll
+C:\Users\tilekaks\OneDrive - Tieto Corporation\Projects\Design Pattern - Copy\DesignPattern\Singleton\bin\Debug\netcoreapp3.1\Singleton.pdb
+C:\Users\tilekaks\OneDrive - Tieto Corporation\Projects\Design Pattern - Copy\DesignPattern\Singleton\bin\Debug\netcoreapp3.1\xunit.abstractions.dll
+C:\Users\tilekaks\OneDrive - Tieto Corporation\Projects\Design Pattern - Copy\DesignPattern\Singleton\bin\Debug\netcoreapp3.1\xunit.assert.dll
+C:\Users\tilekaks\OneDrive - Tieto Corporation\Projects\Design Pattern - Copy\DesignPattern\Singleton\bin\Debug\netcoreapp3.1\xunit.core.dll
+C:\Users\tilekaks\OneDrive - Tieto Corporation\Projects\Design Pattern - Copy\DesignPattern\Singleton\bin\Debug\netcoreapp3.1\xunit.execution.dotnet.dll
+C:\Users\tilekaks\OneDrive - Tieto Corporation\Projects\Design Pattern - Copy\DesignPattern\Singleton\obj\Debug\netcoreapp3.1\Singleton.csprojAssemblyReference.cache
+C:\Users\tilekaks\OneDrive - Tieto Corporation\Projects\Design Pattern - Copy\DesignPattern\Singleton\obj\Debug\netcoreapp3.1\Singleton.AssemblyInfoInputs.cache
+C:\Users\tilekaks\OneDrive - Tieto Corporation\Projects\Design Pattern - Copy\DesignPattern\Singleton\obj\Debug\netcoreapp3.1\Singleton.AssemblyInfo.cs
+C:\Users\tilekaks\OneDrive - Tieto Corporation\Projects\Design Pattern - Copy\DesignPattern\Singleton\obj\Debug\netcoreapp3.1\Singleton.csproj.CopyComplete
+C:\Users\tilekaks\OneDrive - Tieto Corporation\Projects\Design Pattern - Copy\DesignPattern\Singleton\obj\Debug\netcoreapp3.1\Singleton.dll
+C:\Users\tilekaks\OneDrive - Tieto Corporation\Projects\Design Pattern - Copy\DesignPattern\Singleton\obj\Debug\netcoreapp3.1\Singleton.pdb
+C:\Users\tilekaks\OneDrive - Tieto Corporation\Projects\DesignPattern\Singleton\bin\Debug\netcoreapp3.1\Singleton.exe
+C:\Users\tilekaks\OneDrive - Tieto Corporation\Projects\DesignPattern\Singleton\bin\Debug\netcoreapp3.1\Singleton.deps.json
+C:\Users\tilekaks\OneDrive - Tieto Corporation\Projects\DesignPattern\Singleton\bin\Debug\netcoreapp3.1\Singleton.runtimeconfig.json
+C:\Users\tilekaks\OneDrive - Tieto Corporation\Projects\DesignPattern\Singleton\bin\Debug\netcoreapp3.1\Singleton.runtimeconfig.dev.json
+C:\Users\tilekaks\OneDrive - Tieto Corporation\Projects\DesignPattern\Singleton\bin\Debug\netcoreapp3.1\Singleton.dll
+C:\Users\tilekaks\OneDrive - Tieto Corporation\Projects\DesignPattern\Singleton\bin\Debug\netcoreapp3.1\Singleton.pdb
+C:\Users\tilekaks\OneDrive - Tieto Corporation\Projects\DesignPattern\Singleton\bin\Debug\netcoreapp3.1\xunit.abstractions.dll
+C:\Users\tilekaks\OneDrive - Tieto Corporation\Projects\DesignPattern\Singleton\bin\Debug\netcoreapp3.1\xunit.assert.dll
+C:\Users\tilekaks\OneDrive - Tieto Corporation\Projects\DesignPattern\Singleton\bin\Debug\netcoreapp3.1\xunit.core.dll
+C:\Users\tilekaks\OneDrive - Tieto Corporation\Projects\DesignPattern\Singleton\bin\Debug\netcoreapp3.1\xunit.execution.dotnet.dll
+C:\Users\tilekaks\OneDrive - Tieto Corporation\Projects\DesignPattern\Singleton\obj\Debug\netcoreapp3.1\Singleton.csprojAssemblyReference.cache
+C:\Users\tilekaks\OneDrive - Tieto Corporation\Projects\DesignPattern\Singleton\obj\Debug\netcoreapp3.1\Singleton.AssemblyInfoInputs.cache
+C:\Users\tilekaks\OneDrive - Tieto Corporation\Projects\DesignPattern\Singleton\obj\Debug\netcoreapp3.1\Singleton.AssemblyInfo.cs
+C:\Users\tilekaks\OneDrive - Tieto Corporation\Projects\DesignPattern\Singleton\obj\Debug\netcoreapp3.1\Singleton.csproj.CopyComplete
+C:\Users\tilekaks\OneDrive - Tieto Corporation\Projects\DesignPattern\Singleton\obj\Debug\netcoreapp3.1\Singleton.dll
+C:\Users\tilekaks\OneDrive - Tieto Corporation\Projects\DesignPattern\Singleton\obj\Debug\netcoreapp3.1\Singleton.pdb

@@ -1,0 +1,33 @@
+C:\Users\tilekaks\OneDrive - Tieto Corporation\Projects\Design Pattern\StrategyPattern\bin\Debug\netcoreapp3.0\StrategyPattern.exe
+C:\Users\tilekaks\OneDrive - Tieto Corporation\Projects\Design Pattern\StrategyPattern\bin\Debug\netcoreapp3.0\StrategyPattern.deps.json
+C:\Users\tilekaks\OneDrive - Tieto Corporation\Projects\Design Pattern\StrategyPattern\bin\Debug\netcoreapp3.0\StrategyPattern.runtimeconfig.json
+C:\Users\tilekaks\OneDrive - Tieto Corporation\Projects\Design Pattern\StrategyPattern\bin\Debug\netcoreapp3.0\StrategyPattern.runtimeconfig.dev.json
+C:\Users\tilekaks\OneDrive - Tieto Corporation\Projects\Design Pattern\StrategyPattern\bin\Debug\netcoreapp3.0\StrategyPattern.dll
+C:\Users\tilekaks\OneDrive - Tieto Corporation\Projects\Design Pattern\StrategyPattern\bin\Debug\netcoreapp3.0\StrategyPattern.pdb
+C:\Users\tilekaks\OneDrive - Tieto Corporation\Projects\Design Pattern\StrategyPattern\obj\Debug\netcoreapp3.0\StrategyPattern.csprojAssemblyReference.cache
+C:\Users\tilekaks\OneDrive - Tieto Corporation\Projects\Design Pattern\StrategyPattern\obj\Debug\netcoreapp3.0\StrategyPattern.AssemblyInfoInputs.cache
+C:\Users\tilekaks\OneDrive - Tieto Corporation\Projects\Design Pattern\StrategyPattern\obj\Debug\netcoreapp3.0\StrategyPattern.AssemblyInfo.cs
+C:\Users\tilekaks\OneDrive - Tieto Corporation\Projects\Design Pattern\StrategyPattern\obj\Debug\netcoreapp3.0\StrategyPattern.dll
+C:\Users\tilekaks\OneDrive - Tieto Corporation\Projects\Design Pattern\StrategyPattern\obj\Debug\netcoreapp3.0\StrategyPattern.pdb
+C:\Users\tilekaks\OneDrive - Tieto Corporation\Projects\Design Pattern - Copy\DesignPattern\StrategyPattern\bin\Debug\netcoreapp3.0\StrategyPattern.exe
+C:\Users\tilekaks\OneDrive - Tieto Corporation\Projects\Design Pattern - Copy\DesignPattern\StrategyPattern\bin\Debug\netcoreapp3.0\StrategyPattern.deps.json
+C:\Users\tilekaks\OneDrive - Tieto Corporation\Projects\Design Pattern - Copy\DesignPattern\StrategyPattern\bin\Debug\netcoreapp3.0\StrategyPattern.runtimeconfig.json
+C:\Users\tilekaks\OneDrive - Tieto Corporation\Projects\Design Pattern - Copy\DesignPattern\StrategyPattern\bin\Debug\netcoreapp3.0\StrategyPattern.runtimeconfig.dev.json
+C:\Users\tilekaks\OneDrive - Tieto Corporation\Projects\Design Pattern - Copy\DesignPattern\StrategyPattern\bin\Debug\netcoreapp3.0\StrategyPattern.dll
+C:\Users\tilekaks\OneDrive - Tieto Corporation\Projects\Design Pattern - Copy\DesignPattern\StrategyPattern\bin\Debug\netcoreapp3.0\StrategyPattern.pdb
+C:\Users\tilekaks\OneDrive - Tieto Corporation\Projects\Design Pattern - Copy\DesignPattern\StrategyPattern\obj\Debug\netcoreapp3.0\StrategyPattern.csprojAssemblyReference.cache
+C:\Users\tilekaks\OneDrive - Tieto Corporation\Projects\Design Pattern - Copy\DesignPattern\StrategyPattern\obj\Debug\netcoreapp3.0\StrategyPattern.AssemblyInfoInputs.cache
+C:\Users\tilekaks\OneDrive - Tieto Corporation\Projects\Design Pattern - Copy\DesignPattern\StrategyPattern\obj\Debug\netcoreapp3.0\StrategyPattern.AssemblyInfo.cs
+C:\Users\tilekaks\OneDrive - Tieto Corporation\Projects\Design Pattern - Copy\DesignPattern\StrategyPattern\obj\Debug\netcoreapp3.0\StrategyPattern.dll
+C:\Users\tilekaks\OneDrive - Tieto Corporation\Projects\Design Pattern - Copy\DesignPattern\StrategyPattern\obj\Debug\netcoreapp3.0\StrategyPattern.pdb
+C:\Users\tilekaks\OneDrive - Tieto Corporation\Projects\DesignPattern\StrategyPattern\bin\Debug\netcoreapp3.0\StrategyPattern.exe
+C:\Users\tilekaks\OneDrive - Tieto Corporation\Projects\DesignPattern\StrategyPattern\bin\Debug\netcoreapp3.0\StrategyPattern.deps.json
+C:\Users\tilekaks\OneDrive - Tieto Corporation\Projects\DesignPattern\StrategyPattern\bin\Debug\netcoreapp3.0\StrategyPattern.runtimeconfig.json
+C:\Users\tilekaks\OneDrive - Tieto Corporation\Projects\DesignPattern\StrategyPattern\bin\Debug\netcoreapp3.0\StrategyPattern.runtimeconfig.dev.json
+C:\Users\tilekaks\OneDrive - Tieto Corporation\Projects\DesignPattern\StrategyPattern\bin\Debug\netcoreapp3.0\StrategyPattern.dll
+C:\Users\tilekaks\OneDrive - Tieto Corporation\Projects\DesignPattern\StrategyPattern\bin\Debug\netcoreapp3.0\StrategyPattern.pdb
+C:\Users\tilekaks\OneDrive - Tieto Corporation\Projects\DesignPattern\StrategyPattern\obj\Debug\netcoreapp3.0\StrategyPattern.csprojAssemblyReference.cache
+C:\Users\tilekaks\OneDrive - Tieto Corporation\Projects\DesignPattern\StrategyPattern\obj\Debug\netcoreapp3.0\StrategyPattern.AssemblyInfoInputs.cache
+C:\Users\tilekaks\OneDrive - Tieto Corporation\Projects\DesignPattern\StrategyPattern\obj\Debug\netcoreapp3.0\StrategyPattern.AssemblyInfo.cs
+C:\Users\tilekaks\OneDrive - Tieto Corporation\Projects\DesignPattern\StrategyPattern\obj\Debug\netcoreapp3.0\StrategyPattern.dll
+C:\Users\tilekaks\OneDrive - Tieto Corporation\Projects\DesignPattern\StrategyPattern\obj\Debug\netcoreapp3.0\StrategyPattern.pdb

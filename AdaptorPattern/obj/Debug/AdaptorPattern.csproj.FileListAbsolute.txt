@@ -1,0 +1,17 @@
+C:\Users\tilekaks\OneDrive - Tieto Corporation\Projects\Design Pattern\DesignPattern\AdaptorPattern\bin\Debug\AdaptorPattern.exe.config
+C:\Users\tilekaks\OneDrive - Tieto Corporation\Projects\Design Pattern\DesignPattern\AdaptorPattern\bin\Debug\AdaptorPattern.exe
+C:\Users\tilekaks\OneDrive - Tieto Corporation\Projects\Design Pattern\DesignPattern\AdaptorPattern\bin\Debug\AdaptorPattern.pdb
+C:\Users\tilekaks\OneDrive - Tieto Corporation\Projects\Design Pattern\DesignPattern\AdaptorPattern\bin\Debug\Newtonsoft.Json.dll
+C:\Users\tilekaks\OneDrive - Tieto Corporation\Projects\Design Pattern\DesignPattern\AdaptorPattern\bin\Debug\xunit.abstractions.dll
+C:\Users\tilekaks\OneDrive - Tieto Corporation\Projects\Design Pattern\DesignPattern\AdaptorPattern\bin\Debug\xunit.assert.dll
+C:\Users\tilekaks\OneDrive - Tieto Corporation\Projects\Design Pattern\DesignPattern\AdaptorPattern\bin\Debug\xunit.core.dll
+C:\Users\tilekaks\OneDrive - Tieto Corporation\Projects\Design Pattern\DesignPattern\AdaptorPattern\bin\Debug\xunit.execution.desktop.dll
+C:\Users\tilekaks\OneDrive - Tieto Corporation\Projects\Design Pattern\DesignPattern\AdaptorPattern\bin\Debug\Newtonsoft.Json.xml
+C:\Users\tilekaks\OneDrive - Tieto Corporation\Projects\Design Pattern\DesignPattern\AdaptorPattern\bin\Debug\xunit.abstractions.xml
+C:\Users\tilekaks\OneDrive - Tieto Corporation\Projects\Design Pattern\DesignPattern\AdaptorPattern\bin\Debug\xunit.assert.xml
+C:\Users\tilekaks\OneDrive - Tieto Corporation\Projects\Design Pattern\DesignPattern\AdaptorPattern\bin\Debug\xunit.core.xml
+C:\Users\tilekaks\OneDrive - Tieto Corporation\Projects\Design Pattern\DesignPattern\AdaptorPattern\bin\Debug\xunit.execution.desktop.xml
+C:\Users\tilekaks\OneDrive - Tieto Corporation\Projects\Design Pattern\DesignPattern\AdaptorPattern\obj\Debug\AdaptorPattern.csprojAssemblyReference.cache
+C:\Users\tilekaks\OneDrive - Tieto Corporation\Projects\Design Pattern\DesignPattern\AdaptorPattern\obj\Debug\AdaptorPattern.csproj.CopyComplete
+C:\Users\tilekaks\OneDrive - Tieto Corporation\Projects\Design Pattern\DesignPattern\AdaptorPattern\obj\Debug\AdaptorPattern.exe
+C:\Users\tilekaks\OneDrive - Tieto Corporation\Projects\Design Pattern\DesignPattern\AdaptorPattern\obj\Debug\AdaptorPattern.pdb

@@ -1,0 +1,15 @@
+C:\Users\tilekaks\OneDrive - Tieto Corporation\Projects\Design Pattern\DesignPattern\IdisposableBestPractices\bin\Debug\IdisposableBestPractices.exe.config
+C:\Users\tilekaks\OneDrive - Tieto Corporation\Projects\Design Pattern\DesignPattern\IdisposableBestPractices\bin\Debug\IdisposableBestPractices.exe
+C:\Users\tilekaks\OneDrive - Tieto Corporation\Projects\Design Pattern\DesignPattern\IdisposableBestPractices\bin\Debug\IdisposableBestPractices.pdb
+C:\Users\tilekaks\OneDrive - Tieto Corporation\Projects\Design Pattern\DesignPattern\IdisposableBestPractices\obj\Debug\IdisposableBestPractices.exe
+C:\Users\tilekaks\OneDrive - Tieto Corporation\Projects\Design Pattern\DesignPattern\IdisposableBestPractices\obj\Debug\IdisposableBestPractices.pdb
+C:\Users\tilekaks\OneDrive - Tieto Corporation\Projects\Design Pattern - Copy\DesignPattern\IdisposableBestPractices\bin\Debug\IdisposableBestPractices.exe.config
+C:\Users\tilekaks\OneDrive - Tieto Corporation\Projects\Design Pattern - Copy\DesignPattern\IdisposableBestPractices\bin\Debug\IdisposableBestPractices.exe
+C:\Users\tilekaks\OneDrive - Tieto Corporation\Projects\Design Pattern - Copy\DesignPattern\IdisposableBestPractices\bin\Debug\IdisposableBestPractices.pdb
+C:\Users\tilekaks\OneDrive - Tieto Corporation\Projects\Design Pattern - Copy\DesignPattern\IdisposableBestPractices\obj\Debug\IdisposableBestPractices.exe
+C:\Users\tilekaks\OneDrive - Tieto Corporation\Projects\Design Pattern - Copy\DesignPattern\IdisposableBestPractices\obj\Debug\IdisposableBestPractices.pdb
+C:\Users\tilekaks\OneDrive - Tieto Corporation\Projects\DesignPattern\IdisposableBestPractices\bin\Debug\IdisposableBestPractices.exe.config
+C:\Users\tilekaks\OneDrive - Tieto Corporation\Projects\DesignPattern\IdisposableBestPractices\bin\Debug\IdisposableBestPractices.exe
+C:\Users\tilekaks\OneDrive - Tieto Corporation\Projects\DesignPattern\IdisposableBestPractices\bin\Debug\IdisposableBestPractices.pdb
+C:\Users\tilekaks\OneDrive - Tieto Corporation\Projects\DesignPattern\IdisposableBestPractices\obj\Debug\IdisposableBestPractices.exe
+C:\Users\tilekaks\OneDrive - Tieto Corporation\Projects\DesignPattern\IdisposableBestPractices\obj\Debug\IdisposableBestPractices.pdb
