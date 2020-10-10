@@ -92,7 +92,7 @@ namespace DesignPattern
             return 5;
         }
 
-        static void Main(string[] args)
+        static void Main1(string[] args)
         {
 
             ProtectWithTransaction(() => Add(1, 3));

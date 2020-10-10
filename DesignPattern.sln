@@ -69,6 +69,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EF.RepoAndUOW", "EF.RepoAnd
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EF.Data", "EF.RepoAndUOW\EF.Data\EF.Data.csproj", "{EA20F03D-8656-4D1B-8E0C-456058B8E832}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PublisherSubscriber", "PublisherSubscriber\PublisherSubscriber.csproj", "{F7A7082D-6442-4619-97EE-AA3A4DB0A2B1}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -195,6 +197,10 @@ Global
 		{EA20F03D-8656-4D1B-8E0C-456058B8E832}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{EA20F03D-8656-4D1B-8E0C-456058B8E832}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{EA20F03D-8656-4D1B-8E0C-456058B8E832}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F7A7082D-6442-4619-97EE-AA3A4DB0A2B1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F7A7082D-6442-4619-97EE-AA3A4DB0A2B1}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F7A7082D-6442-4619-97EE-AA3A4DB0A2B1}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F7A7082D-6442-4619-97EE-AA3A4DB0A2B1}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -208,6 +214,7 @@ Global
 		{7FED80C1-6A15-420A-BC32-11FA3163577C} = {CB9817E0-F952-4878-9407-344FDCF9A9C5}
 		{9719BF97-54BC-491A-BDE7-F620BF7D280C} = {10C7830D-DED8-4EDF-A48E-265249D7056F}
 		{EA20F03D-8656-4D1B-8E0C-456058B8E832} = {10C7830D-DED8-4EDF-A48E-265249D7056F}
+		{F7A7082D-6442-4619-97EE-AA3A4DB0A2B1} = {CB9817E0-F952-4878-9407-344FDCF9A9C5}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {8098D428-5190-4588-AB42-BD8F51F1F97C}

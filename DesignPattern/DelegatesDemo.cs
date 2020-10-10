@@ -7,11 +7,6 @@ namespace DesignPattern
     {
         public static DbOperations X = new DbOperations();
 
-        public virtual void Test()
-        {
-
-        }
-
         static void CallbackGetStatus1(int status)
         {
             Console.WriteLine("1 now we are done with adding record with id :" + status);
@@ -28,7 +23,7 @@ namespace DesignPattern
             DbOperations obj = new DbOperations();
             obj.EventSender += CallbackGetStatus1;
             obj.EventSender += CallbackGetStatus2;
-            //obj.eventSender = null; // in case of delegate we can set to NULL 
+            //obj.EventSender = null; // NOT ALLOWED IN CASE OF EVEnt 
 
             obj.DelegateSender += CallbackGetStatus1;
             obj.DelegateSender += CallbackGetStatus2;
