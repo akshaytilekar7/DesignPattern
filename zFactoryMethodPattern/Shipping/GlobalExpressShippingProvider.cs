@@ -1,6 +1,5 @@
 ﻿
 using zFactoryMethodPattern.Commerce;
-using zFactoryPattern.Shipping.ShipingProvider;
 
 namespace zFactoryMethodPattern.Shipping
 {

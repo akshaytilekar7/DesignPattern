@@ -20,14 +20,3 @@ C:\Users\tilekaks\OneDrive - Tieto Corporation\Projects\Design Pattern - Copy\De
 C:\Users\tilekaks\OneDrive - Tieto Corporation\Projects\Design Pattern - Copy\DesignPattern\zFactoryMethodPattern\obj\Debug\netcoreapp3.1\zFactoryMethodPattern.AssemblyInfo.cs
 C:\Users\tilekaks\OneDrive - Tieto Corporation\Projects\Design Pattern - Copy\DesignPattern\zFactoryMethodPattern\obj\Debug\netcoreapp3.1\zFactoryMethodPattern.dll
 C:\Users\tilekaks\OneDrive - Tieto Corporation\Projects\Design Pattern - Copy\DesignPattern\zFactoryMethodPattern\obj\Debug\netcoreapp3.1\zFactoryMethodPattern.pdb
-C:\Users\tilekaks\OneDrive - Tieto Corporation\Projects\DesignPattern\zFactoryMethodPattern\bin\Debug\netcoreapp3.1\zFactoryMethodPattern.exe
-C:\Users\tilekaks\OneDrive - Tieto Corporation\Projects\DesignPattern\zFactoryMethodPattern\bin\Debug\netcoreapp3.1\zFactoryMethodPattern.deps.json
-C:\Users\tilekaks\OneDrive - Tieto Corporation\Projects\DesignPattern\zFactoryMethodPattern\bin\Debug\netcoreapp3.1\zFactoryMethodPattern.runtimeconfig.json
-C:\Users\tilekaks\OneDrive - Tieto Corporation\Projects\DesignPattern\zFactoryMethodPattern\bin\Debug\netcoreapp3.1\zFactoryMethodPattern.runtimeconfig.dev.json
-C:\Users\tilekaks\OneDrive - Tieto Corporation\Projects\DesignPattern\zFactoryMethodPattern\bin\Debug\netcoreapp3.1\zFactoryMethodPattern.dll
-C:\Users\tilekaks\OneDrive - Tieto Corporation\Projects\DesignPattern\zFactoryMethodPattern\bin\Debug\netcoreapp3.1\zFactoryMethodPattern.pdb
-C:\Users\tilekaks\OneDrive - Tieto Corporation\Projects\DesignPattern\zFactoryMethodPattern\obj\Debug\netcoreapp3.1\zFactoryMethodPattern.csprojAssemblyReference.cache
-C:\Users\tilekaks\OneDrive - Tieto Corporation\Projects\DesignPattern\zFactoryMethodPattern\obj\Debug\netcoreapp3.1\zFactoryMethodPattern.AssemblyInfoInputs.cache
-C:\Users\tilekaks\OneDrive - Tieto Corporation\Projects\DesignPattern\zFactoryMethodPattern\obj\Debug\netcoreapp3.1\zFactoryMethodPattern.AssemblyInfo.cs
-C:\Users\tilekaks\OneDrive - Tieto Corporation\Projects\DesignPattern\zFactoryMethodPattern\obj\Debug\netcoreapp3.1\zFactoryMethodPattern.dll
-C:\Users\tilekaks\OneDrive - Tieto Corporation\Projects\DesignPattern\zFactoryMethodPattern\obj\Debug\netcoreapp3.1\zFactoryMethodPattern.pdb

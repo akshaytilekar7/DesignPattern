@@ -10,7 +10,7 @@ namespace DesignPattern
         static NormalClassWithStatic()
         {
             Name = "A1";
-            // Id = 5; // CTE
+            //Id = 5; // XXXXXXXX COMPILE TIME ERROR!!!!!!!
             Console.WriteLine("Static Ctor called");
         }
 
@@ -23,7 +23,7 @@ namespace DesignPattern
 
         public static string StaticMethod(string name, string branch)
         {
-            //Id = 5; // CTE  cant
+            //Id = 5; // XXXXXXXX COMPILE TIME ERROR!!!!!!!  cant
             Name = "A2";
             return "Name: " + name + " Branch: " + branch;
         }

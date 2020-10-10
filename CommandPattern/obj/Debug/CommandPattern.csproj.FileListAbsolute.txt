@@ -8,9 +8,3 @@ C:\Users\tilekaks\OneDrive - Tieto Corporation\Projects\Design Pattern - Copy\De
 C:\Users\tilekaks\OneDrive - Tieto Corporation\Projects\Design Pattern - Copy\DesignPattern\CommandPattern\bin\Debug\CommandPattern.pdb
 C:\Users\tilekaks\OneDrive - Tieto Corporation\Projects\Design Pattern - Copy\DesignPattern\CommandPattern\obj\Debug\CommandPattern.exe
 C:\Users\tilekaks\OneDrive - Tieto Corporation\Projects\Design Pattern - Copy\DesignPattern\CommandPattern\obj\Debug\CommandPattern.pdb
-C:\Users\tilekaks\OneDrive - Tieto Corporation\Projects\DesignPattern\CommandPattern\bin\Debug\CommandPattern.exe.config
-C:\Users\tilekaks\OneDrive - Tieto Corporation\Projects\DesignPattern\CommandPattern\bin\Debug\CommandPattern.exe
-C:\Users\tilekaks\OneDrive - Tieto Corporation\Projects\DesignPattern\CommandPattern\bin\Debug\CommandPattern.pdb
-C:\Users\tilekaks\OneDrive - Tieto Corporation\Projects\DesignPattern\CommandPattern\obj\Debug\CommandPattern.exe
-C:\Users\tilekaks\OneDrive - Tieto Corporation\Projects\DesignPattern\CommandPattern\obj\Debug\CommandPattern.pdb
-C:\Users\tilekaks\OneDrive - Tieto Corporation\Projects\DesignPattern\CommandPattern\obj\Debug\CommandPattern.csprojAssemblyReference.cache

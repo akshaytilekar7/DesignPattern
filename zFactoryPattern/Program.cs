@@ -7,9 +7,9 @@ namespace zFactoryPattern
     class Program
     {
         // ADVANTAGE SIMPLE FACTORY 
-        // 1. ShippingProviderFactory is RESUABLE
-        // 2. we can use same class in TEST and actual application (dont need to create separate object for test)
-        // 3. application DONT NEED TO CARE ABOUT CREATION OF OBJECT
+        // 1. ShippingProviderFactory is REUSABLE
+        // 2. we can use same class in TEST and actual application (don't need to create separate object for test)
+        // 3. application DON'T NEED TO CARE ABOUT CREATION OF OBJECT
 
         // DISADVANTAGES
         // 1. NOT EXTENDABLE eg. for INDIA shipping we need to modified to this class which s wrong

@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using System.Linq.Expressions;
 
-namespace MyShop.Infrastructure.Repositories
+namespace RepositoryPattern.Repositories.Interface
 {
     public interface IRepository<T>
     {

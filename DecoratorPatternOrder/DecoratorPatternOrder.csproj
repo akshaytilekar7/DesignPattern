@@ -45,7 +45,7 @@
   <ItemGroup>
     <Compile Include="Component\Order.cs" />
     <Compile Include="ConcreteComponents\RegularOrder.cs" />
-    <Compile Include="ConcreteComponents\PreOrder.cs" />
+    <Compile Include="ConcreteDecorators\PreOrder.cs" />
     <Compile Include="ConcreteDecorators\PremiumPreOrder.cs" />
     <Compile Include="Decorator\OrderDecorator.cs" />
     <Compile Include="Product.cs" />

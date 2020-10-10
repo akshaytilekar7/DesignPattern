@@ -1,6 +1,4 @@
-﻿using zFactoryPattern.Shipping.ShipingProvider;
-
-namespace zFactoryMethodPattern.Shipping.Factories
+﻿namespace zFactoryMethodPattern.Shipping.Factories
 {
     public class GlobalExpressShippingProviderFactory : IShippingProviderFactory
     {

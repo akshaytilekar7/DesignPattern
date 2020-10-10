@@ -12,25 +12,29 @@ namespace DecoratorPatternOrder
             Console.WriteLine(regularOrder.CalculateTotalOrderPrice());
             Console.WriteLine();
 
-            var preOrder = new PreOrder();
+            var preOrder = new PreOrder(new RegularOrder());
             Console.WriteLine(preOrder.CalculateTotalOrderPrice());
             Console.WriteLine();
 
-            var premiumPreOrder = new PremiumPreOrder(new PreOrder());
+            var premiumPreOrder = new PremiumPreOrder(new PreOrder(new RegularOrder()));
             Console.WriteLine(premiumPreOrder.CalculateTotalOrderPrice());
 
             Console.ReadKey();
+
+            //10
+            //110
+            //160
         }
     }
 }
 
 
 // [A]
-// regularOrder orders our products in a RegularOrder =>  ACTUAL PRICE;
-// buyer orders our products in a preOrder =>  ACTUAL PRICE + 100;
+// regularOrder orders our products in a RegularOrder =>  ACTUAL PRICE;         // 10
+// buyer orders our products in a preOrder =>  ACTUAL PRICE + 100;              // 110
 
 // [B]
-// premium users for the preOrder. =>  ACTUAL PRICE + 100 + 50;
+// premium users for the preOrder. =>  ACTUAL PRICE + 100 + 50;                 // 160
 
 /*
  [A] : we can create 2 classes "RegularOrder" & "PreOrder" for calculating discount

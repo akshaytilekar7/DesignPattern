@@ -1,78 +1,78 @@
-﻿using MyShop.Domain.Models;
-using MyShop.Infrastructure;
-using MyShop.Infrastructure.Repositories;
+﻿using RepositoryPattern.Models;
+using RepositoryPattern.Repositories;
+using RepositoryPattern.Repositories.Interface;
 using RepositoryPattern.UnitOfWorkPattern;
 using System;
 using System.Linq;
 
-namespace MyShop.Web
+namespace RepositoryPattern
 {
     public class Program
     {
-        public readonly IRepository<Customer> _customerRepository;
-        public readonly IRepository<Order> _orderRepository;
-        public readonly IRepository<Product> _productRepository;
+        public readonly IRepository<Customer> CustomerRepository;
+        public readonly IRepository<Address> AddressRepository;
 
-        ShoppingContext context = new ShoppingContext();
-        private IUnitOfWork unitOfWork;
+        readonly ShoppingContext context = new ShoppingContext();
+        private readonly IUnitOfWork unitOfWork;
 
-        public static void Main(string[] args) { }
-
-        public Program(IRepository<Order> c, IRepository<Product> g)
+        public static void Main()
         {
-            _customerRepository = new CustomerRepository(context);
-            _orderRepository = new OrderRepository(context);
-            _productRepository = new ProductRepository(context);
-            Create(new CreateOrderModel());
+
+        }
+
+        //only repo
+        public Program(IRepository<Customer> c, IRepository<Address> address)
+        {
+            CustomerRepository = new CustomerRepository(context);
+            AddressRepository = new AddressRepository(context);
+            Create();
             GetCustomer(new Guid());
         }
 
+        // Unit of work [shares a single database context and serves one purpose; to make sure that when we use multiple repositories.]
         public Program(IUnitOfWork unitOfWork)
         {
             this.unitOfWork = unitOfWork;
         }
 
-        public void CreateWIthUnitOfWork(CreateOrderModel model)
+        public void CreateWIthUnitOfWork()
         {
             var customer = unitOfWork.CustomerRepository.Find(c => c.Name == "A").FirstOrDefault();
 
             if (customer != null)
             {
                 //Update property of object
-                customer.ShippingAddress = "update field";
+                customer.Name = "update field with new data";
                 unitOfWork.CustomerRepository.Update(customer);
             }
             else
-                customer = new Customer { Name = "A" };
-            //Create new customer obj as it is not exist in DB
+            {
+                var customer1 = new Customer { Name = "A" };
+            }
 
-            var order = new Order { Customer = customer };
+            var order = new Address();
 
-            unitOfWork.OrderRepository.Add(order);
+            unitOfWork.AddressRepository.Add(order);
             unitOfWork.SaveChanges();
 
         }
 
-        public void Create(CreateOrderModel model)
+        public void Create()
         {
-            _orderRepository.Add(new Order());
-            _orderRepository.SaveChanges();
+            AddressRepository.Add(new Address());
+            AddressRepository.SaveChanges();
         }
         public void GetCustomer(Guid? id)
         {
             if (id == null)
             {
-                var customers = _customerRepository.All();
+                var customers = CustomerRepository.All();
             }
 
-            var customer = _customerRepository.Get(id.Value);
+            var customer = CustomerRepository.Get(id.Value);
 
             //Order 
-            var orders = _orderRepository.Find(order => order.OrderDate > DateTime.UtcNow.AddDays(-1));
-
-            //priduct
-            var products = _productRepository.All();
-
+            var orders = AddressRepository.Find(order => order.AddressId > 0);
         }
     }
 }

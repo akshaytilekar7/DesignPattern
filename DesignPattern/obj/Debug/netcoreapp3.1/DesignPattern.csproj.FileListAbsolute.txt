@@ -20,14 +20,3 @@ C:\Users\tilekaks\OneDrive - Tieto Corporation\Projects\Design Pattern - Copy\De
 C:\Users\tilekaks\OneDrive - Tieto Corporation\Projects\Design Pattern - Copy\DesignPattern\DesignPattern\obj\Debug\netcoreapp3.1\DesignPattern.AssemblyInfo.cs
 C:\Users\tilekaks\OneDrive - Tieto Corporation\Projects\Design Pattern - Copy\DesignPattern\DesignPattern\obj\Debug\netcoreapp3.1\DesignPattern.dll
 C:\Users\tilekaks\OneDrive - Tieto Corporation\Projects\Design Pattern - Copy\DesignPattern\DesignPattern\obj\Debug\netcoreapp3.1\DesignPattern.pdb
-C:\Users\tilekaks\OneDrive - Tieto Corporation\Projects\DesignPattern\DesignPattern\bin\Debug\netcoreapp3.1\DesignPattern.exe
-C:\Users\tilekaks\OneDrive - Tieto Corporation\Projects\DesignPattern\DesignPattern\bin\Debug\netcoreapp3.1\DesignPattern.deps.json
-C:\Users\tilekaks\OneDrive - Tieto Corporation\Projects\DesignPattern\DesignPattern\bin\Debug\netcoreapp3.1\DesignPattern.runtimeconfig.json
-C:\Users\tilekaks\OneDrive - Tieto Corporation\Projects\DesignPattern\DesignPattern\bin\Debug\netcoreapp3.1\DesignPattern.runtimeconfig.dev.json
-C:\Users\tilekaks\OneDrive - Tieto Corporation\Projects\DesignPattern\DesignPattern\bin\Debug\netcoreapp3.1\DesignPattern.dll
-C:\Users\tilekaks\OneDrive - Tieto Corporation\Projects\DesignPattern\DesignPattern\bin\Debug\netcoreapp3.1\DesignPattern.pdb
-C:\Users\tilekaks\OneDrive - Tieto Corporation\Projects\DesignPattern\DesignPattern\obj\Debug\netcoreapp3.1\DesignPattern.csprojAssemblyReference.cache
-C:\Users\tilekaks\OneDrive - Tieto Corporation\Projects\DesignPattern\DesignPattern\obj\Debug\netcoreapp3.1\DesignPattern.AssemblyInfoInputs.cache
-C:\Users\tilekaks\OneDrive - Tieto Corporation\Projects\DesignPattern\DesignPattern\obj\Debug\netcoreapp3.1\DesignPattern.AssemblyInfo.cs
-C:\Users\tilekaks\OneDrive - Tieto Corporation\Projects\DesignPattern\DesignPattern\obj\Debug\netcoreapp3.1\DesignPattern.dll
-C:\Users\tilekaks\OneDrive - Tieto Corporation\Projects\DesignPattern\DesignPattern\obj\Debug\netcoreapp3.1\DesignPattern.pdb

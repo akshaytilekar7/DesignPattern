@@ -43,9 +43,11 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="ICommand.cs" />
+    <Compile Include="Interfaces\ICommand.cs" />
     <Compile Include="ModifyPrice.cs" />
     <Compile Include="Product.cs" />
+    <Compile Include="Concreate\ProductDecreseCommand.cs" />
+    <Compile Include="Concreate\ProductIncreseCommand.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>

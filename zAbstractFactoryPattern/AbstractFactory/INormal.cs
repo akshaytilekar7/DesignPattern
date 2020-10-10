@@ -1,4 +1,4 @@
-﻿namespace AbstractFactoryDemo
+﻿namespace zAbstractFactoryPattern.AbstractFactory
 {
     interface INormal
     {

@@ -1,14 +1,13 @@
 ﻿using System;
-using zFactoryMethodPattern;
 using zFactoryMethodPattern.Commerce;
 
-namespace zFactoryPattern.Shipping.ShipingProvider
+namespace zFactoryMethodPattern.Shipping
 {
     public class SwedishSP : ShippingProvider
     {
         private readonly string apiKey;
 
-        public SwedishSP(string apiKey, CostCaluculate shippingCostCalculator, TaxOptions taxOptions)
+        public SwedishSP(string apiKey, CostCalculate shippingCostCalculator, TaxOptions taxOptions)
         {
             this.apiKey = apiKey;
 

@@ -1,0 +1,9 @@
+C:\Users\tilekaks\Downloads\GenericRepository\GenericRepository\EF.Data\bin\Debug\EF.Data.dll.config
+C:\Users\tilekaks\Downloads\GenericRepository\GenericRepository\EF.Data\bin\Debug\EF.Data.dll
+C:\Users\tilekaks\Downloads\GenericRepository\GenericRepository\EF.Data\bin\Debug\EF.Data.pdb
+C:\Users\tilekaks\Downloads\GenericRepository\GenericRepository\EF.Data\bin\Debug\EF.Core.dll
+C:\Users\tilekaks\Downloads\GenericRepository\GenericRepository\EF.Data\bin\Debug\EF.Core.pdb
+C:\Users\tilekaks\Downloads\GenericRepository\GenericRepository\EF.Data\obj\Debug\EF.Data.csprojAssemblyReference.cache
+C:\Users\tilekaks\Downloads\GenericRepository\GenericRepository\EF.Data\obj\Debug\EF.Data.csproj.CopyComplete
+C:\Users\tilekaks\Downloads\GenericRepository\GenericRepository\EF.Data\obj\Debug\EF.Data.dll
+C:\Users\tilekaks\Downloads\GenericRepository\GenericRepository\EF.Data\obj\Debug\EF.Data.pdb

@@ -1,6 +1,8 @@
 using System;
+using zAbstractFactoryPattern.ConcreteFactory;
+using zAbstractFactoryPattern.Models;
 
-namespace AbstractFactoryDemo
+namespace zAbstractFactoryPattern
 {
     class Program
     {
@@ -8,12 +10,15 @@ namespace AbstractFactoryDemo
         {
             PhoneMakerFactory factory = new PhoneMakerFactory();
 
-            var samsung = factory.GetProducts(enums.SAMSUNG);
+            var samsung = new SamsungFactory();
             samsung.GetSmart();
             samsung.GetNormal();
 
 
-            factory.GetProducts(enums.HTC);
+            var htc = factory.GetProducts(enums.HTC);
+            htc.GetSmart();
+            htc.GetNormal();
+
             factory.GetProducts(enums.NOKIA);
 
             Console.Read();

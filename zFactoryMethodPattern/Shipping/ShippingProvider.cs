@@ -1,25 +1,24 @@
-﻿using zFactoryMethodPattern;
-using zFactoryMethodPattern.Commerce;
+﻿using zFactoryMethodPattern.Commerce;
 
-namespace zFactoryPattern.Shipping.ShipingProvider
+namespace zFactoryMethodPattern.Shipping
 {
     public abstract class ShippingProvider
     {
-        public CostCaluculate ShippingCostCalculator { get; protected set; }
+        public CostCalculate ShippingCostCalculator { get; protected set; }
         public TaxOptions TaxOptions { get; set; }
         public bool RequireSignature { get; internal set; }
 
         public abstract string GenerateShippingLabelFor(Order order);
     }
 
-    public class CostCaluculate
+    public class CostCalculate
     {
         private readonly decimal internationalShippingFee;
         private readonly decimal extraWeightFee;
 
         public ShippingType ShippingType { get; set; }
 
-        public CostCaluculate(decimal internationalShippingFee, decimal extraWeightFee, ShippingType shippingType = ShippingType.Standard)
+        public CostCalculate(decimal internationalShippingFee, decimal extraWeightFee, ShippingType shippingType = ShippingType.Standard)
         {
             this.internationalShippingFee = internationalShippingFee;
             this.extraWeightFee = extraWeightFee;

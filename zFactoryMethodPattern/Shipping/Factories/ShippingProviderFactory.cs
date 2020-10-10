@@ -1,10 +1,8 @@
-﻿using zFactoryPattern.Shipping.ShipingProvider;
-
-namespace zFactoryMethodPattern.Shipping.Factories
+﻿namespace zFactoryMethodPattern.Shipping.Factories
 {
     interface IShippingProviderFactory
     {
-        public abstract ShippingProvider CreateShippingProvider(string country);
+        ShippingProvider CreateShippingProvider(string country);  //public abstract 
 
     }
 

@@ -1,14 +1,12 @@
-﻿using MyShop.Domain.Models;
-using MyShop.Infrastructure.Repositories;
+﻿using RepositoryPattern.Models;
+using RepositoryPattern.Repositories.Interface;
 
 namespace RepositoryPattern.UnitOfWorkPattern
 {
     public interface IUnitOfWork
     {
         IRepository<Customer> CustomerRepository { get; }
-        IRepository<Order> OrderRepository { get; }
-        IRepository<Product> ProductRepository { get; }
-
+        IRepository<Address> AddressRepository { get; }
         void SaveChanges();
     }
 }

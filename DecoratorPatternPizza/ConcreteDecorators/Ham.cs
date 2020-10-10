@@ -7,20 +7,19 @@ namespace DecoratorPatternPizza.ConcreteDecorators
     {
         public Ham(Pizza pizza) : base(pizza)
         {
-            //Description = this.GetType().Name;
         }
 
         public override string GetDescription()
         {
-            // HAM
-            var x = Pizza.GetDescription();
-            var y = this.GetType().Name;
+
+            var x = PizzaDeco.GetDescription();
+            var y = this.GetType().Name;   // HAM
             return $"{x}, {y}";
         }
 
         public override double CalculateCost()
         {
-            return Pizza.CalculateCost() + 1.00;
+            return PizzaDeco.CalculateCost() + 1.00;
         }
     }
 }

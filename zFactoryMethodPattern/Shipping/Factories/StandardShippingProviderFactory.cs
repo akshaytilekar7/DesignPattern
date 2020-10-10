@@ -1,5 +1,4 @@
 ﻿using System;
-using zFactoryPattern.Shipping.ShipingProvider;
 
 namespace zFactoryMethodPattern.Shipping.Factories
 {
@@ -16,7 +15,7 @@ namespace zFactoryMethodPattern.Shipping.Factories
                 case "Australia":
                     {
                         #region Australia Post Shipping Provider
-                        var shippingCostCalculator = new CostCaluculate(250, 500)
+                        var shippingCostCalculator = new CostCalculate(250, 500)
                         {
                             ShippingType = ShippingType.Standard
                         };
@@ -30,7 +29,7 @@ namespace zFactoryMethodPattern.Shipping.Factories
                 case "Sweden":
                     {
                         #region Swedish Postal Service Shipping Provider
-                        var shippingCostCalculator = new CostCaluculate(50, 100)
+                        var shippingCostCalculator = new CostCalculate(50, 100)
                         {
                             ShippingType = ShippingType.Express
                         };

@@ -1,7 +1,8 @@
-﻿using MyShop.Domain.Models;
+﻿using RepositoryPattern.Models;
+using RepositoryPattern.Repositories.Interface;
 using System.Linq;
 
-namespace MyShop.Infrastructure.Repositories
+namespace RepositoryPattern.Repositories
 {
     public class CustomerRepository : GenericRepository<Customer>
     {
@@ -11,15 +12,8 @@ namespace MyShop.Infrastructure.Repositories
 
         public override Customer Update(Customer entity)
         {
-            var customer = context.Customers
-                .Single(c => c.CustomerId == entity.CustomerId);
-
-            customer.Name = entity.Name;
-            customer.City = entity.City;
-            customer.PostalCode = entity.PostalCode;
-            customer.ShippingAddress = entity.ShippingAddress;
-            customer.Country = entity.Country;
-
+            var customer = Context.Customers.Single(c => c.CustomerId == entity.CustomerId);
+            customer.Name = entity.Name + " (sys name)";
             return base.Update(customer);
         }
     }

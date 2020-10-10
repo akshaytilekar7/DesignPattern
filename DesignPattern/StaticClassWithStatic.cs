@@ -3,17 +3,17 @@ namespace DesignPattern
 {
     public static class StaticClassWithStatic
     {
-        //public int Id { get; set; } // CTE
+        //public int Id { get; set; } // XXXXXXXX COMPILE TIME ERROR!!!!!!!
         public static string Name { get; set; }
 
         static StaticClassWithStatic()
         {
             Name = "A1";
-            // Id = 5; // CTE
+            // Id = 5; // XXXXXXXX COMPILE TIME ERROR!!!!!!!
             Console.WriteLine("Static Ctor called");
         }
 
-        //public StaticClassWithStatic(int j) // CTE
+        //public StaticClassWithStatic(int j) // XXXXXXXX COMPILE TIME ERROR!!!!!!!
         //{
         //    Name = "A2";
         //    Id = 5;
@@ -22,7 +22,7 @@ namespace DesignPattern
 
         public static string GetDetails1(string name, string branch)
         {
-            //Id = 5; // CTE  cant
+            //Id = 5; // XXXXXXXX COMPILE TIME ERROR!!!!!!!  cant
             Name = "A2";
             return "Name: " + name + " Branch: " + branch;
         }

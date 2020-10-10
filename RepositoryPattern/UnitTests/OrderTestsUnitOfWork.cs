@@ -1,10 +1,10 @@
 using Microsoft.VisualStudio.TestTools.UnitTesting;
 using Moq;
-using MyShop.Domain.Models;
-using MyShop.Infrastructure.Repositories;
+using RepositoryPattern.Models;
+using RepositoryPattern.Repositories.Interface;
 using RepositoryPattern.UnitOfWorkPattern;
 
-namespace MyShop.Web.Tests
+namespace RepositoryPattern.UnitTests
 {
     [TestClass]
     public class OrderTestsUnitOfWork
@@ -13,22 +13,20 @@ namespace MyShop.Web.Tests
         public void CanCreateOrderWithCorrectModel()
         {
             // ARRANGE 
-            var orderRepository = new Mock<IRepository<Order>>();
-            var productRepository = new Mock<IRepository<Product>>();
+            var addressRepository = new Mock<IRepository<Address>>();
             var customerRepository = new Mock<IRepository<Customer>>();
             var unitOfWork = new Mock<IUnitOfWork>();
 
             unitOfWork.Setup(uow => uow.CustomerRepository).Returns(() => customerRepository.Object);
-            unitOfWork.Setup(uow => uow.OrderRepository).Returns(() => orderRepository.Object);
-            unitOfWork.Setup(uow => uow.ProductRepository).Returns(() => productRepository.Object);
+            unitOfWork.Setup(uow => uow.AddressRepository).Returns(() => addressRepository.Object);
 
             var action = new Program(unitOfWork.Object);
 
             // ACT
-            action.CreateWIthUnitOfWork(new CreateOrderModel());
+            action.CreateWIthUnitOfWork();
 
             // ASSERT
-            orderRepository.Verify(r => r.Add(It.IsAny<Order>()), Times.AtLeastOnce());
+            addressRepository.Verify(r => r.Add(It.IsAny<Address>()), Times.AtLeastOnce());
         }
     }
 }

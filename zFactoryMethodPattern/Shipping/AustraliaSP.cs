@@ -1,15 +1,14 @@
 ﻿using System;
-using zFactoryMethodPattern;
 using zFactoryMethodPattern.Commerce;
 
-namespace zFactoryPattern.Shipping.ShipingProvider
+namespace zFactoryMethodPattern.Shipping
 {
-    public class AustraliaSP : ShippingProvider
+    public class AustraliaSP : zFactoryMethodPattern.Shipping.ShippingProvider
     {
         private readonly string clientId;
         private readonly string secret;
 
-        public AustraliaSP(string clientId, string secret, CostCaluculate shippingCostCalculator, TaxOptions taxOptions)
+        public AustraliaSP(string clientId, string secret, CostCalculate shippingCostCalculator, TaxOptions taxOptions)
         {
             this.clientId = clientId;
             this.secret = secret;

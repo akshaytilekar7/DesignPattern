@@ -6,8 +6,8 @@ namespace DecoratorPatternPizza.ConcreteComponents
     {
         public override string GetDescription()
         {
-            //SMALL
-            return $"{this.GetType().Name}";
+
+            return $"{this.GetType().Name}"; //SMALL
         }
 
         public override double CalculateCost()

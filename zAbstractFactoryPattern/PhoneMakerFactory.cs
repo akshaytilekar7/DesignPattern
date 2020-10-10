@@ -1,6 +1,9 @@
 ﻿using System;
+using zAbstractFactoryPattern.AbstractFactory;
+using zAbstractFactoryPattern.ConcreteFactory;
+using zAbstractFactoryPattern.Models;
 
-namespace AbstractFactoryDemo
+namespace zAbstractFactoryPattern
 {
     class PhoneMakerFactory
     {

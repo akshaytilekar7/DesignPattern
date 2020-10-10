@@ -4,19 +4,19 @@ namespace DecoratorPatternPizza.Decorator
 {
     public class PizzaDecorator : Pizza
     {
-        protected Pizza Pizza;
+        protected Pizza PizzaDeco;
         public PizzaDecorator(Pizza pizza)
         {
-            Pizza = pizza;
+            PizzaDeco = pizza;
         }
         public override string GetDescription()
         {
-            return Pizza.GetDescription();
+            return PizzaDeco.GetDescription();
         }
 
         public override double CalculateCost()
         {
-            return Pizza.CalculateCost();
+            return PizzaDeco.CalculateCost();
         }
     }
 }

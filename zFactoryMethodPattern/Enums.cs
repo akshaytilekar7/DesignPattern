@@ -17,7 +17,7 @@
     public enum ShippingStatus
     {
         WaitingForPayment,
-        ReadyForShippment,
+        ReadyForShipment,
         Shipped
     }
 }

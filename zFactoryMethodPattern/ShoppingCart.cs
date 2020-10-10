@@ -19,7 +19,7 @@
 //        {
 //            var shippingProvider = shippingProviderFactory.CreateShippingProvider(order.Sender.Country);
 
-//            order.ShippingStatus = ShippingStatus.ReadyForShippment;
+//            order.ShippingStatus = ShippingStatus.ReadyForShipment;
 
 //            return shippingProvider.GenerateShippingLabelFor(order);
 //        }

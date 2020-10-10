@@ -22,24 +22,41 @@ namespace DesignPattern
             Console.WriteLine("2 now we are done with adding record with id :" + status);
             Console.WriteLine("2 doing some operations which LEXICAL SCOPE IS WITH THIS CLASS");
         }
+
+        static void Main1(string[] args)
+        {
+            DbOperations obj = new DbOperations();
+            obj.EventSender += CallbackGetStatus1;
+            obj.EventSender += CallbackGetStatus2;
+            //obj.eventSender = null; // in case of delegate we can set to NULL 
+
+            obj.DelegateSender += CallbackGetStatus1;
+            obj.DelegateSender += CallbackGetStatus2;
+            obj.DelegateSender = null; // in case of delegate we can set to NULL 
+
+            Thread t = new Thread(new ThreadStart(obj.AddingHugeRecord));
+            t.Start();
+
+        }
     }
 
 
     public class DbOperations
     {
         public delegate void Sender(int currentStatus);
-        // public Sender sender = null;  
+        public Sender DelegateSender = null;
         // PROBLEM IS WE CAN SET TO NULL // x.sender = null; to avoid this use event
-        public event Sender sender = null;
+        public event Sender EventSender = null;
 
-        public void AddingHugeRecord(int noOfRecords)
+        public void AddingHugeRecord()
         {
             //add
-            for (int i = 0; i < noOfRecords; i++)
+            for (int i = 0; i < 5000; i++)
             {
                 Thread.Sleep(3000);
-                sender(i);
+                EventSender(i);
             }
         }
+
     }
 }

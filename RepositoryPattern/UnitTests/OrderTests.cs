@@ -1,9 +1,9 @@
 using Microsoft.VisualStudio.TestTools.UnitTesting;
 using Moq;
-using MyShop.Domain.Models;
-using MyShop.Infrastructure.Repositories;
+using RepositoryPattern.Models;
+using RepositoryPattern.Repositories.Interface;
 
-namespace MyShop.Web.Tests
+namespace RepositoryPattern.UnitTests
 {
     [TestClass]
     public class OrderTests
@@ -12,19 +12,16 @@ namespace MyShop.Web.Tests
         public void CanCreateOrderWithCorrectModel()
         {
             // ARRANGE 
-            var orderRepository = new Mock<IRepository<Order>>();
-            var productRepository = new Mock<IRepository<Product>>();
+            var addressRepository = new Mock<IRepository<Address>>();
             var customerRepository = new Mock<IRepository<Customer>>();
 
-            var orderController = new Program(orderRepository.Object, productRepository.Object);
-
-            var createOrderModel = new CreateOrderModel { };
+            var orderController = new Program(customerRepository.Object, addressRepository.Object);
 
             // ACT
-            orderController.Create(createOrderModel);
+            orderController.Create();
 
             // ASSERT
-            orderRepository.Verify(r => r.Add(It.IsAny<Order>()), Times.AtLeastOnce());
+            addressRepository.Verify(r => r.Add(It.IsAny<Address>()), Times.AtLeastOnce());
         }
     }
 }

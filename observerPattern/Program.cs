@@ -1,5 +1,5 @@
-﻿using observerPattern.ConcreateObservable;
-using observerPattern.ConcreateObserver;
+﻿using observerPattern.ConcreteObservable;
+using observerPattern.ConcreteObserver;
 using System;
 
 namespace observerPattern
@@ -9,13 +9,13 @@ namespace observerPattern
         static void Main(string[] args)
         {
 
-            WheatherStation station = new WheatherStation();
+            WeatherStation station = new WeatherStation();
 
             PrintMediaDisplay printMediaDisplay = new PrintMediaDisplay(station);
-            NewsChannleDisplay newsChannleDisplay = new NewsChannleDisplay(station);
+            NewsChannelDisplay newsChannelDisplay = new NewsChannelDisplay(station);
 
             station.Add(printMediaDisplay);
-            station.Add(newsChannleDisplay);
+            station.Add(newsChannelDisplay);
 
             var startTimeSpan = TimeSpan.Zero;
             var periodTimeSpan = TimeSpan.FromSeconds(10);
