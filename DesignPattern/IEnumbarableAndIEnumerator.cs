@@ -4,12 +4,12 @@ using System.Collections.Generic;
 
 namespace DesignPattern
 {
-    public class Restaurant
+    public class BaseRestaurant
     {
         public string Name { get; set; }
         public bool IsOpened { get; set; }
 
-        public Restaurant(string name, bool isOpened)
+        public BaseRestaurant(string name, bool isOpened)
         {
             Name = name;
             IsOpened = isOpened;
@@ -18,10 +18,10 @@ namespace DesignPattern
 
     public class OpenRestaurantsEnumerator : IEnumerator
     {
-        private readonly List<Restaurant> _restaurants;
+        private readonly List<BaseRestaurant> _restaurants;
         private int _position = -1;
 
-        public OpenRestaurantsEnumerator(List<Restaurant> restaurants)
+        public OpenRestaurantsEnumerator(List<BaseRestaurant> restaurants)
         {
             _restaurants = restaurants;
         }
@@ -55,14 +55,14 @@ namespace DesignPattern
         }
     }
 
-    class Restaurants : IEnumerable
+    class RestaurantEnumerableForOpenFlag : IEnumerable
     {
-        readonly public List<Restaurant> restaurants = new List<Restaurant>
+        private readonly List<BaseRestaurant> restaurants;
+
+        public RestaurantEnumerableForOpenFlag(List<BaseRestaurant> restaurants)
         {
-            new Restaurant("Pizza", true),
-            new Restaurant("Hamburger", false),
-            new Restaurant("Bread", true)
-        };
+            this.restaurants = restaurants;
+        }
 
         public IEnumerator GetEnumerator()
         {
@@ -73,42 +73,21 @@ namespace DesignPattern
 
     class Program
     {
-        private static void ProtectWithTransaction(Action action)
+        public static void Main1(string[] args)
         {
-            action.Invoke();
-        }
-
-        private static int ProtectWithTransaction1(Func<int> action)
-        {
-            return action.Invoke();
-        }
-
-        private static void Add(int a, int b)
-        {
-        }
-
-        private static int Add(int a)
-        {
-            return 5;
-        }
-
-        static void Main1(string[] args)
-        {
-
-            ProtectWithTransaction(() => Add(1, 3));
-            ProtectWithTransaction(() => Add(10));
-            var x = ProtectWithTransaction1(() => Add(10));
-
-            Restaurants restaurants = new Restaurants();
-
-            foreach (Restaurant restaurant in restaurants)
+            List<BaseRestaurant> restaurants = new List<BaseRestaurant>
             {
-                Console.WriteLine(restaurant.Name);
-            }
+                new BaseRestaurant("Pizza", true),
+                new BaseRestaurant("Hamburger", false),
+                new BaseRestaurant("Bread", true)
+            };
 
-            //Output:
-            //Pizza
-            //Bread
+            RestaurantEnumerableForOpenFlag restaurantsFinal = new RestaurantEnumerableForOpenFlag(restaurants);
+
+            foreach (BaseRestaurant restaurant in restaurantsFinal)
+                Console.WriteLine(restaurant.Name);
+
+            //Output: Pizza and Bread only 
         }
     }
 }

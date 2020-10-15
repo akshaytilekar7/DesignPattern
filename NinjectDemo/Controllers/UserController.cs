@@ -48,4 +48,4 @@ namespace NinjectDemo.Controllers
 //services.AddScoped<IService, ServiceC>();  
 
 //public ValuesController(IService serviceA, IService serviceB, IService serviceC)  
-// IMP // ALL 3 HAVE SAME INSTANCE : LAST ONE INJECTED IR SERVICE
+// IMP // ALL 3 HAVE SAME INSTANCE : LAST ONE INJECTED IN SERVICE

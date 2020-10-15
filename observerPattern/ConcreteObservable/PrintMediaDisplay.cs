@@ -14,7 +14,7 @@ namespace observerPattern.ConcreteObservable
 
         public void Update()
         {
-            var temp = _weatherStation.GetWeather();
+            var temp = _weatherStation.GetWeatherDataOnWeatherChange();
             var str = "indian express!! \n weather today :" + DateTime.UtcNow + " is " + temp;
             Console.WriteLine(str);
         }

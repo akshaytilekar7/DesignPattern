@@ -42,7 +42,7 @@ namespace EF.Data
             _disposed = true;
         }
 
-        public UOWRepository<T> Repository<T>() where T : class, new()
+        public UOWRepository<T> GetRepository<T>() where T : class, new()
         {
             if (_repositories == null)
             {

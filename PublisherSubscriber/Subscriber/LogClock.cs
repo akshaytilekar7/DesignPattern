@@ -11,9 +11,9 @@ namespace PublisherSubscriber.Subscriber
         {
             _clock = clock;
         }
-        public void Subscribe()
+        public void AddSubscriber()
         {
-            _clock.SecondChange += WriteLogEntry;
+            _clock.SecondChange += WriteLogEntry; // subscribe to event
         }
 
         public void WriteLogEntry(string ti)

@@ -8,7 +8,6 @@ namespace observerPattern
     {
         static void Main(string[] args)
         {
-
             WeatherStation station = new WeatherStation();
 
             PrintMediaDisplay printMediaDisplay = new PrintMediaDisplay(station);
@@ -17,18 +16,12 @@ namespace observerPattern
             station.Add(printMediaDisplay);
             station.Add(newsChannelDisplay);
 
-            var startTimeSpan = TimeSpan.Zero;
-            var periodTimeSpan = TimeSpan.FromSeconds(10);
-
             var timer = new System.Threading.Timer((e) =>
             {
                 station.Notify();
-            }, null, startTimeSpan, periodTimeSpan);
-
+            }, null, TimeSpan.Zero, TimeSpan.FromSeconds(10));
 
             Console.ReadKey();
-
-
         }
     }
 }

@@ -11,9 +11,9 @@ namespace PublisherSubscriber.Subscriber
         {
             _clock = clock;
         }
-        public void Subscribe()
+        public void AddSubscriber()
         {
-            _clock.SecondChange += TimeHasChanged;
+            _clock.SecondChange += TimeHasChanged; // subscribe to event
         }
 
         public void TimeHasChanged(string ti)

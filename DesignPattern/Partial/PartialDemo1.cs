@@ -4,7 +4,6 @@ namespace DesignPattern.Partial
 {
     public partial class Circle
     {
-
         public void NewArea(int a)
         {
             Area(a);

@@ -35,15 +35,15 @@ namespace DesignPattern
             return "Name: " + name + " Branch: " + branch;
         }
 
-        //public static void Main()
-        //{
+        public static void Main1()
+        {
 
-        //    Test t = new Test();
-        //    NormalClassWithStatic obj = new NormalClassWithStatic(1);
-        //    Console.WriteLine(obj.NonStaticMethod("A", "B"));
+            Test t = new Test();
+            NormalClassWithStatic obj = new NormalClassWithStatic(1);
+            Console.WriteLine(obj.NonStaticMethod("A", "B"));
 
-        //    NormalClassWithStatic ob = new NormalClassWithStatic(2);
-        //    Console.WriteLine(ob.NonStaticMethod("AA", "BB"));
-        //}
+            NormalClassWithStatic ob = new NormalClassWithStatic(2);
+            Console.WriteLine(ob.NonStaticMethod("AA", "BB"));
+        }
     }
 }

@@ -30,7 +30,7 @@ namespace EF.Data
                     throw new ArgumentNullException(nameof(entity));
                 }
                 this.Entities.Add(entity);
-                this._context.SaveChanges();
+                this._context.SaveChanges(); // NOT IN CASE OF UOW
             }
             catch (DbEntityValidationException dbEx)
             {

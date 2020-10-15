@@ -32,7 +32,7 @@ namespace observerPattern.ConcreteObserver
                 item.Update();
         }
 
-        public string GetWeather()
+        public string GetWeatherDataOnWeatherChange()
         {
             Random rnd = new Random();
             return rnd.Next(-20, 45).ToString();

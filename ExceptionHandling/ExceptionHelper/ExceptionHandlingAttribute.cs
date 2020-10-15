@@ -2,13 +2,11 @@
 using System;
 using System.Net;
 using System.Net.Http;
-using System.Threading;
-using System.Threading.Tasks;
 using System.Web.Http.Filters;
 
 namespace ExceptionHandling.ExceptionHelper
 {
-    public class ExceptionHandlingAttribute : FilterAttribute, IExceptionFilter
+    public class ExceptionHandlingAttribute : FilterAttribute
     {
         public void OnException(HttpActionExecutedContext actionExecutedContext)
         {
@@ -27,11 +25,12 @@ namespace ExceptionHandling.ExceptionHelper
         {
             // 461
             var errorKey = $"{businessError.ErrorCode.ToString()}";
-            var errorMessage = errorKey + " Error occured at : " + DateTime.Now; // GET TRANSLATION FOR ERROR CODE
-            var response = actionExecutedContext.Request.CreateResponse((HttpStatusCode)HTTPStatusCode.BusinessException, new
-            {
-                ExceptionMessage = errorMessage
-            });
+            var errorMessage = errorKey + " Error occured at : " + DateTime.Now; // GET TRANSLATION FOR ERROR CODE 
+            var response = actionExecutedContext.Request
+                .CreateResponse((HttpStatusCode)HTTPStatusCode.BusinessException, new
+                {
+                    ExceptionMessage = errorMessage
+                });
 
             actionExecutedContext.Response = response;
         }
@@ -55,11 +54,6 @@ namespace ExceptionHandling.ExceptionHelper
             });
 
             actionExecutedContext.Response = response;
-        }
-
-        public Task ExecuteExceptionFilterAsync(HttpActionExecutedContext actionExecutedContext, CancellationToken cancellationToken)
-        {
-            throw new NotImplementedException();
         }
     }
 }

@@ -43,6 +43,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="AnotherExample.cs" />
     <Compile Include="Publisher\Publisher.cs" />
     <Compile Include="Subscriber\DisplayClock.cs" />
     <Compile Include="Program.cs" />
