@@ -19,7 +19,7 @@ namespace ExceptionHandling.Controllers
 
         /*
          - once we send BusinessException (461) or UnhandledException (460)
-         in client side we have wrapper on Ajaxcall like :
+         in client side we have wrapper on Ajax call like :
 
                         $.ajax(url, options).done(function () {
                             dfd.resolve.apply(this, arguments);
@@ -30,7 +30,7 @@ namespace ExceptionHandling.Controllers
         test()
         {
          if (ajaxErrorHelper.isBusinessException(jqXhr)) // 461
-                        this.notifyErrorIncontainer(getErrorMessage(jqXhr, message));
+                        this.notifyErrorInContainer(getErrorMessage(jqXhr, message));
         else if (ajaxErrorHelper.isForbidden(jqXhr)) { //403
                         this.showErrorDialog(translate('FlowHtml.Translations.Forbidden'), getErrorMessage(jqXhr, message), showCorrelationOnly);
         
