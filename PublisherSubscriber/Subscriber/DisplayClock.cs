@@ -3,7 +3,7 @@ using System;
 
 namespace PublisherSubscriber.Subscriber
 {
-    public class DisplayClock
+    public class DisplayClock : ISubscriber
     {
         private readonly Clock _clock;
 
@@ -15,8 +15,7 @@ namespace PublisherSubscriber.Subscriber
         {
             _clock.SecondChange += TimeHasChanged; // subscribe to event
         }
-
-        public void TimeHasChanged(string ti)
+        private void TimeHasChanged(string ti)
         {
             Console.WriteLine("Current Time: " + ti);
         }

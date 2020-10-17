@@ -3,7 +3,7 @@ using System;
 
 namespace PublisherSubscriber.Subscriber
 {
-    public class LogClock
+    public class LogClock : ISubscriber
     {
         private readonly Clock _clock;
 
@@ -16,7 +16,7 @@ namespace PublisherSubscriber.Subscriber
             _clock.SecondChange += WriteLogEntry; // subscribe to event
         }
 
-        public void WriteLogEntry(string ti)
+        private void WriteLogEntry(string ti)
         {
             Console.WriteLine("Logging to file: " + ti);
         }

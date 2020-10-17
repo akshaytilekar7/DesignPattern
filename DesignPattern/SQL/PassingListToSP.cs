@@ -16,7 +16,7 @@ Examples :
         Name varchar(250),
         )
 
-    - created in programitibility  in system data type
+    - created in programibility  in system data type
 
 
     Create SP InsertEmployee

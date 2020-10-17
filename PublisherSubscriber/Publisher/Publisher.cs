@@ -24,8 +24,10 @@ namespace PublisherSubscriber.Publisher
 
                 if (dbDateTime.Second != _second)
                 {
-                    // u can use any one np
+
+                    // we can use any one... option 1
                     Notify(dbDateTime.ToLongTimeString());
+                    //option 2
                     SecondChange?.Invoke(dbDateTime.ToLongTimeString());
                 }
 

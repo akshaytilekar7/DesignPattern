@@ -11,11 +11,11 @@ namespace PublisherSubscriber
         {
             Clock clock = new Clock();
 
-            DisplayClock dc = new DisplayClock(clock);
-            LogClock lc = new LogClock(clock);
+            ISubscriber dc = new DisplayClock(clock);
+            ISubscriber lc = new LogClock(clock);
 
-            lc.AddSubscriber();
-            dc.AddSubscriber();
+            lc.AddSubscriber(); // subscribe for event
+            dc.AddSubscriber(); // subscribe for event
 
             clock.GetUpdatedTimeOnSecondChange(); // publish event
 

@@ -48,6 +48,7 @@
     <Compile Include="Subscriber\DisplayClock.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Subscriber\ISubscriber.cs" />
     <Compile Include="Subscriber\LogClock.cs" />
   </ItemGroup>
   <ItemGroup>
