@@ -5,7 +5,7 @@ namespace CommandPatternDineChef.Invokers
     public class DineTableCommand
     {
         //Dine table method
-        public OrderCommand GetDineCommand(int dineCommand)
+        public IOrderCommand GetDineCommand(int dineCommand)
         {
             switch (dineCommand)
             {

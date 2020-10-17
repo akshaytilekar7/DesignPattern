@@ -6,8 +6,8 @@ namespace CommandPatternDineChef.Invokers
 {
     public class DineChef
     {
-        private DineChefRestaurant dineChefRestaurant = new DineChefRestaurant();
-        private OrderCommand orderCommand;
+        private readonly DineChefRestaurant dineChefRestaurant = new DineChefRestaurant();
+        private IOrderCommand orderCommand;
 
         public void ExecuteCommand(int dineCommand, MenuItem item)
         {

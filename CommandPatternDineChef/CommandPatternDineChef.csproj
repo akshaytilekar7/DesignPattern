@@ -45,7 +45,7 @@
   <ItemGroup>
     <Compile Include="Interfaces\ModifyOrderCommand.cs" />
     <Compile Include="Interfaces\NewOrderCommand.cs" />
-    <Compile Include="Interfaces\OrderCommand.cs" />
+    <Compile Include="Interfaces\IOrderCommand.cs" />
     <Compile Include="Interfaces\RemoveOrderCommand.cs" />
     <Compile Include="Invokers\DineChef.cs" />
     <Compile Include="Helpers\DineTableCommand.cs" />

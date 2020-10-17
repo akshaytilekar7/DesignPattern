@@ -4,11 +4,11 @@ using System.Linq;
 
 namespace CommandPatternDineChef.Interfaces
 {
-    public class RemoveOrderCommand : OrderCommand
+    public class RemoveOrderCommand : IOrderCommand
     {
         public void Execute(List<MenuItem> order, MenuItem newItem)
         {
-            order.Remove(order.Where(x => x.Item == newItem.Item).First());
+            order.Remove(order.First(x => x.Item == newItem.Item));
         }
     }
 }

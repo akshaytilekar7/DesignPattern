@@ -4,11 +4,11 @@ using System.Linq;
 
 namespace CommandPatternDineChef.Interfaces
 {
-    public class ModifyOrderCommand : OrderCommand
+    public class ModifyOrderCommand : IOrderCommand
     {
         public void Execute(List<MenuItem> order, MenuItem newItem)
         {
-            var item = order.Where(x => x.Item == newItem.Item).First();
+            var item = order.First(x => x.Item == newItem.Item);
             item.Quantity = newItem.Quantity;
             item.Tags = newItem.Tags;
             item.TableNumber = newItem.TableNumber;

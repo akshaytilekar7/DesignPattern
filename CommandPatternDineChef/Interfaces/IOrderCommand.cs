@@ -3,7 +3,7 @@ using System.Collections.Generic;
 
 namespace CommandPatternDineChef.Interfaces
 {
-    public interface OrderCommand
+    public interface IOrderCommand
     {
         void Execute(List<MenuItem> order, MenuItem newItem);
 
