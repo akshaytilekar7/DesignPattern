@@ -1,5 +1,5 @@
-﻿using CommandPatternDineChef.Invokers;
-using CommandPatternDineChef.Models;
+﻿using CommandPatternDineChef.Models;
+using CommandPatternDineChef.Receivers;
 using System;
 using System.Collections.Generic;
 
@@ -9,44 +9,44 @@ namespace CommandPatternDineChef
     {
         static void Main(string[] args)
         {
-            DineChef dineChef = new DineChef();
-            /* Insert Order */
-            var x = new MenuItem()
+            DineChefRestaurant dineChef = new DineChefRestaurant();
+
+            var menuItem = new MenuItem()
             {
                 TableNumber = 1,
                 Item = "Super Mega Burger",
                 Quantity = 1,
                 Tags = new List<Tag>() { new Tag() { TagName = "Jalapenos," }, new Tag() { TagName = " Cheese," }, new Tag() { TagName = " Tomato" } }
             };
-            dineChef.ExecuteCommand(1, x);
+            dineChef.ExecuteCommand(Helper.GetCmd(Cmd.NewOrder), menuItem);
             dineChef.ShowCurrentOrder();
 
-            x = new MenuItem()
+            menuItem = new MenuItem()
             {
                 TableNumber = 1,
                 Item = "Cheese Sandwich",
                 Quantity = 1,
                 Tags = new List<Tag>() { new Tag() { TagName = "Spicy Mayo," } }
             };
-            dineChef.ExecuteCommand(1, x);
+            dineChef.ExecuteCommand(Helper.GetCmd(Cmd.ModifyOrder), menuItem);
             dineChef.ShowCurrentOrder();
 
-            x = new MenuItem()
+            menuItem = new MenuItem()
             {
                 TableNumber = 1,
                 Item = "Cheese Sandwich"
             };
-            dineChef.ExecuteCommand(3, x);
+            dineChef.ExecuteCommand(Helper.GetCmd(Cmd.RemoveOrder), menuItem);
             dineChef.ShowCurrentOrder();
 
-            x = new MenuItem()
+            menuItem = new MenuItem()
             {
                 TableNumber = 1,
                 Item = "Super Mega Burger",
                 Quantity = 1,
                 Tags = new List<Tag>() { new Tag() { TagName = "Jalapenos," }, new Tag() { TagName = " Cheese" } }
             };
-            dineChef.ExecuteCommand(2, x);
+            dineChef.ExecuteCommand(Helper.GetCmd(Cmd.ModifyOrder), menuItem);
             dineChef.ShowCurrentOrder();
 
             Console.ReadKey();

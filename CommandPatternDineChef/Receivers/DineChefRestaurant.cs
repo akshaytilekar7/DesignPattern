@@ -8,13 +8,12 @@ namespace CommandPatternDineChef.Receivers
     {
         public List<MenuItem> Orders = new List<MenuItem>();
 
-
         public void ExecuteCommand(IOrderCommand command, MenuItem item)
         {
-            command.Execute(this.Orders, item);
+            command.Execute(Orders, item);
         }
 
-        public void ShowOrders()
+        public void ShowCurrentOrder()
         {
             foreach (var item in Orders)
             {

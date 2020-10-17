@@ -43,12 +43,11 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Interfaces\ModifyOrderCommand.cs" />
-    <Compile Include="Interfaces\NewOrderCommand.cs" />
+    <Compile Include="ConcreteClass\ModifyOrderCommand.cs" />
+    <Compile Include="ConcreteClass\NewOrderCommand.cs" />
     <Compile Include="Interfaces\IOrderCommand.cs" />
-    <Compile Include="Interfaces\RemoveOrderCommand.cs" />
-    <Compile Include="Invokers\DineChef.cs" />
-    <Compile Include="Helpers\DineTableCommand.cs" />
+    <Compile Include="ConcreteClass\RemoveOrderCommand.cs" />
+    <Compile Include="Models\Helper.cs" />
     <Compile Include="Models\MenuItem.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
