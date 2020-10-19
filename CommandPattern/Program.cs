@@ -25,3 +25,10 @@ namespace CommandPattern
         }
     }
 }
+/*
+
+    - serve request as object
+    - save actions/command in as object and later executes it
+    - supprt undo redo opearions
+
+*/
