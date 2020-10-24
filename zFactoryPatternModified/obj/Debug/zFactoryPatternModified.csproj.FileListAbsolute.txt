@@ -1,0 +1,6 @@
+C:\Users\tilekaks\OneDrive - Tieto Corporation\Projects\DesignPattern\zFactoryPatternModified\bin\Debug\zFactoryPatternModified.exe.config
+C:\Users\tilekaks\OneDrive - Tieto Corporation\Projects\DesignPattern\zFactoryPatternModified\bin\Debug\zFactoryPatternModified.exe
+C:\Users\tilekaks\OneDrive - Tieto Corporation\Projects\DesignPattern\zFactoryPatternModified\bin\Debug\zFactoryPatternModified.pdb
+C:\Users\tilekaks\OneDrive - Tieto Corporation\Projects\DesignPattern\zFactoryPatternModified\obj\Debug\zFactoryPatternModified.csprojAssemblyReference.cache
+C:\Users\tilekaks\OneDrive - Tieto Corporation\Projects\DesignPattern\zFactoryPatternModified\obj\Debug\zFactoryPatternModified.exe
+C:\Users\tilekaks\OneDrive - Tieto Corporation\Projects\DesignPattern\zFactoryPatternModified\obj\Debug\zFactoryPatternModified.pdb

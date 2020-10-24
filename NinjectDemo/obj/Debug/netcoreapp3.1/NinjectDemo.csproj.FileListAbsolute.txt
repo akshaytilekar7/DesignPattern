@@ -34,3 +34,21 @@ C:\Users\tilekaks\OneDrive - Tieto Corporation\Projects\Design Pattern - Copy\De
 C:\Users\tilekaks\OneDrive - Tieto Corporation\Projects\Design Pattern - Copy\DesignPattern\NinjectDemo\obj\Debug\netcoreapp3.1\NinjectDemo.RazorTargetAssemblyInfo.cache
 C:\Users\tilekaks\OneDrive - Tieto Corporation\Projects\Design Pattern - Copy\DesignPattern\NinjectDemo\obj\Debug\netcoreapp3.1\NinjectDemo.dll
 C:\Users\tilekaks\OneDrive - Tieto Corporation\Projects\Design Pattern - Copy\DesignPattern\NinjectDemo\obj\Debug\netcoreapp3.1\NinjectDemo.pdb
+C:\Users\tilekaks\OneDrive - Tieto Corporation\Projects\DesignPattern\NinjectDemo\bin\Debug\netcoreapp3.1\appsettings.Development.json
+C:\Users\tilekaks\OneDrive - Tieto Corporation\Projects\DesignPattern\NinjectDemo\bin\Debug\netcoreapp3.1\appsettings.json
+C:\Users\tilekaks\OneDrive - Tieto Corporation\Projects\DesignPattern\NinjectDemo\bin\Debug\netcoreapp3.1\Properties\launchSettings.json
+C:\Users\tilekaks\OneDrive - Tieto Corporation\Projects\DesignPattern\NinjectDemo\bin\Debug\netcoreapp3.1\NinjectDemo.exe
+C:\Users\tilekaks\OneDrive - Tieto Corporation\Projects\DesignPattern\NinjectDemo\bin\Debug\netcoreapp3.1\NinjectDemo.deps.json
+C:\Users\tilekaks\OneDrive - Tieto Corporation\Projects\DesignPattern\NinjectDemo\bin\Debug\netcoreapp3.1\NinjectDemo.runtimeconfig.json
+C:\Users\tilekaks\OneDrive - Tieto Corporation\Projects\DesignPattern\NinjectDemo\bin\Debug\netcoreapp3.1\NinjectDemo.runtimeconfig.dev.json
+C:\Users\tilekaks\OneDrive - Tieto Corporation\Projects\DesignPattern\NinjectDemo\bin\Debug\netcoreapp3.1\NinjectDemo.dll
+C:\Users\tilekaks\OneDrive - Tieto Corporation\Projects\DesignPattern\NinjectDemo\bin\Debug\netcoreapp3.1\NinjectDemo.pdb
+C:\Users\tilekaks\OneDrive - Tieto Corporation\Projects\DesignPattern\NinjectDemo\obj\Debug\netcoreapp3.1\NinjectDemo.csprojAssemblyReference.cache
+C:\Users\tilekaks\OneDrive - Tieto Corporation\Projects\DesignPattern\NinjectDemo\obj\Debug\netcoreapp3.1\staticwebassets\NinjectDemo.StaticWebAssets.Manifest.cache
+C:\Users\tilekaks\OneDrive - Tieto Corporation\Projects\DesignPattern\NinjectDemo\obj\Debug\netcoreapp3.1\staticwebassets\NinjectDemo.StaticWebAssets.xml
+C:\Users\tilekaks\OneDrive - Tieto Corporation\Projects\DesignPattern\NinjectDemo\obj\Debug\netcoreapp3.1\NinjectDemo.MvcApplicationPartsAssemblyInfo.cache
+C:\Users\tilekaks\OneDrive - Tieto Corporation\Projects\DesignPattern\NinjectDemo\obj\Debug\netcoreapp3.1\NinjectDemo.AssemblyInfoInputs.cache
+C:\Users\tilekaks\OneDrive - Tieto Corporation\Projects\DesignPattern\NinjectDemo\obj\Debug\netcoreapp3.1\NinjectDemo.AssemblyInfo.cs
+C:\Users\tilekaks\OneDrive - Tieto Corporation\Projects\DesignPattern\NinjectDemo\obj\Debug\netcoreapp3.1\NinjectDemo.RazorTargetAssemblyInfo.cache
+C:\Users\tilekaks\OneDrive - Tieto Corporation\Projects\DesignPattern\NinjectDemo\obj\Debug\netcoreapp3.1\NinjectDemo.dll
+C:\Users\tilekaks\OneDrive - Tieto Corporation\Projects\DesignPattern\NinjectDemo\obj\Debug\netcoreapp3.1\NinjectDemo.pdb

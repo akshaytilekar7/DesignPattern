@@ -10,3 +10,9 @@ C:\Users\tilekaks\OneDrive - Tieto Corporation\Projects\Design Pattern - Copy\De
 C:\Users\tilekaks\OneDrive - Tieto Corporation\Projects\Design Pattern - Copy\DesignPattern\ChainOfResponsibilityPatternAction\obj\Debug\ChainOfResponsibilityPatternAction.csprojAssemblyReference.cache
 C:\Users\tilekaks\OneDrive - Tieto Corporation\Projects\Design Pattern - Copy\DesignPattern\ChainOfResponsibilityPatternAction\obj\Debug\ChainOfResponsibilityPatternAction.exe
 C:\Users\tilekaks\OneDrive - Tieto Corporation\Projects\Design Pattern - Copy\DesignPattern\ChainOfResponsibilityPatternAction\obj\Debug\ChainOfResponsibilityPatternAction.pdb
+C:\Users\tilekaks\OneDrive - Tieto Corporation\Projects\DesignPattern\ChainOfResponsibilityPatternAction\bin\Debug\ChainOfResponsibilityPatternAction.exe.config
+C:\Users\tilekaks\OneDrive - Tieto Corporation\Projects\DesignPattern\ChainOfResponsibilityPatternAction\bin\Debug\ChainOfResponsibilityPatternAction.exe
+C:\Users\tilekaks\OneDrive - Tieto Corporation\Projects\DesignPattern\ChainOfResponsibilityPatternAction\bin\Debug\ChainOfResponsibilityPatternAction.pdb
+C:\Users\tilekaks\OneDrive - Tieto Corporation\Projects\DesignPattern\ChainOfResponsibilityPatternAction\obj\Debug\ChainOfResponsibilityPatternAction.csprojAssemblyReference.cache
+C:\Users\tilekaks\OneDrive - Tieto Corporation\Projects\DesignPattern\ChainOfResponsibilityPatternAction\obj\Debug\ChainOfResponsibilityPatternAction.exe
+C:\Users\tilekaks\OneDrive - Tieto Corporation\Projects\DesignPattern\ChainOfResponsibilityPatternAction\obj\Debug\ChainOfResponsibilityPatternAction.pdb

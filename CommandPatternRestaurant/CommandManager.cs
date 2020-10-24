@@ -23,7 +23,7 @@ namespace CommandPatternRestaurant
             if (_undoStack.Count <= 0)
                 return;
 
-            _undoStack.Peek().Undo();          // undo most recently executed command
+            _undoStack.Peek().UnExecute();          // undo most recently executed command
             _redoStack.Push(_undoStack.Peek()); // add undone command to undo stack
             _undoStack.Pop();                  // remove top entry from undo stack
         }
@@ -33,7 +33,7 @@ namespace CommandPatternRestaurant
             if (_redoStack.Count <= 0)
                 return;
 
-            _redoStack.Peek().Redo();          // redo most recently executed command
+            _redoStack.Peek().Execute();          // redo most recently executed command
             _undoStack.Push(_redoStack.Peek()); // add undone command to redo stack
             _redoStack.Pop();                  // remove top entry from redo stack
         }

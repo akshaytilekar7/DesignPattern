@@ -1,0 +1,6 @@
+C:\Users\tilekaks\OneDrive - Tieto Corporation\Projects\DesignPattern\DelegateDemo\Entities\bin\Debug\Entities.dll.config
+C:\Users\tilekaks\OneDrive - Tieto Corporation\Projects\DesignPattern\DelegateDemo\Entities\bin\Debug\Entities.dll
+C:\Users\tilekaks\OneDrive - Tieto Corporation\Projects\DesignPattern\DelegateDemo\Entities\bin\Debug\Entities.pdb
+C:\Users\tilekaks\OneDrive - Tieto Corporation\Projects\DesignPattern\DelegateDemo\Entities\obj\Debug\Entities.csprojAssemblyReference.cache
+C:\Users\tilekaks\OneDrive - Tieto Corporation\Projects\DesignPattern\DelegateDemo\Entities\obj\Debug\Entities.dll
+C:\Users\tilekaks\OneDrive - Tieto Corporation\Projects\DesignPattern\DelegateDemo\Entities\obj\Debug\Entities.pdb

@@ -16,16 +16,10 @@ namespace CommandPatternRestaurant.ConcreateClass
             Console.WriteLine("Switch On");
             _tv.SwitchOn();
         }
-        public void Undo()
+        public void UnExecute()
         {
             Console.WriteLine("Switch Off");
             _tv.SwitchOff();
         }
-        public void Redo()
-        {
-            Console.WriteLine("Switch On");
-            _tv.SwitchOn();
-        }
-
-    };
+    }
 }

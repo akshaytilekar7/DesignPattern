@@ -1,0 +1,5 @@
+C:\Users\tilekaks\OneDrive - Tieto Corporation\Projects\DesignPattern\CommandPatternDineChef\bin\Debug\CommandPatternDineChef.exe.config
+C:\Users\tilekaks\OneDrive - Tieto Corporation\Projects\DesignPattern\CommandPatternDineChef\bin\Debug\CommandPatternDineChef.exe
+C:\Users\tilekaks\OneDrive - Tieto Corporation\Projects\DesignPattern\CommandPatternDineChef\bin\Debug\CommandPatternDineChef.pdb
+C:\Users\tilekaks\OneDrive - Tieto Corporation\Projects\DesignPattern\CommandPatternDineChef\obj\Debug\CommandPatternDineChef.exe
+C:\Users\tilekaks\OneDrive - Tieto Corporation\Projects\DesignPattern\CommandPatternDineChef\obj\Debug\CommandPatternDineChef.pdb

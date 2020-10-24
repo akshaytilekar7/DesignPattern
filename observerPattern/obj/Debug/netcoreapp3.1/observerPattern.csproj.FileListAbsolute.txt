@@ -20,3 +20,14 @@ C:\Users\tilekaks\OneDrive - Tieto Corporation\Projects\Design Pattern - Copy\De
 C:\Users\tilekaks\OneDrive - Tieto Corporation\Projects\Design Pattern - Copy\DesignPattern\observerPattern\obj\Debug\netcoreapp3.1\observerPattern.AssemblyInfo.cs
 C:\Users\tilekaks\OneDrive - Tieto Corporation\Projects\Design Pattern - Copy\DesignPattern\observerPattern\obj\Debug\netcoreapp3.1\observerPattern.dll
 C:\Users\tilekaks\OneDrive - Tieto Corporation\Projects\Design Pattern - Copy\DesignPattern\observerPattern\obj\Debug\netcoreapp3.1\observerPattern.pdb
+C:\Users\tilekaks\OneDrive - Tieto Corporation\Projects\DesignPattern\observerPattern\bin\Debug\netcoreapp3.1\observerPattern.exe
+C:\Users\tilekaks\OneDrive - Tieto Corporation\Projects\DesignPattern\observerPattern\bin\Debug\netcoreapp3.1\observerPattern.deps.json
+C:\Users\tilekaks\OneDrive - Tieto Corporation\Projects\DesignPattern\observerPattern\bin\Debug\netcoreapp3.1\observerPattern.runtimeconfig.json
+C:\Users\tilekaks\OneDrive - Tieto Corporation\Projects\DesignPattern\observerPattern\bin\Debug\netcoreapp3.1\observerPattern.runtimeconfig.dev.json
+C:\Users\tilekaks\OneDrive - Tieto Corporation\Projects\DesignPattern\observerPattern\bin\Debug\netcoreapp3.1\observerPattern.dll
+C:\Users\tilekaks\OneDrive - Tieto Corporation\Projects\DesignPattern\observerPattern\bin\Debug\netcoreapp3.1\observerPattern.pdb
+C:\Users\tilekaks\OneDrive - Tieto Corporation\Projects\DesignPattern\observerPattern\obj\Debug\netcoreapp3.1\observerPattern.csprojAssemblyReference.cache
+C:\Users\tilekaks\OneDrive - Tieto Corporation\Projects\DesignPattern\observerPattern\obj\Debug\netcoreapp3.1\observerPattern.AssemblyInfoInputs.cache
+C:\Users\tilekaks\OneDrive - Tieto Corporation\Projects\DesignPattern\observerPattern\obj\Debug\netcoreapp3.1\observerPattern.AssemblyInfo.cs
+C:\Users\tilekaks\OneDrive - Tieto Corporation\Projects\DesignPattern\observerPattern\obj\Debug\netcoreapp3.1\observerPattern.dll
+C:\Users\tilekaks\OneDrive - Tieto Corporation\Projects\DesignPattern\observerPattern\obj\Debug\netcoreapp3.1\observerPattern.pdb

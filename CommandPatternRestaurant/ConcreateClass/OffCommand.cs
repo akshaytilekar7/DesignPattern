@@ -11,15 +11,11 @@ namespace CommandPatternRestaurant.ConcreateClass
         }
         public void Execute()
         {
-            _tvOnCommand.Undo();
+            _tvOnCommand.UnExecute();
         }
-        public void Undo()
+        public void UnExecute()
         {
             _tvOnCommand.Execute();
         }
-        public void Redo()
-        {
-            _tvOnCommand.Undo();
-        }
-    };
+    }
 }

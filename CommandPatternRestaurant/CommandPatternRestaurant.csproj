@@ -47,7 +47,7 @@
     <Compile Include="ConcreateClass\SwitchCommand.cs" />
     <Compile Include="ConcreateClass\OffCommand.cs" />
     <Compile Include="ConcreateClass\OnCommand.cs" />
-    <Compile Include="Helper\Class1.cs" />
+    <Compile Include="Helper\ActionFactory.cs" />
     <Compile Include="Tv.cs" />
     <Compile Include="CommandManager.cs" />
     <Compile Include="Interface\ICommand.cs" />

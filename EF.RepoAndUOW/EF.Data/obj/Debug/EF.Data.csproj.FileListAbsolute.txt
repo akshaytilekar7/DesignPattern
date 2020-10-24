@@ -7,3 +7,9 @@ C:\Users\tilekaks\Downloads\GenericRepository\GenericRepository\EF.Data\obj\Debu
 C:\Users\tilekaks\Downloads\GenericRepository\GenericRepository\EF.Data\obj\Debug\EF.Data.csproj.CopyComplete
 C:\Users\tilekaks\Downloads\GenericRepository\GenericRepository\EF.Data\obj\Debug\EF.Data.dll
 C:\Users\tilekaks\Downloads\GenericRepository\GenericRepository\EF.Data\obj\Debug\EF.Data.pdb
+C:\Users\tilekaks\OneDrive - Tieto Corporation\Projects\DesignPattern\EF.RepoAndUOW\EF.Data\bin\Debug\EF.Data.dll
+C:\Users\tilekaks\OneDrive - Tieto Corporation\Projects\DesignPattern\EF.RepoAndUOW\EF.Data\bin\Debug\EF.Data.pdb
+C:\Users\tilekaks\OneDrive - Tieto Corporation\Projects\DesignPattern\EF.RepoAndUOW\EF.Data\obj\Debug\EF.Data.csprojAssemblyReference.cache
+C:\Users\tilekaks\OneDrive - Tieto Corporation\Projects\DesignPattern\EF.RepoAndUOW\EF.Data\obj\Debug\EF.Data.csproj.CopyComplete
+C:\Users\tilekaks\OneDrive - Tieto Corporation\Projects\DesignPattern\EF.RepoAndUOW\EF.Data\obj\Debug\EF.Data.dll
+C:\Users\tilekaks\OneDrive - Tieto Corporation\Projects\DesignPattern\EF.RepoAndUOW\EF.Data\obj\Debug\EF.Data.pdb

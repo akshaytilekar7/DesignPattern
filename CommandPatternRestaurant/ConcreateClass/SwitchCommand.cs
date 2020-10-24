@@ -28,7 +28,7 @@ namespace CommandPatternRestaurant.ConcreateClass
             _tv.SwitchChannel(_newChannel);
         }
 
-        public void Undo()
+        public void UnExecute()
         {
             if (!_tv.IsOn())
             {
@@ -38,14 +38,5 @@ namespace CommandPatternRestaurant.ConcreateClass
             _tv.SwitchChannel(_oldChannel);
         }
 
-        public void Redo()
-        {
-            if (!_tv.IsOn())
-            {
-                Console.WriteLine("tv is off, can't change channel");
-                return;
-            }
-            _tv.SwitchChannel(_newChannel);
-        }
-    };
+    }
 }
