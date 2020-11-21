@@ -1,4 +1,10 @@
 ﻿/*
+    - web api and mvc controller difference 
+    ans -   
+        - Use Controller to render your normal views. 
+        - ApiController action only return data that is serialized and sent to the client
+        - Web API controllers do not return views, they return data.
+
  
     -   adds extra logic to be implemented into the request being processed
 

@@ -11,8 +11,7 @@ namespace ChainOfRespoLeavesApp.ConcreteHandler
         {
             if (request.LeaveDays > 30)
             {
-                Console.WriteLine("Leave request:- Employee: {0}, Leave days: {1} - approved by HR", request.Employee,
-                    request.LeaveDays);
+                Console.WriteLine("Leave request:- Employee: {0}, Leave days: {1} - approved by HR", request.Employee, request.LeaveDays);
             }
             else
             {

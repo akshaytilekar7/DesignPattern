@@ -5,7 +5,7 @@
 Table value parameter :
 
     -  can pass list<T> to SP
-    -   must be passed as READONLY, cant do DML on tableValue parameter
+    -  must be passed as READONLY, cant do DML on tableValue parameter
 
 
 Examples :
@@ -60,3 +60,20 @@ GLOBAL TEMPORARY
  */
 
 #endregion Temp Table
+
+
+#region CTE
+
+/*
+
+    -   define a temporary named to result set that available temporarily in 
+        the execution scope of a statement such as SELECT, INSERT, UPDATE, DELETE, or MERGE.
+ 
+*/
+
+#endregion
+
+
+//one to one →an author can write only one book, and a book only have one author.
+//one to many →an author can write multiple books, but book can only have one author.
+//many to many →an author can write multiple books, and also a book can be written by multiple authors.

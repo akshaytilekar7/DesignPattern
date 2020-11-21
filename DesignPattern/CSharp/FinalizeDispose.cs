@@ -38,7 +38,8 @@ GARBAGE COLLECTOR : EXPLICITLY RELEASE THOSE RESOURCES AFTER USING THEM IN OUR A
 -   FINALIZERS CANNOT BE CALLED EXPLICITLY, THEY ARE CALLED BY THE GARBAGE COLLECTOR (GC) 
 
 2. implementing Dispose method from the IDisposable interface
--    AS FINALIZE CANT CALL DIRECLTY, so what about huge resources how release then explicitly manually ANSWER : DISPOSE METHOD FROM IDISPOSABLE INTERFACE.
+-    AS FINALIZE CANT CALL DIRECLTY, 
+    So what about huge resources how release then explicitly manually ANSWER : DISPOSE METHOD FROM IDISPOSABLE INTERFACE.
  */
 
 class DatabaseConnection : IDisposable

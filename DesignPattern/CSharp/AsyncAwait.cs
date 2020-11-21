@@ -50,10 +50,11 @@
 //        }
 
 //        /*
-//         If you were to run this code you would notice a problem: 
+//            If you were to run this code you would notice a problem: 
 //            The success dialog displays before the download/blur operation completes!
-//            This demonstrates an important point: When a method using await is not itself awaited, 
-//            EXECUTION OF THE CALLING METHOD CONTINUES BEFORE THE CALLED METHOD HAS COMPLETED.
+//            This demonstrates an important point:
+//            When a method using await is not itself awaited, 
+//            EXECUTION OF THE CALLING METHOD (OnButtonClick) CONTINUES BEFORE THE CALLED (DownloadAndBlur) METHOD HAS COMPLETED.
 //         */
 
 //        void OnButtonClick()
@@ -79,7 +80,7 @@
 //        //button clicked
 //        //about to download
 //        //about to show dialog
-//        //dialog shown
+//        //dialog shown "Success!!"
 //        //finished downloading, about to blur
 //        //finished blurring, about to save
 //        //finished saving
