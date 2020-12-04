@@ -11,8 +11,8 @@ namespace ExceptionHandling.Preprocess
         public void Init(HttpApplication objApplication)
         {
             // Register event handler of the pipe line
-            objApplication.BeginRequest += new EventHandler(this.context_BeginRequest);
-            objApplication.EndRequest += new EventHandler(this.context_EndRequest);
+            objApplication.BeginRequest += this.context_BeginRequest;
+            objApplication.EndRequest += this.context_EndRequest;
         }
         public void Dispose()
         {

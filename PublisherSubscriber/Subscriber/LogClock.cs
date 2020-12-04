@@ -5,9 +5,9 @@ namespace PublisherSubscriber.Subscriber
 {
     public class LogClock : ISubscriber
     {
-        private readonly Clock _clock;
+        private readonly ClockPublisher _clock;
 
-        public LogClock(Clock clock)
+        public LogClock(ClockPublisher clock)
         {
             _clock = clock;
         }

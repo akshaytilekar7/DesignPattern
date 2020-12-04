@@ -22,9 +22,9 @@ var numCallback: NumberCallback = (result: number): void => {
 }
 
 var foo = new User();
-foo.save(numCallback)
+foo.save(numCallback);
 
-//2 function overload (mehods and ctor)
+//2 function overload (methods and ctor)
 // allowed overloads but you can only 
 // have one implementation and that implementation 
 // must have a signature that is compatible with all overloads

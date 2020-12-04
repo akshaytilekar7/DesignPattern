@@ -26,8 +26,8 @@ C:\Users\tilekaks\OneDrive - Tieto Corporation\Projects\DesignPattern\zAbstractF
 C:\Users\tilekaks\OneDrive - Tieto Corporation\Projects\DesignPattern\zAbstractFactoryPattern\bin\Debug\netcoreapp3.1\zAbstractFactoryPattern.runtimeconfig.dev.json
 C:\Users\tilekaks\OneDrive - Tieto Corporation\Projects\DesignPattern\zAbstractFactoryPattern\bin\Debug\netcoreapp3.1\zAbstractFactoryPattern.dll
 C:\Users\tilekaks\OneDrive - Tieto Corporation\Projects\DesignPattern\zAbstractFactoryPattern\bin\Debug\netcoreapp3.1\zAbstractFactoryPattern.pdb
-C:\Users\tilekaks\OneDrive - Tieto Corporation\Projects\DesignPattern\zAbstractFactoryPattern\obj\Debug\netcoreapp3.1\zAbstractFactoryPattern.csprojAssemblyReference.cache
 C:\Users\tilekaks\OneDrive - Tieto Corporation\Projects\DesignPattern\zAbstractFactoryPattern\obj\Debug\netcoreapp3.1\zAbstractFactoryPattern.AssemblyInfoInputs.cache
 C:\Users\tilekaks\OneDrive - Tieto Corporation\Projects\DesignPattern\zAbstractFactoryPattern\obj\Debug\netcoreapp3.1\zAbstractFactoryPattern.AssemblyInfo.cs
 C:\Users\tilekaks\OneDrive - Tieto Corporation\Projects\DesignPattern\zAbstractFactoryPattern\obj\Debug\netcoreapp3.1\zAbstractFactoryPattern.dll
 C:\Users\tilekaks\OneDrive - Tieto Corporation\Projects\DesignPattern\zAbstractFactoryPattern\obj\Debug\netcoreapp3.1\zAbstractFactoryPattern.pdb
+C:\Users\tilekaks\OneDrive - Tieto Corporation\Projects\DesignPattern\zAbstractFactoryPattern\obj\Debug\netcoreapp3.1\zAbstractFactoryPattern.csprojAssemblyReference.cache

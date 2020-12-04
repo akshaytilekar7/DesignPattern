@@ -1,4 +1,17 @@
 ﻿
+/*
+promise 
+    -   is a future value
+    3 states
+        1.  fulfilled (resolve)
+        2.  rejected (reject)
+        3.  pending
+    -   resolve only once, if set again wont affect anything
+    -   eagar to run
+    -   in call back they have a full control over our func()
+        but in promise they gives us control/event listner
+
+*/
 
 let promiseToCleanRoom = new Promise(function (resolve, reject) {
 
@@ -79,19 +92,6 @@ promise
 https://www.youtube.com/watch?v=PoRJizFvM7s
 
 */
-
-
-
-$ajax({
-    url: '',
-    content: '',
-    data: {},
-    success: (x) => { console.log(x) },
-    fail: (x) => { console.log(x) }
-});
-
-
-
 
 
 

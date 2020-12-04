@@ -10,8 +10,9 @@
 //    class AsyncAwait
 //    {
 //        /*
-//            calling res.Result or Wait() will cause syncronus operation, UI will block in that case, its a bad idea
-//            await keyword causing CONITNUATION allowing us to get back to original context
+//            calling res.Result or Wait() will cause synchronous operation,
+//            UI will block in that case, its a bad idea
+//            await keyword causing CONTINUATION allowing us to get back to original context
 //            public async void GetData() // avoid async await at any cost
 
 //        2]
@@ -31,9 +32,9 @@
 //        exceptions occured in ASYNC VOID can not be caught so use async void 
 
 //        TASK 
-//            -   represent an Asyncronus operations
+//            -   represent an Asynchronous operations
 
-//        Task.Run() - queue the work by scope ti run on different thread
+//        Task.Run() - queue the work by scope to run on different thread
 
 //         */
 //        void OnButtonClick()
@@ -54,7 +55,8 @@
 //            The success dialog displays before the download/blur operation completes!
 //            This demonstrates an important point:
 //            When a method using await is not itself awaited, 
-//            EXECUTION OF THE CALLING METHOD (OnButtonClick) CONTINUES BEFORE THE CALLED (DownloadAndBlur) METHOD HAS COMPLETED.
+//            EXECUTION OF THE CALLING METHOD (OnButtonClick)
+//              CONTINUES BEFORE THE CALLED (DownloadAndBlur) METHOD HAS COMPLETED.
 //         */
 
 //        void OnButtonClick()
@@ -85,8 +87,10 @@
 //        //finished blurring, about to save
 //        //finished saving
 
-//        //Notice that, at first, execution of DownloadAndBlur is performed synchronously, until the first encounter with await.
-//        // Control at that time returns to the calling method as if DownloadAndBlur had already finished.
+//        //Notice that, at first, execution of DownloadAndBlur is performed synchronously,
+//          until the first encounter with await.
+//        // Control at that time returns to the calling method as if
+//          DownloadAndBlur had already finished.
 
 //        //fix by
 //        async void OnButtonClick()

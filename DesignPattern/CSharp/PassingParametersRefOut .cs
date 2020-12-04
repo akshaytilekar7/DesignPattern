@@ -102,8 +102,8 @@ namespace A_ReferenceType
         }
     }
 
-    // 17 17 18 18
-    // 17 17 18 Ex - Object refrance not set to instance
+    //// IncrementAge(alice); 17 17 18 18   
+    //// IncrementAge(ref alice);  17 17 18 Ex - Object refrance not set to instance 
     // because noraml paramter 
 
 }

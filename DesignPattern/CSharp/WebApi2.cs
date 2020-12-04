@@ -3,7 +3,6 @@
 
     Authentication in Web API
 
-
     1] Forms Authentication
         - ticket base mechanism. (traditional approach)
         -  working : ticket gets created to authenticate logged in user and stored in cookies  
@@ -37,9 +36,4 @@
 
     - https://www.sharepointcafe.net/2018/10/web-api2-crud-operations-using-entity-framework-and-mvc.html
 
-        
-
-
-
-
- */
+ *  */

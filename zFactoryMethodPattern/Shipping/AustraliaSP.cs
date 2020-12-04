@@ -3,7 +3,7 @@ using zFactoryMethodPattern.Commerce;
 
 namespace zFactoryMethodPattern.Shipping
 {
-    public class AustraliaSP : zFactoryMethodPattern.Shipping.ShippingProvider
+    public class AustraliaSP : ShippingProvider
     {
         private readonly string clientId;
         private readonly string secret;

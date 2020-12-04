@@ -12,7 +12,6 @@ namespace zFactoryPatternModified.Factory
         private readonly IApplicationAction _applicationAction;
         private readonly IEmployeeAction _employeeAction;
 
-
         public IAddressAction AddressAction
         {
             get
@@ -22,7 +21,6 @@ namespace zFactoryPatternModified.Factory
                 return _addressAction;
             }
         }
-
         public ISalesAction SalesAction
         {
             get

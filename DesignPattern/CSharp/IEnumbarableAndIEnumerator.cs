@@ -1,7 +1,15 @@
 ﻿using System;
 using System.Collections;
 using System.Collections.Generic;
+/*
+ IENumerable has 1 method : IEnumerator GetEnumerator();
+ IEnumerable support foreach semantics
 
+ and IEnumerator has 3 methods
+    object Current()
+    bool MoveNext()
+    void Reset()
+ */
 namespace DesignPattern.CSharp
 {
     public class BaseRestaurant

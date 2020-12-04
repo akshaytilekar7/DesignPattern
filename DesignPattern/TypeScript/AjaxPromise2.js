@@ -1,7 +1,7 @@
 ﻿//https://www.youtube.com/watch?v=ay_qbDuIHNk
 
-// dfd = 
-//   is a proxy object
+//  dfd = 
+//  is a proxy object
 //  which we can attached callback based on def is rejected or selected
 
 $ajax({
@@ -12,7 +12,7 @@ $ajax({
     fail: (x) => { console.log(x) }
 });
 
-// refactored : 
+//  refactored : 
 //  achieve decouple
 //  callback allowed to added incrementally
 //  success = done
@@ -34,6 +34,7 @@ dfd.fail(function (x) {
 });
 
 dfd.success(function (x) {
+    // callback allowed to added incrementally
     console.log(x + 1);
 });
 
@@ -89,7 +90,6 @@ outerDeferred.then(
 // so by returning dfd.promise(), outside apiCall we cant mock with dfd means 
 // we cant do dfd.resolve or dfd.promise
 
-
 apiCall = function () {
     var dfd = $.Deferred();
 
@@ -106,8 +106,21 @@ $.when(apiCall1, apiCall2).then(function () { }, function () { });
 
 
 
+// LAST VALUE FROM PROMISE
+var counter = 0;
+var lastCounter = 0;
 
+apiCall = (request) => {
 
+    var localSendValue = ++this.counter; // 1 2 3
+    this.lastCounter++; // 1 2 3
 
+    return getData(value).then((result) => {
 
+        if (localSendValue !== this.lastCounter) // 1 3 // 2 3 // 3 3
+            return;
 
+        this.counter = 0;
+        this.lastCounter = 0;
+    });
+};

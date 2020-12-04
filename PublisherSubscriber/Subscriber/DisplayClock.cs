@@ -5,9 +5,9 @@ namespace PublisherSubscriber.Subscriber
 {
     public class DisplayClock : ISubscriber
     {
-        private readonly Clock _clock;
+        private readonly ClockPublisher _clock;
 
-        public DisplayClock(Clock clock)
+        public DisplayClock(ClockPublisher clock)
         {
             _clock = clock;
         }

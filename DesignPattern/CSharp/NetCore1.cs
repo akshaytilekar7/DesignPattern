@@ -1,9 +1,10 @@
 ﻿/*
  1] app.Use vs app.Run vs app.Map in ASP.NET 
  
- app.Use may call next middleware component in the pipeline. 
- app.Run will never call subsequent middleware
- in short :  await next() can call in app.use() but not in app.run()
+     Run, Map and Use are three methods that you will need to USE TO CONFIGURE HTTP PIPELINE
+     app.Use may call next middleware component in the pipeline. 
+     app.Run will never call subsequent middleware
+     in short :  await next() can call in app.use() but not in app.run()
 
 
     app.Use(async (context, next) =>
@@ -45,9 +46,6 @@
         // will see "map called" only for following request is made
             localhost://44563/maptest
 
-
-        -   
-
     2] map requests to responses?
         app.UseMvc(routes => { routes.MapRoute("default","{controller=Home}/{action=Index}/{id?}"); }); 
         OR
@@ -68,10 +66,10 @@
             }
 
         -   Configure
-            -   Configure method is used to set up middleware
+            -   we can add middleware
             -   We manage HTTP request pipeline inside of Configure method
-            -   Inside of Configure method, we write code that will process every request and eventually make a response
-            -   Example Adding show custom error page in the development environment.
+            -   code that will process every request and eventually make a response
+            -   Example adding show custom error page in the development environment.
                 public void Configure(IApplicationBuilder app, IHostingEnvironment env)
                 {
                     if (env.IsDevelopment())
@@ -79,6 +77,7 @@
                         app.UseDeveloperExceptionPage();
                     }
                 }
+            -   configure built-in middleware such as routing, authentication, session, third-party middleware.
 
     4] WWW ROOT :
         all the static resources, such as CSS, JavaScript, and image files are kept under the wwwroot folder
@@ -89,14 +88,14 @@
             app.UseStaticFiles();
         }
     6]
-        Transient - objects are always different; a new instance is provided to every controller and every service.
-
         Singleton -  objects are the same for every object and every request.
+
+        Transient - objects are always different; a new instance is provided to every controller and every service.
  
         Scoped - objects are the same within a request, but different across different requests.-
                - It is equivalent to a singleton in the current scope.  
                  For example, in MVC it creates one instance for each HTTP request, 
-                 but it uses the same instance in the other calls within the same web request.
+                 but it uses the SAME INSTANCE in the other calls WITHIN THE SAME WEB REQUEST.
     7]
         -   Command line style development
         -   all os
@@ -119,13 +118,6 @@
    9]
         ON DELETE CASCADE : parent delete child also get deleted
         ON DELETE SET NULL : parent delete child set to null
-
-   10]        
-        Run, Map and Use are three methods that you will need to use to configure HTTP Pipeline
-
-
-
-
 
 
  */

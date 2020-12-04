@@ -44,7 +44,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="AnotherExample.cs" />
-    <Compile Include="Publisher\Publisher.cs" />
+    <Compile Include="Publisher\ClockPublisher.cs" />
     <Compile Include="Subscriber\DisplayClock.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />

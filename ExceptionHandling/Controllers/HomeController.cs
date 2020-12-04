@@ -1,5 +1,4 @@
 ﻿using ExceptionHandling.ExceptionHelper;
-using ExceptionHandling.ExceptionHelper.Enums;
 using ExceptionHandling.Services;
 using System.Web.Mvc;
 
@@ -13,7 +12,7 @@ namespace ExceptionHandling.Controllers
             ViewBag.Title = "Home Page";
             UserServices userServices = new UserServices();
             //userServices.AddUser(null);
-            throw new BusinessException(ErrorTypes.ValidationFault, ErrorCodes.InvalidUserId);
+            //throw new BusinessException(ErrorTypes.ValidationFault, ErrorCodes.InvalidUserId);
             return View();
         }
 

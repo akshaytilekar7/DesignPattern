@@ -26,7 +26,5 @@ namespace ExceptionHandling.Controllers
         {
             string strName = user.Name;
         }
-
-
     }
 }

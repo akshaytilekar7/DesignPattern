@@ -4,7 +4,6 @@
 A] Service Oriented Architecture (SOA)
     - 2 or more component communicates with each other over a network through a defined protocol.
 
-
     Web Service?
         -   way to communicate between 2 machines via HTTP, those 2 machines can be on a different platform.
 
@@ -15,6 +14,8 @@ A] Service Oriented Architecture (SOA)
 
     REST 
         -   architectural style to build and loosely couple 2 or more systems
+        -   HTTP protocol using its verbs GET, POST, PUT and DELETE.
+        -   All requests are mapped to actions using HTTP verbs.    
         -   HTML, XML, JSON, Plain Text format.
         -   REST is a style, so it can use any protocol like HTTP, SOAP.
         -   REST is stateless, cache able.
@@ -27,8 +28,12 @@ A] Service Oriented Architecture (SOA)
         -   RESTFUL WEB SERVICE CAN ALSO USE SOAP BECAUSE SOAP IS A PROTOCOL AND REST IS AN ARCHITECTURAL STYLE.
         -   Supports XML, plain text, JSON as data exchange format.
         
+        -   SOAP is an XML based protocol whereas REST is not a protocol, but it is a resource-based architecture.
+        -   SOAP has specifications for both stateless and state-full implementation, whereas REST is completely stateless.
+
     Q. Can SOAP be RESTful? NO
-        -   SOAP is a protocol so it can not use REST, whereas REST is a style and can use any protocol HTTP, SOAP etc.
+        -   SOAP is a protocol so it can NOT use REST, 
+            whereas REST is a style and can use any protocol HTTP, SOAP etc.
 
     -   REST is an architectural style VS SOAP is an XML based protocol
 
@@ -45,7 +50,7 @@ A] Service Oriented Architecture (SOA)
 
     -   CORS issue in Web API? (Cross-Origin Resource Sharing)
         -   CORS resolve the same-origin restriction for JavaScript
-        -   The same Origin means that a JavaScript can only make AJAX call to the web pages within the same origin
+        -   The same origin means that a JavaScript can only make AJAX call to the web pages within the same origin
         -   To enable CORS in Web API you must install CORS nuget package using Package Manager Console.
             -   in WebApiConfig.cs add : config.EnableCors();
             -   [EnableCors(origins: "<origin url>", headers: "*", methods: "*")] in controller
@@ -79,6 +84,24 @@ A] Service Oriented Architecture (SOA)
 		        return BadRequest(ModelState.GetErrorMessages());
         }
 
+    - 6 architectural constraints for true RESTful API.
+            1.  Uniform interface
+                -   interface between clients and servers  
+                -   HTTP Verbs (GET,POST,PUT,DELETE)
+                -   URIs (resource name)
+                -   HTTP response (status and body)
 
-
+            2.  Client–server 
+                -   servers and clients may also be replaced and developed independently,
+                -   client should know only resource URIs, and that’s all
+            3.  Stateless
+                -   server will not store anything about HTTP request
+                -   each request from the client should contain info need to service the request : authentication and authorization
+            4.  Cacheable
+                -   implemented on the server or client-side.
+            5.  Layered system
+                -    deploy the APIs on server A, and store data on server B and authenticate requests in Server C,
+            6.  Code on demand (optional)
+                -   you are free to return executable code to support a part of your application, 
+                    e.g., clients may call your API to get a UI widget rendering code
  */

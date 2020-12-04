@@ -9,7 +9,7 @@ namespace PublisherSubscriber
     {
         public static void Main()
         {
-            Clock clock = new Clock();
+            ClockPublisher clock = new ClockPublisher();
 
             ISubscriber dc = new DisplayClock(clock);
             ISubscriber lc = new LogClock(clock);
@@ -26,7 +26,7 @@ namespace PublisherSubscriber
 
 /*
  Q : we can simply print the time rather than raising an event? why we are using delegates?
- A : PS allowed : any number of classes can be notified when an event is raised
+ A : PS allowed : ANY NUMBER OF CLASSES CAN BE NOTIFIED WHEN AN EVENT IS RAISED
     -   subscribing classes do not need to know how the clock(publisher) works
     -   clock(publisher) does not need to know what subscribers are going to do in response to the event
     -   PS are decoupled by the delegate
