@@ -1,5 +1,4 @@
-﻿
-/*
+﻿/*
 promise 
     -   is a future value
     3 states
@@ -10,7 +9,7 @@ promise
     -   eagar to run
     -   in call back they have a full control over our func()
         but in promise they gives us control/event listner
-
+ 
 */
 
 let promiseToCleanRoom = new Promise(function (resolve, reject) {

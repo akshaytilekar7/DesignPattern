@@ -1,5 +1,6 @@
 ﻿using EF.Core.Data;
 using EF.Data;
+using System.Text;
 
 namespace EF.RepoAndUOW
 {
@@ -7,27 +8,24 @@ namespace EF.RepoAndUOW
     {
         static void Main(string[] args)
         {
-            var t = new Test();
 
-            // TRY ONE BY ONE
+        }
 
-            #region  NOTransactionRepo
-            t.AddRepo();
-            // Address table with values        1 LA 123
-            // Customer will be empty
-            #endregion
+        public string Test(string s)
+        {
+            int[] arr = new int[] { 1, 5, 7 };
+            StringBuilder newText = new StringBuilder(s);
 
-            #region  TransactionHandleUOW
-            t.AddWithUow();
-            // Address table will be empty
-            // Customer table will be empty
-            #endregion
+            foreach (var item in arr)
+            {
+                if (item < arr.Length)
+                {
+                    // exist
+                    newText.Append(" ");
+                }
+            }
 
-            //SELECT* FROM Address
-            //SELECT* FROM Customer
-
-            //DELETE FROM Address
-            //DELETE FROM Customer
+            return newText.ToString();
         }
     }
 

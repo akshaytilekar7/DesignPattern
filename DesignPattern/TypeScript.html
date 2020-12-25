@@ -1,5 +1,4 @@
 ﻿<!DOCTYPE html>
-
 <html lang="en" xmlns="http://www.w3.org/1999/xhtml">
 <head>
     <meta charset="utf-8" />
@@ -47,29 +46,28 @@
             <li>Create a new type that lets us create objects that have some/all of the properties of each type</li>
         </ul>
         <p>
-                interface Animal {
-                kind: string;
-                }
+            interface Animal {
+            kind: string;
+            }
 
-                interface Person {
-                firstName: string;
-                lastName: string;
-                age: number;
-                }
-                interface Employee {
-                employeeCode: string;
-                }
-                <b>let employee: Animal | Person | Employee = {</b>
-                kind: 'human',
-                firstName: 'Jane',
-                lastName: 'Smith',
-                age: 20
-                }
+            interface Person {
+            firstName: string;
+            lastName: string;
+            age: number;
+            }
+            interface Employee {
+            employeeCode: string;
+            }
+            <b>let employee: Animal | Person | Employee = {</b>
+            kind: 'human',
+            firstName: 'Jane',
+            lastName: 'Smith',
+            age: 20
+            }
         </p>
         <b> employee object of the Animal | Person | Employee type which means that it can have some of the properties of the Animal, Person, or Employee interfaces.</b>
         <b>Not all of them have to be included, but if they’re included, then the type has to match the ones in the interface</b>
 
     </div>
-
 </body>
 </html>

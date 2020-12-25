@@ -1,6 +1,9 @@
 ﻿using LSP.Models;
 using System;
 
+//Subtypes must be substitutable for their base types.
+//Functions that use pointers or references to base classes must be able to use objects
+//of derived classes without knowing it
 namespace LSP
 {
     class Program
