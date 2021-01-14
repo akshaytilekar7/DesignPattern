@@ -43,6 +43,8 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="ByInheritance\Rectangle.cs" />
+    <Compile Include="ByInheritance\Square.cs" />
     <Compile Include="Models\EvenNumbersSumCalculator.cs" />
     <Compile Include="Models\SolutionLSP.cs" />
     <Compile Include="Models\SumCalculator.cs" />
