@@ -1,4 +1,10 @@
 ﻿/*
+
+Function borrowing allows us to use the methods of one object on a different object 
+without having to make a copy of that method and maintain it in two separate places. 
+It is accomplished through the use of .call(), .apply(), or .bind()
+
+
  .bind()
     -   when you want that function to later be called with a certain context.
     -   useful in events.
