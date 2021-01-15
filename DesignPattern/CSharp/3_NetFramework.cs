@@ -6,10 +6,9 @@ MSIL
 
     source code -> MISL (half compile code) -> run on jit -> Machine
     half code ?
-        during runtime JIT configure iut of OS, hardware
+        during runtime JIT configure info of OS, hardware
         and it can compile optimal code as per environment
     
-
 GC
     -   perform on heap memory
     -   no memory for new object then GC will run

@@ -53,3 +53,50 @@ Static readonly fields
 		object obj1 = "10";
 		var v1 = obj1. GetType();  //System.String
 */
+
+/*
+
+    Boxing 
+        -   process of converting a value type to reference type [type object or to any interface type implemented by this value type]
+        -   Boxing is implicit
+        -   When the CLR boxes a value type, it wraps the value inside a System.Object instance 
+            and stores it on the managed heap. 
+        -   used to store value types in the garbage-collected heap
+        -    Boxing a value type allocates an object instance on the heap and copies the value into the new object.
+
+    Unboxing
+        -   Attempting to unbox null causes a NullReferenceException. 
+        -   Attempting to unbox a reference to an incompatible value type causes an InvalidCastException.
+
+    Enum
+        -   numeric constants in .NET framework.
+        -   value type
+        -   type : integer, float, int, byte, double
+        -   can have the same value in the enum type
+        -   to add functionality to an enumeration type, create an extension method.
+
+
+*/
+
+using System;
+
+namespace DesignPattern.CSharp
+{
+    enum Duration { Day, Week, Month };
+
+    static class DurationExtensions
+    {
+        public static DateTime From(this Duration duration, DateTime dateTime)
+        {
+            switch (duration)
+            {
+                case Duration.Day: return dateTime.AddDays(1);
+                case Duration.Week: return dateTime.AddDays(7);
+                case Duration.Month: return dateTime.AddMonths(1);
+                default: throw new ArgumentOutOfRangeException(nameof(duration));
+            }
+        }
+    }
+}
+
+

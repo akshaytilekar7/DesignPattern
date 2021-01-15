@@ -1,18 +1,15 @@
 ﻿/*
 
 Managed and Unmanaged Code
-    -   code targeting the .NET runtime is managed code.
     -   code executed by CLR is managed code instead of OS
     -   unmanaged code executed by OS directly 
     -   only managed code has : runtime provide services like GC, exception and type checking
     -   binary unit that contains the managed code which is called assembly
-    -   code that cannot be directly hosted by the .NET runtime is called unmanaged cod
     -   manage code compile to MSIL and then machine code
     -   un-manage code directly compile to machine code
 
     two types of assemblies
         exe and dll
-
 
     C# compiler produces IL as part of an assembly’s output
 

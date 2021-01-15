@@ -1,6 +1,6 @@
-﻿//Subtypes must be substitutable for their base types.
-//Functions that use pointers or references to base classes must be able to use objects
-//of derived classes without knowing it
+﻿// Subtypes must be substitutable for their base types.
+// Functions that use pointers or references to base classes must be able to use objects
+// of derived classes without knowing it
 
 using LSP.ByInheritance;
 using System;
@@ -11,7 +11,6 @@ namespace LSP
     {
         static void GetAreaTest(Rectangle r)
         {
-
             Console.WriteLine("Expected area of " + ("") + ", got " + r.GetArea());
         }
         static void Main(string[] args)

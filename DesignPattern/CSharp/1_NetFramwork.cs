@@ -7,10 +7,10 @@
         BCL (Base Class Libraries)
 
 
-    CLR [.NET Framework provides a runtime environment]
-            -   GC [manged unused resource]
-        -   Code access security [access right and | safe | authenticated ]
-        -   IL to machine language
+    CLR [provides a runtime environment]
+        -   A]  GC [manged unused resource]
+        -   B]  Code access security [access right and | safe | authenticated ]
+        -   C]  IL to machine language
         -   In initial execution of a method, the CLR carries out the verifications (Types are verified; 
             subscripts are verified to be in range; unsafe casts and un-initialized variables are prevented)
         -   During compilation, a source code of any .NET-compliant language 
@@ -25,17 +25,17 @@
         -   controls the executing the .NET code.
         -   after compile we get MSIL code (not executable)
         -   MSIL is a portable assembly language.
-        -   MSIL is an OS and H/W independent
         -   CLR converts IL into native machine code using JIT compiler.
         -   program needs to be executed, this MSIL or intermediate code is converted
             to binary executable code, called native code
         -   MAIN TASK ->  to transform the intermediate MSIL code in the executable code at runtime.
-        -   Any program, that is compiled into pseudocode MSIL [], 
+        -   Any program, that is compiled into pseudocode MSIL, 
             can be run in any environment, that contains the CLR realization. 
             This provides the programs portability in the .NET Framework environment.
 
-    JIT
-        -   CLR only compiles code just before it executes
+    MISL 
+        -   MSIL is an OS and H/W independent
+        -   not executable
 
     Type loading
         -   Finds and loads assemblies and types
@@ -51,6 +51,8 @@
         -   small unit of deployment (dll or exe)
         -   dll [reusable and not contain main()] 
             exe [reusable and contain main()]
+        -   at compile time Metadata is created with MSIL and stored in a file called Assembly Manifest
+        -   Assembly Manifest contains Metadata about .NET Assemblies
         -   primary unit of deployment for .Net application
         -   Assemblies are the files with the extension *.dll or *.exe, 
             which contain the instructions, that are independent of the .NET language, and metadata of types. 
@@ -73,7 +75,19 @@
             It is used to ensure that type exposed by the assembly resides within a unique namespace.
         -   list of other assemblies that the assembly depends upon.
         -   list of all types and resources exposed by the assembly
+        -   using ILDasm, you can view the manifest information for any managed DLL.
 
+    two types of Assembly:
+        -   Private Assembly 
+            -   used in single application
+            -   stored in that application's install directory
+
+        -   Shared Assembly 
+            -   used by more than one application
+            -   add the Assembly to the Global Assembly Cache (GAC)
+
+        -   Satellite Assembly 
+            -   only static objects like images and other non-executable files
 
     see SourceCodeTransformation.jpg in this project
 
