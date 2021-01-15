@@ -24,4 +24,10 @@ PATCH
     is always for update a resource
 
 
+controller method overloading in MVC
+    -   action method are invole via url ir http protocol
+    -   u cant have duplicate url
+    -   solve by : [ActionName("otherName")]
+
+
 */

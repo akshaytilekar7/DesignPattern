@@ -2,7 +2,6 @@
 
     Encapsulation 
         -   implementation hiding not information 
-        -   
 
 
 */

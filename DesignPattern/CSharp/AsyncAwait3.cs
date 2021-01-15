@@ -1,6 +1,6 @@
-﻿//https://app.pluralsight.com/guides/understand-control-flow-async-await
-//https://app.pluralsight.com/guides/csharp-async-await-keywords-getting-started
-//https://app.pluralsight.com/guides/using-task-run-async-await
+﻿////https://app.pluralsight.com/guides/understand-control-flow-async-await
+////https://app.pluralsight.com/guides/csharp-async-await-keywords-getting-started
+////https://app.pluralsight.com/guides/using-task-run-async-await
 
 //using System;
 //using System.Threading.Tasks;
@@ -54,9 +54,9 @@
 //            If you were to run this code you would notice a problem: 
 //            The success dialog displays before the download/blur operation completes!
 //            This demonstrates an important point:
-//            When a method using await is not itself awaited, 
+//            WHEN A METHOD USING AWAIT(DownloadAndBlur) IS NOT ITSELF AWAITED, 
 //            EXECUTION OF THE CALLING METHOD (OnButtonClick)
-//              CONTINUES BEFORE THE CALLED (DownloadAndBlur) METHOD HAS COMPLETED.
+//            CONTINUES BEFORE THE CALLED (DownloadAndBlur) METHOD HAS COMPLETED.
 //         */
 
 //        void OnButtonClick()
@@ -88,11 +88,11 @@
 //        //finished saving
 
 //        //Notice that, at first, execution of DownloadAndBlur is performed synchronously,
-//          until the first encounter with await.
+//        //until the first encounter with await.
 //        // Control at that time returns to the calling method as if
-//          DownloadAndBlur had already finished.
+//        //DownloadAndBlur had already finished.
 
-//        //fix by
+//        //fix by adding async await
 //        async void OnButtonClick()
 //        {
 //            Console.WriteLine("button clicked");
