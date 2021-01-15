@@ -2,13 +2,20 @@
 using System.Collections;
 using System.Collections.Generic;
 /*
- IENumerable has 1 method : IEnumerator GetEnumerator();
+ IEnumerable has 1 method : IEnumerator GetEnumerator();
  IEnumerable support foreach semantics
 
  and IEnumerator has 3 methods
     object Current()
     bool MoveNext()
     void Reset()
+
+    simple iteration over a non-generic collection.
+    base interface for all non-generic collections
+
+     IQueryable interface inherits the IEnumerable
+
+
  */
 namespace DesignPattern.CSharp
 {

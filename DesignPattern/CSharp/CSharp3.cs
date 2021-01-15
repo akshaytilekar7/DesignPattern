@@ -1,4 +1,6 @@
 ﻿using System;
+using System.Collections.Generic;
+
 /*
     Indexer
         -   allow instances of a class or struct to be indexed just like arrays
@@ -80,5 +82,42 @@ namespace DesignPattern.CSharp
             Console.WriteLine(strStore["Four"]);
             strStore["one"] = "A"; // because on string indexer "set"
         }
+    }
+}
+
+
+/*
+ 
+    -   refer to how you treat an object
+    -   Covariance preserves assignment compatibility and contra-variance reverses it.
+    -   4.0
+    -   Immutable collection classes like lists are covariant when you are only allowed to push elements in 
+        if they are of type T or its subtype. 
+    -   Covariance comes into picture when you are working with mutable [liable to change] collections.
+    -   Contra-variance allows you to utilize a less derived type than originally specified,
+    -   covariance lets you use a more derived type
+    -   covariance allows you to use a derived class where a base class is expected
+
+    -   covariance -  child can use instead of parent
+                   -  method returns a more specific type.
+    -   contra-variance 
+                    -   method is passed a less specific type
+*/
+
+public class Co
+{
+    public Co()
+    {
+        // Covariance.
+        IEnumerable<string> strings = new List<string>();
+        // An object that is instantiated with a more derived type argument
+        // is assigned to an object instantiated with a less derived type argument.
+        // Assignment compatibility is preserved.
+        IEnumerable<object> objects = strings;
+
+        // Contra-variance.
+        IEnumerable<object> objects2 = new List<object>();
+        //IEnumerable<string> strings2 = objects2;
+
     }
 }
