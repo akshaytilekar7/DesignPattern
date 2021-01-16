@@ -43,3 +43,33 @@ async controller [avoid thread stravation]
  
 */
 
+/*
+
+Thread is used for creating thread in Windows.
+Task represents some asynchronous operation and is part of the TPL, which has APIs for running tasks asynchronously and in parallel.
+
+ There is no direct mechanism to return the result from a thread.
+The task can return a result.
+
+Task supports cancellation through the use of cancellation tokens. 
+
+Threads can only have one task running at a time.
+A task can have multiple processes happening at the same time. 
+
+We can easily implement Asynchronous using ’async’ and ‘await’ keywords.
+A new Thread()is not dealing with Thread pool thread, whereas Task does use thread pool thread.
+
+A Task is a higher level concept than Thread.
+
+_________
+
+ Task is a future or a promise.
+ Thread is a way of fulfilling that promise. 
+    but not every Task needs a brand-new Thread
+
+    If the value you are waiting for comes from the DB, 
+    then there is no need for a thread to sit around and wait for the data
+    when it can be servicing other requests. 
+    Instead, the Task might register a callback to receive the value(s) when they're ready.
+
+*/ 
