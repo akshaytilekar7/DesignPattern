@@ -20,18 +20,18 @@ namespace DataStructure.StackDFS.NumberOfIsland
             return c;
         }
 
-        private void VisitIsland(int[,] grid, int i, int j)
+        private void VisitIsland(int[,] arr, int i, int j)
         {
-            var n = grid.GetLength(0);
-            var m = grid.GetLength(1);
-            if (i < 0 || j < 0 || i >= n || j >= m || grid[i, j] == 0) return;
+            var n = arr.GetLength(0);
+            var m = arr.GetLength(1);
+            if (i < 0 || j < 0 || i >= n || j >= m || arr[i, j] == 0) return;
 
-            grid[i, j] = 0;
+            arr[i, j] = 0;
 
-            VisitIsland(grid, i, j + 1);
-            VisitIsland(grid, i + 1, j);
-            VisitIsland(grid, i, j - 1);
-            VisitIsland(grid, i - 1, j);
+            VisitIsland(arr, i, j + 1);
+            VisitIsland(arr, i + 1, j);
+            VisitIsland(arr, i, j - 1);
+            VisitIsland(arr, i - 1, j);
         }
 
         public static void Main1(string[] args)

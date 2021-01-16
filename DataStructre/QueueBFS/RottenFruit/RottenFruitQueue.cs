@@ -22,6 +22,7 @@ namespace DataStructure.QueueBFS.RottenFruit
 
         public int RottenFruit(int[,] arr)
         {
+            #region Add All Existing rotten fruit
             for (int i = 0; i < arr.GetLength(0); i++)
             {
                 for (int j = 0; j < arr.GetLength(1); j++)
@@ -30,8 +31,10 @@ namespace DataStructure.QueueBFS.RottenFruit
                         _queue.Enqueue(new Coordinates(i, j));
                 }
             }
+            #endregion
 
             _queue.Enqueue(new Coordinates(-1, -1));
+
             var flag = false;
             while (_queue.Count != 0)
             {
@@ -88,7 +91,7 @@ namespace DataStructure.QueueBFS.RottenFruit
 
                 }
 
-                _queue.Dequeue();
+                _queue.Dequeue(); // its a delimiter
                 flag = false;
                 if (_queue.Count() != 0)
                     _queue.Enqueue(new Coordinates(-1, -1));
@@ -105,9 +108,7 @@ namespace DataStructure.QueueBFS.RottenFruit
                 for (int j = 0; j < mat.GetLength(1); j++)
                 {
                     if (mat[i, j] == 1)
-                    {
                         return true;
-                    }
                 }
             }
 
@@ -117,7 +118,8 @@ namespace DataStructure.QueueBFS.RottenFruit
         public bool IsFresh(int[,] arr, int xx, int yy)
         {
             return xx >= 0 && xx < arr.GetLength(0)
-                          && yy >= 0 && yy < arr.GetLength(1) && arr[xx, yy] == 1;
+                && yy >= 0 && yy < arr.GetLength(1)
+                && arr[xx, yy] == 1;
         }
 
         public bool IsNotDelimiter()

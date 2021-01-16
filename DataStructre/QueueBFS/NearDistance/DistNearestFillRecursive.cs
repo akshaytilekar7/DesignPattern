@@ -54,8 +54,7 @@ namespace DataStructure.QueueBFS.NearDistance
         }
         public static void Main1(string[] args)
         {
-            int[,] arr = new int[,]
-            {
+            int[,] arr = {
                 {1, 0, 1, 1, 0},
                 {1, 1, 0, 1, 0},
                 {0, 0, 0, 0, 1},
