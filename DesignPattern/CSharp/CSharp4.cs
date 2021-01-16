@@ -175,9 +175,9 @@ public class Di
 */
 
 
-public class T
+public class T1
 {
-    public T()
+    public T1()
     {
         var primes = Tuple.Create(2, 3, 5, 7, 11, 13, 17, 19);
         Console.WriteLine("Prime numbers less than 20: " +
@@ -201,7 +201,7 @@ public class T
     }
 
     #region method return type
-    public T(int x)
+    public T1(int x)
     {
         var xs = new[] { 4, 7, 9 };
         var limits = FindMinMax(xs);
@@ -220,7 +220,7 @@ public class T
     #endregion
 
     #region Tuple field names
-    public T(string s)
+    public T1(string s)
     {
         var t = (Sum: 4.5, Count: 3);
         var r1 = t.Count;
@@ -263,7 +263,7 @@ public class T
         and for string : always content comarision
 
     */
-    public T(double d)
+    public T1(double d)
     {
         object name = "sandeep";
         object myName = new string("sandeep".ToCharArray());
@@ -283,7 +283,7 @@ public class T
          */
     }
 
-    public T(double d, int c)
+    public T1(double d, int c)
     {
         string name = "sandeep";
         string myName = null;

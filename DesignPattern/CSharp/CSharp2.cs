@@ -11,7 +11,7 @@ namespace DesignPattern.CSharp
 
     class Run
     {
-        public static void Main()
+        public static void Main1()
         {
             Student s1 = new Student() { Id = 1, Name = "A" };
             Student s2 = new Student() { Id = 213, Name = "A" };
