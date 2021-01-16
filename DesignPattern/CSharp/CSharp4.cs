@@ -237,10 +237,10 @@ public class T1
         var Item3 = 3;
         var t1 = (sum, Item3);
         var x1 = t1.sum;
-        var x2 = t1.Item2; // not item 3 becuase 
+        var x2 = t1.Item2; // not item 3 because 
 
         /*
-         That's known as tuple projection initializers. 
+         That's known as tuple projection initializer. 
          The name of a variable isn't projected onto a tuple field name in the following cases:
             1   The candidate name is a member name of a tuple type, 
                 for example, Item3, ToString, or Rest.
@@ -257,16 +257,16 @@ public class T1
     #region EqualAnd==
 
     /*
-        == : object refrance
+        == : object reference
         Equals : content are same
 
-        and for string : always content comarision
+        and for string : always content comparision
 
     */
     public T1(double d)
     {
-        object name = "sandeep";
-        object myName = new string("sandeep".ToCharArray());
+        object name = "John";
+        object myName = new string("John".ToCharArray());
 
         Console.WriteLine(name == myName);  // False //  compares the reference identity
         Console.WriteLine(myName.Equals(name)); // True  // compares the contents of the objects
@@ -276,16 +276,16 @@ public class T1
         
          Stack          Heap 
 
-         name  ------->  "sandeep"
+         name  ------->  "John"
 
-         myName ------>  "sandeep"
+         myName ------>  "John"
 
          */
     }
 
     public T1(double d, int c)
     {
-        string name = "sandeep";
+        string name = "John";
         string myName = null;
         Console.WriteLine(name == myName);    //  compares the reference identity
         Console.WriteLine(myName.Equals(name));  // compares the contents of the objects
