@@ -11,9 +11,6 @@ namespace DesignPattern.CSharp
         public Demo1()
         {
 
-            List<int> l = new List<int>();
-            IEnumerable<int> ll = new List<int>();
-
             var names = new List<string> { "Akshay", "Akshata", "Yash", "Yashraj" };
 
             var startingWithA = names.Where(x => x.StartsWith("A"));
@@ -36,43 +33,27 @@ namespace DesignPattern.CSharp
     }
 }
 
-// Evaluation of the result was deferred until calling ToList 
+// Evaluation of the result was DEFERRED UNTIL CALLING TOLIST 
 
-// IEnumerable where only create a query but not execute it (behind the scenes the expression trees are used).
-// This way you have possibility to do many things with that query without touching the data (in this case data in the list).
+// IEnumerable where only create a query but not execute it
+//  (behind the scenes the expression trees are used).
+
+// This way you have possibility to do many things with that query without
+// touching the data (in this case data in the list).
+
 // List method takes the prepared query and executes it against the source of data
 
 // IEnumerable is read-only and List is not.
 
-// IEnumerable, you give the compiler a chance to defer work until later, possibly optimizing along the way.
+// IEnumerable, you give the compiler a chance to defer work until later,
+//  possibly optimizing along the way.
+
 // If you use ToList() you force the compiler to reify the results right away.
 
 
 // IEnumerable
 // ICollection
 // IList
-
-#endregion
-
-
-#region ApiReturnXmlOrJsonBasedOnInput
-
-// by QUERYSTRINGMAPPING
-// code in app_start event in global.asax 
-/*
-    GlobalConfiguration.Configuration.Formatters.JsonFormatter.MediaTypeMappings.Add(
-            new QueryStringMapping("type", "json", new MediaTypeHeaderValue("application/json")));
-
-    GlobalConfiguration.Configuration.Formatters.XmlFormatter.MediaTypeMappings.Add(
-            new QueryStringMapping("type", "xml", new MediaTypeHeaderValue("application/xml"))).
-
-    call Like :
-
-    for xml : http://localhost:49533/api/?type=xml
-
-    for json: http://localhost:49533/api/?type=json
-
-*/
 
 #endregion
 

@@ -4,7 +4,7 @@
 Asynchronous programming
     -   general in that it has to do with latency (something on which your application has to wait, for one reason or another)
 
-multithreaded programming
+multi-threaded programming
     -   achieve parallelization (1/more things that your application has to do at the same time))
 
 Task Parallel Library [4.0]

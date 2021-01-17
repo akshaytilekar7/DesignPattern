@@ -40,3 +40,23 @@
 		
  */
 
+#region ApiReturnXmlOrJsonBasedOnInput
+
+// by QUERYSTRINGMAPPING
+// code in app_start event in global.asax 
+/*
+    GlobalConfiguration.Configuration.Formatters.JsonFormatter.MediaTypeMappings.Add(
+            new QueryStringMapping("type", "json", new MediaTypeHeaderValue("application/json")));
+
+    GlobalConfiguration.Configuration.Formatters.XmlFormatter.MediaTypeMappings.Add(
+            new QueryStringMapping("type", "xml", new MediaTypeHeaderValue("application/xml"))).
+
+    call Like :
+
+    for xml : http://localhost:49533/api/?type=xml
+
+    for json: http://localhost:49533/api/?type=json
+
+*/
+
+#endregion

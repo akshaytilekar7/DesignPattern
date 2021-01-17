@@ -18,8 +18,6 @@ namespace DesignPattern.CSharp
             return s.Length > number; // or Take(number).Count()
         }
     }
-
-
 }
 
 // principle of encapsulation is not really being violated.
@@ -27,4 +25,3 @@ namespace DesignPattern.CSharp
 // cant override them
 // you can write a method having same signature but it will never call
 // as compile time, it has lowest priority then instance methods 
-//

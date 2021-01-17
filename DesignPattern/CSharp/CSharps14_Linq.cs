@@ -4,11 +4,11 @@ using System.Linq;
 
 namespace DesignPattern.CSharp
 {
-    public class Stud
+    public class Student
     {
         public int Id { get; set; }
 
-        public List<Subject> lstSubjects { get; set; }
+        public List<Subject> LstSubjects { get; set; }
     }
     public class Subject
     {
@@ -43,16 +43,16 @@ namespace DesignPattern.CSharp
         public Linq1(int a)
         {
 
-            var lstStudent = new List<Stud>()
+            var lstStudent = new List<Student>()
             {
-                new Stud() { Id =1 ,
-                                lstSubjects = new List<Subject>()
+                new Student() { Id =1 ,
+                                LstSubjects = new List<Subject>()
                                 {
                                     new Subject() {Id = 11, SubjectName= "A" }
                                 }
                              },
-                new Stud() { Id =2 ,
-                lstSubjects = new List<Subject>()
+                new Student() { Id =2 ,
+                LstSubjects = new List<Subject>()
                 {
                     new Subject() {Id = 22, SubjectName= "b" },
                     new Subject() {Id = 33, SubjectName= "c" }
@@ -60,12 +60,13 @@ namespace DesignPattern.CSharp
                 }
                 },
             };
-            /* SelectMany - 
-                -   project each element of sequence to an IEnumberable<T>
-                    and flattern resulting sequence into one sequence
+            /*
+                SelectMany - 
+                -   project each element of sequence to an IEnumerable<T>
+                    and flat-tern resulting sequence into one sequence
             */
 
-            var ls = lstStudent.SelectMany(r => r.lstSubjects);
+            var ls = lstStudent.SelectMany(r => r.LstSubjects);
             foreach (var item in ls)
             {
                 Console.WriteLine(item.SubjectName);
@@ -77,9 +78,9 @@ namespace DesignPattern.CSharp
     {
         public static void Main1()
         {
-            new Linq1(6);
-            var lst1 = new List<Stud>();
-            var lst2 = new List<Stud>();
+            var linq1 = new Linq1(6);
+            var lst1 = new List<Student>();
+            var lst2 = new List<Student>();
 
             var res = from r1 in lst1
                       join r2 in lst2

@@ -45,7 +45,7 @@ namespace DesignPattern.CSharp
 }
 /*
 
-Enumerable - access items, unordered, unmodifiable
+Enumerable - access items, unordered, unmodifiable ie readonly
 Collection - can be modified (add,delete,count)
 List - allows items to have an order (accessing and removing by index) and can access by index
 

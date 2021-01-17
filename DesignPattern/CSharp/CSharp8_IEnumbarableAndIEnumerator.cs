@@ -15,7 +15,6 @@ using System.Collections.Generic;
 
      IQueryable interface inherits the IEnumerable
 
-
  */
 namespace DesignPattern.CSharp
 {

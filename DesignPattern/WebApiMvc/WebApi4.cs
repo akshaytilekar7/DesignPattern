@@ -7,12 +7,12 @@ FromBody and FromUri
         -   complex data look in request body
 
 
-    to change drfault conventions we use : fromBody and FromUri
+    to change default conventions we use : fromBody and FromUri
 
-Versioning web api
+Version-ing web api
 
-    -   diifrent client are using same application
-    -   service need to change wothout breaking existing clients and at same time satisfied new client also
+    -   different client are using same application
+    -   service need to change without breaking existing clients and at same time satisfied new client also
     -   attribute or convention routing
     -   URI
     -   QueryString
@@ -21,9 +21,9 @@ Versioning web api
     -   Media type
 
     A]
-        create 2 entiry ex : studentV1 and StudentV2
+        create 2 entiyy ex : studentV1 and StudentV2
         create 2 controller : StudentV1Controller and StudentV2Controller
-        and user attribute or convention routing for versioning
+        and user attribute or convention routing for version-ing
 
         C   Post
         R   Get
@@ -39,7 +39,7 @@ Versioning web api
 
 why we need HTTP methods
     -   uniform naming conventions
-    -   server side developer are respocisibe to use proper HTTP verbs
+    -   server side developer are responsible to use proper HTTP verbs
 
 
     post    -   new / never update
@@ -49,11 +49,11 @@ why we need HTTP methods
     patch   -   how update
 
 
-    idempotent  -   same beaviour for each request
+    idempotent  -   same behaviour for each request
                 -   req and res url same    
 
     post and put
-        -   post - nonidempotent - 
+        -   post - non idempotent - 
         -   put -   idempotent - if id is sent by client then : exist update ow create
 
     patch
