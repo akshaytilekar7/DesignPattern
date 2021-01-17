@@ -19,7 +19,7 @@
     2] How to Enable HTTPS for ASP.Net Web API?
         - Using 
 
-        public class HTTPSAttribute:AuthorizationFilterAttribute
+        public class HTTPSAttribute : AuthorizationFilterAttribute
         {
             public override void OnAuthorization(HttpActionContext actionContext)
             {

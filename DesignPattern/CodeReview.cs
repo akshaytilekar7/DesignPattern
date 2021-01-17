@@ -23,7 +23,4 @@ Code review strategy :
         -   work best when : accepts, processes, and uses input without much checking.
         -   inject code into someone’s browser
 
-
-
-
 */

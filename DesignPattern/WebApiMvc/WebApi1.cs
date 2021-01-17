@@ -5,19 +5,20 @@ A] Service Oriented Architecture (SOA)
     - 2 or more component communicates with each other over a network through a defined protocol.
 
     Web Service?
-        -   way to communicate between 2 machines via HTTP, those 2 machines can be on a different platform.
+        -   way to communicate between 2 machines via HTTP, 
+            those 2 machines can be on a different platform.
 
     SOAP
         -   heavier than REST web service
         -   XML based web service (limitations)
         -   XML data require parsing to read, so it is slow and consumes more bandwidth.
 
-    REST 
+    REST [not a protocol its an architectural style]
         -   architectural style to build and loosely couple 2 or more systems
         -   HTTP protocol using its verbs GET, POST, PUT and DELETE.
         -   All requests are mapped to actions using HTTP verbs.    
         -   HTML, XML, JSON, Plain Text format.
-        -   REST is a style, so it can use any protocol like HTTP, SOAP.
+        -   REST IS A STYLE, SO IT CAN USE ANY PROTOCOL LIKE HTTP, SOAP.
         -   REST is stateless, cache able.
         -   Stateless 
             -   A fundamental principle of REST architecture is Stateless. 
@@ -25,10 +26,13 @@ A] Service Oriented Architecture (SOA)
             -   It means every request is treated as unique and fresh.
 
         -   fast and less bandwidth
-        -   RESTFUL WEB SERVICE CAN ALSO USE SOAP BECAUSE SOAP IS A PROTOCOL AND REST IS AN ARCHITECTURAL STYLE.
+        -   RESTFUL WEB SERVICE CAN ALSO USE SOAP BECAUSE 
+                SOAP IS A PROTOCOL AND REST IS AN ARCHITECTURAL STYLE.
+
         -   Supports XML, plain text, JSON as data exchange format.
         
-        -   SOAP is an XML based protocol whereas REST is not a protocol, but it is a resource-based architecture.
+        -   SOAP is an XML based protocol whereas REST is not a protocol, 
+                but it is a resource-based architecture.
         -   SOAP has specifications for both stateless and state-full implementation, whereas REST is completely stateless.
 
     Q. Can SOAP be RESTful? NO
@@ -49,21 +53,23 @@ A] Service Oriented Architecture (SOA)
         -  Attribute based routing 
 
     -   CORS issue in Web API? (Cross-Origin Resource Sharing)
-        -   CORS resolve the same-origin restriction for JavaScript
+        -   CORS resolve the SAME-ORIGIN RESTRICTION for JavaScript
         -   The same origin means that a JavaScript can only make AJAX call to the web pages within the same origin
         -   To enable CORS in Web API you must install CORS nuget package using Package Manager Console.
             -   in WebApiConfig.cs add : config.EnableCors();
             -   [EnableCors(origins: "<origin url>", headers: "*", methods: "*")] in controller
 
     -   How to make sure that Web API returns data in JSON format only?
-        -   In WebApiConfig.cs" : config.Formatters.JsonFormatter.SupportedMediaTypes.Add(new MediaTypeHeaderValue("application/json"))
+        -   In WebApiConfig.cs" 
+            : config.Formatters.JsonFormatter.SupportedMediaTypes.Add(new MediaTypeHeaderValue("application/json"))
 
     -   How to host Web API
             -   Self Hosting
             -   IIS hosting
         
-    -   content negotiation 
-        -   server-side : determine the media type formatter to return the response to an incoming request.
+    -   content negotiation [return type for respose]
+        -   server-side :   determine the media type formatter to
+                            return the response to an incoming request.
 
     -   Media Type?
         -   called a MIME type, which identifies the format of a piece of data sends over HTTP protocol
@@ -76,7 +82,9 @@ A] Service Oriented Architecture (SOA)
 
     - Validating the Request Body Using the Model State
         -   This property is filled during request execution before reaching our action execution
-        -   Its a instance of ModelStateDictionary, a class that contains infor about request is valid and validation error messages
+        -   Its a instance of ModelStateDictionary, 
+            a class that contains information about request is valid and validation error messages
+
         [HttpPost]
         public async Task<IActionResult> PostAsync([FromBody] SaveCategoryResource resource)
         {
@@ -90,14 +98,13 @@ A] Service Oriented Architecture (SOA)
                 -   HTTP Verbs (GET,POST,PUT,DELETE)
                 -   URIs (resource name)
                 -   HTTP response (status and body)
-
             2.  Client–server 
                 -   servers and clients may also be replaced and developed independently,
                 -   client should know only resource URIs, and that’s all
             3.  Stateless
                 -   server will not store anything about HTTP request
                 -   each request from the client should contain info need to service the request : authentication and authorization
-            4.  Cacheable
+            4.  Cache-able
                 -   implemented on the server or client-side.
             5.  Layered system
                 -    deploy the APIs on server A, and store data on server B and authenticate requests in Server C,
