@@ -4,11 +4,11 @@ You are not done when it works, you are done when it's right.
 
 clean code matters
 
-readable well wriiten
+readable well written
 author of code
 peer able to understand code
 
-adding double developer never increses productivty
+adding double developer never increases productivity
 
 developer will not train the new developer 
 our existing code will train them
@@ -62,6 +62,26 @@ clean code rule
         -   side effect function comes in pair : new and delete
         -   system crash : dut to many people open a same file
 
-        
+       
+    comment
+        -   some comment are good
+        -   comment can lie but code don't
+        -   every comment will show that we are fail to express code
+        -   no one maintain a comment it will rot after some days
+        -   don't comment always clean it
+        -   if ( person.Age > 18 && person.Age < 60 ) => if(IsAdult())
+        -   comment for regular expression 
+
+    pair program
+        -   5 hrs to original code then review - 
+
+    TDD 
+        -   is a discipline 
+        -   should not allowed to write any production code 
+            -   not compile is test failing 
+            -   reduce debugging time
+            -   fail and then pass : nice feeling
+            -   you cannot write a code that is ard to test if we follow TDD
+                coz we are write test case 1st
 
 */

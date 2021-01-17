@@ -2,25 +2,20 @@
 using System.Collections.Generic;
 
 /*
-    Indexer
-        -   allow instances of a class or struct to be indexed just like arrays
+    Indexer [smart arrays]
+        -   allow instances of a class/struct to be indexed just like arrays
         -   created using this keyword
-        -   indexers do not have to be indexed by an integer value; it is up to you how to define the specific look-up mechanism.
+        -   indexers do not have to be indexed by an integer value; 
+            it is up to you how to define the specific look-up mechanism.
         -   can be overloaded.
-        -   smart arrays
-        -   class property that allows you to access a member variable of a class using the features of an array
+        -   class property that allows you to access a member variable of a class using 
+            the features of an array
 
  
     <modifier> <return type> this [argument list]  
     {  
-        get  
-        {  
-            // your get block code  
-        }  
-        set  
-        {  
-            // your set block code  
-        }  
+        get { // your get block code }  
+        set { // your set block code }  
     }  
 
 */
@@ -87,21 +82,25 @@ namespace DesignPattern.CSharp
 
 
 /*
- 
+ Covariance 
+ and contra-variance [4.0]
+
+        [List<T> coz : we can add type T or its subtype] 
+        [means we can use "more derived type"]
+        [use a derived class where a base class is expected]
+        [only for mutable objects] 
     -   refer to how you treat an object
     -   Covariance preserves assignment compatibility and contra-variance reverses it.
-    -   4.0
-    -   Immutable collection classes like lists are covariant when you are only allowed to push elements in 
-        if they are of type T or its subtype. 
-    -   Covariance comes into picture when you are working with mutable [liable to change] collections.
-    -   Contra-variance allows you to utilize a less derived type than originally specified,
-    -   covariance lets you use a more derived type
-    -   covariance allows you to use a derived class where a base class is expected
 
+    -   Immutable collection classes like lists are covariant
+        when you are only allowed to push elements in if they are of type T or its subtype. 
+    -   covariance comes into picture when you are working with mutable [liable to change] collections.
+
+    -   Contra-variance allows you to utilize a less derived type than originally specified,
     -   covariance -  child can use instead of parent
                    -  method returns a more specific type.
     -   contra-variance 
-                    -   method is passed a less specific type
+                    -   method is passed a less specific type [parent can pass]
 */
 
 public class Co

@@ -11,9 +11,12 @@ MSIL
     
 GC
     -   perform on heap memory
-    -   no memory for new object then GC will run
+    -   if there is not enough memory for new object then GC will run
     -   gen 0 1 2
-    -   GC doesn't remove application root object and if there is any reference for that object
+    -   Not remove object if
+            1.  root object 
+            2.  any reference for that object
+
     -   gen 0 : youngest generation
         if gen 0 has memory then GC directly allocates memory for new object
         if not then check for gen 1 [longest lifetime]
