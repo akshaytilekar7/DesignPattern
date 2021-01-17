@@ -18,8 +18,7 @@ namespace DesignPattern.CSharp
 
     public class Test
     {
-        Circle p = new Circle();
-
+        readonly Circle p = new Circle();
         public Test()
         {
             p.NewArea(6);

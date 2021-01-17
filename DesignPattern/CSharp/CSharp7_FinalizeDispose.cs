@@ -1,4 +1,129 @@
 using System;
+/*
+    https://docs.microsoft.com/en-us/dotnet/standard/garbage-collection/fundamentals
+
+    GC fundamentals
+    -   developer, you work only with virtual address space and 
+        never manipulate physical memory directly. 
+    -   The garbage collector allocates and frees virtual memory for you on the managed heap.
+
+    Virtual memory can be in three states:
+
+    Free	    The block of memory has no references to it and is available for allocation.
+    Reserved	The block of memory is available for your use and cannot
+                be used for any other allocation request. However, you cannot store data to this memory block until it is committed.
+    Committed	The block of memory is assigned to physical storage.
+
+
+    Managed Heap
+        -   When you initialize a new process, the runtime reserves a contiguous region of address space 
+            for the process. This reserved address space is called the managed heap
+        -   managed heap maintains a pointer to the address where the next object 
+            in the heap will be allocated.
+        -   Initially, this pointer is set to the managed heap's base address
+        -   All reference types are allocated on the managed heap
+        -   When an application creates the first reference type, memory is allocated for the type
+            at the base address of the managed heap. When the application creates the next object,
+            the garbage collector allocates memory for it in the address space immediately
+            following the first object. 
+            As long as address space is available, the garbage collector continues 
+            to allocate space for new objects in this manner.
+
+        -   Allocating memory from the managed heap is faster than unmanaged memory allocation
+            because : runtime allocates memory for an object by adding a value to a pointer,
+                     it's almost as fast as allocating memory from the stack.
+       
+    Release memory
+        -   GC determines objects are no longer being used by examining the application's roots. 
+            application's roots include static fields, local variables on a thread's stack, CPU registers
+        -   Each root either refers to an object on the managed heap or is set to null.
+        -   Using this list, the garbage collector creates a graph that contains 
+            all the objects that are reachable from the roots.
+        -   Objects that are not in the graph are unreachable from the application's roots
+        -   asach
+            - Once the memory for the reachable objects has been compacted,
+            the garbage collector makes the necessary pointer corrections so that the 
+            application's roots point to the objects in their new locations. 
+            It also positions the managed heap's pointer after the last reachable object.
+
+
+    Garbage collection occurs when 
+        -   1.  system has low physical memory.
+                determine by either the low memory notification from the OS 
+                or low memory as indicated by the host.
+            2.  GC.Collect method is called
+    
+
+    Managed Heap
+        -   All threads in the process allocate memory for objects on the same heap
+        -   To reserve memory : GC call  VirtualAlloc function 
+            and release by calling  VirtualFree function.
+        -   reclaiming process compacts live objects so that they are moved together and dead space is removed
+            This ensures that 
+                objects that are allocated together stay together on the managed heap to preserve their locality
+
+        2 Type
+            large object heap [objects that are 85,000 bytes usually arrays]
+            small object heap
+
+*/
+
+/*
+    Generation
+        -    managed heap is divided into three generations, 0, 1, and 2, 
+             so it can handle long-lived and short-lived objects separately
+        -   MAIN POINTS
+            object lifetime that survive collections are promoted and stored in generations 1 and 2.
+            BECAUSE IT'S FASTER TO COMPACT A PORTION OF THE MANAGED HEAP THAN THE ENTIRE HEAP, *******
+            this scheme allows the garbage collector to release the memory
+                in a specific generation rather than release the memory for the entire managed heap each time 
+                it performs a collection.
+        -   If they are large objects, they go on the large object heap (LOH), 
+            which is sometimes referred to as generation 2. 
+
+    Generation 1.    
+        -   GC performs a collection of generation 0, 
+            it compacts the memory for the reachable objects
+            and then promotes them to generation 1.
+            because, objects that survive collections tend to have longer lifetimes,
+
+        -   If a collection of generation 0 does not reclaim enough memory for the application 
+            to create a new object, the garbage collector can perform a collection of generation 1, 
+            then generation 2.
+            Objects in generation 1 that survive collections are promoted to generation 2.
+
+    Generation 2
+        -   contains static data
+        -   Objects in generation 2 that survive a collection remain in generation 2 
+            until they are determined to be unreachable in a future collection.
+        -   Objects on the large object heap (which is sometimes referred to as generation 3) are also collected in generation 2.
+    
+    What happens during a garbage collection
+        -   GC has 3 phases 
+            -   marking phase 
+                    -   that finds and creates a list of all live objects.
+            -   relocating phase 
+                    -   updates the references to the objects that will be compacted.
+            -   compacting phase
+                    -   reclaims the space occupied by the dead objects and compacts the 
+                        surviving objects.
+        -    large object heap (LOH) is not compacted, because copying large objects 
+            imposes a performance penalty. 
+        
+    Determine objects are live:
+        -   Stack roots
+        -   Garbage collection handles. 
+        -   Static data
+
+ */
+
+/*
+ 
+    Unmanaged resource
+        -   most common type of unmanaged resource is an object that wraps an operating system resource, 
+            such as a file handle, window handle, or network connection
+        -   release by Dispose() or Finalize()
+ */
 
 namespace DesignPattern.CSharp
 {
@@ -10,9 +135,9 @@ namespace DesignPattern.CSharp
         1. why need Dispose()
            FINALIZERS CANNOT BE CALLED EXPLICITLY, THEY ARE CALLED BY THE GARBAGE COLLECTOR (GC) 
            So to RELEASE MEMORY MANUALLY implement IDisposable interface
-        2. why need dtor/finalize when we have Dispose()
-           by ADDING THE FINALIZER (Destructor) DURING THE IMPLEMENTATION OF THE DISPOSE PATTERN 
-           BECOMES A SAFEGUARD TO CLEAN UP THE RESOURCES IF THE CLIENT DOES NOT CALL THE DISPOSE METHOD.
+        2. why need destructor/finalize when we have Dispose()
+           by ADDING THE FINALIZER (Destructor) during the implementation of the dispose pattern 
+           becomes a SAFEGUARD to clean up the resources if the client does NOT CALL THE DISPOSE METHOD.
 
           SuppressFinalize only be called by a class that has a finalizer. 
           It's informing the Garbage Collector (GC) that this object was cleaned up fully.

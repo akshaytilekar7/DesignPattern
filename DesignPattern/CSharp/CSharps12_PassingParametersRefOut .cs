@@ -103,8 +103,8 @@ namespace A_ReferenceType
     }
 
     //// IncrementAge(alice); 17 17 18 18   
-    //// IncrementAge(ref alice);  17 17 18 Ex - Object refrance not set to instance 
-    // because noraml paramter 
+    //// IncrementAge(ref alice);  17 17 18 Ex - Object reference not set to instance 
+    // because normal parameter 
 
 }
 
@@ -139,14 +139,16 @@ namespace A_ValeType_Out
 
 namespace A_In_Csharp7_2
 {
-    // IN keyword is used to pass a PARAMETER BY REFERENCE FOR INPUT. in arguments cannot be modified by the called method.
+    // IN keyword is used to pass a PARAMETER BY REFERENCE FOR INPUT.
+    //  in arguments cannot be modified by the called method.
     // Variables passed as in arguments must be initialized before being passed in a method call
     // in modifier is optional at the method call. It is only required in the method declaration.
     class Program
     {
         static void TyrInParameter(in int number)
         {
-            //This will get compile time error => Cannot assign to variable 'in int' because it is a readonly variable 
+            //This will get compile time error =>
+            //Cannot assign to variable 'in int' because it is a readonly variable 
             //number = 20;
 
             Console.WriteLine($"Inside function => Value : {number}");
@@ -182,3 +184,7 @@ namespace A_In_Csharp7_2
 //      public void A(out int a)  public void A(ref int a) // cant overload ref and out
 
 // INVALID for in, ref, and out : Async methods and Iterator methods (yield return or yield break)
+
+// for reference type like Lst and Student
+// Passing By Value and Pass by reference is same
+// but if we are using ref - mag te vala null vala :-)
