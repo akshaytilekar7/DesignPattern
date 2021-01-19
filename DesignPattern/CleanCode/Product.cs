@@ -1,9 +1,35 @@
 ﻿/*
 
+    technical flow
+    UI
+
+        dataContext - services for student and address
+        dataService
+            -   wrapper methods for getWithPara | create | update | remove
+        
+    Service
+
+        WebApi
+            ActionClass
+                call repository
+                    DB call
+
+        EF
+        Ado.net
+
+    Test case
+    clean code
+
+    
+ 
+*/
+
+/*
+
 Life-care :
 
 sweden municipalities to make the whole process easy and transparent
-    -   services related to Home care or any other requirements
+    -   services related to Home care or any other requirements 
     -   housing services, handicapped service 
 
     -   we gather all information from user

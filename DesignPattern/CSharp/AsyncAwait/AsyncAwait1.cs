@@ -8,12 +8,13 @@ multi-threaded programming
     -   achieve parallelization (1/more things that your application has to do at the same time))
 
 Task Parallel Library [4.0]
-    -   async and await  not possibile without TPL
+    -   async and await  not possible without TPL
     -   introduced to address parallelization
-    -   requirements for multithreaded programming are very similar to that of asynchronous programming in general
+    -   requirements for multi-threaded programming are very similar to 
+        that of asynchronous programming in general
     -   so, introduced a beautiful abstraction called a Task
-    -    DownloadImage(url).ContinueWith(task1 =>) defines an additional task that corresponds to what should happen when the previous task completes
-    -   not readabel due to callbacks
+    -   DownloadImage(url).ContinueWith(task1 =>) defines an additional task that corresponds to what should happen when the previous task completes
+    -   not readable due to callbacks
 
 */
 
@@ -70,11 +71,5 @@ public class T
         var blurredImagePath = Path.Combine("", blurredFileName);
         await SaveImage(blurredImageBytes, blurredImagePath);
         var done = true;
-    }
-
-    public T(string o)
-    {
-        var await = 110;
-        var async = 10;
     }
 }

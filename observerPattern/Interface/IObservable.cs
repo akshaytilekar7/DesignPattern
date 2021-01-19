@@ -2,6 +2,7 @@
 
 namespace observerPattern.Interface
 {
+    // publisher
     public interface IObservable
     {
         List<IObserver> SubscriberList { get; set; }

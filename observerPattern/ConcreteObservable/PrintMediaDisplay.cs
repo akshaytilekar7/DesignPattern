@@ -4,12 +4,12 @@ using System;
 
 namespace observerPattern.ConcreteObservable
 {
-    public class PrintMediaDisplay : IObserver
+    public class PrintMediaDisplay : IObserver ////subscriber
     {
         private readonly WeatherStation _weatherStation;
         public PrintMediaDisplay(WeatherStation weatherStation)
         {
-            this._weatherStation = weatherStation;
+            _weatherStation = weatherStation;
         }
 
         public void Update()

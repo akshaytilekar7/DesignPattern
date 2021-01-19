@@ -22,7 +22,7 @@ interface in WCF interfaces to define Service Contracts.
 read only and static and constants
 
     constant
-        -   Constants are static by default
+        -   constants are static by default
         -   They must have a value at compilation-time (you can have e.g. 3.14 * 2, but cannot call methods)
         -   Can be used in attributes
         -   we can access by className.ConstantPropertyName [IMP]

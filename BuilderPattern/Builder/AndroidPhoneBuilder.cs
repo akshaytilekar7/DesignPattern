@@ -7,7 +7,10 @@ namespace BuilderPattern.Builder
         readonly Mobile _phone;
         Mobile IPhoneBuilder.Phone => _phone;
 
-        public AndroidPhoneBuilder() => _phone = new Mobile("Android Phone");
+        public AndroidPhoneBuilder()
+        {
+            _phone = new Mobile("Android Phone");
+        }
 
         public void BuildBattery() => _phone.PhoneBattery = Battery.MAH_1500;
 

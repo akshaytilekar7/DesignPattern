@@ -4,7 +4,8 @@
     typeof Foo // 'function'
 
 Closure
-    -   when function access and remember its lexical scope even when function is executed outside its lexical scope
+    -   when function access and remember its lexical scope 
+        even when function is executed outside its lexical scope
     -   inner function always has access to the vars and parameters of its outer function, 
         even after the outer function has returned
     -   means it maintain its lexical scope (compile time scope)
@@ -73,9 +74,7 @@ f(15)(3);
                         console.log(geek) // undefined
 
         null        -   is a value of a variable and is a type of object
-
                         console.log(myVariable) //ReferenceError: myVariable is not defined.
-
                         'use strict' so no undeclared variable is present if exist
 
 
@@ -117,7 +116,6 @@ f(15)(3);
             let : block scope
 
 
-
         Ex :
             No error                ||    SyntaxError: Identifier 'x' has already been declared
                                     ||
@@ -144,13 +142,12 @@ f(15)(3);
 
 
     Q.  Hoisting
-        -   function and variable declaration moves to top
+        -   function and variable DECLARATION moves to top
         -   function expression (ie, var x = function(){} ) never get hoisted
 
 
     Q.  this
         every function while executing has reference to its current context
-
 
     Q.  immutability / freeze
 

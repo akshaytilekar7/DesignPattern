@@ -370,9 +370,9 @@ namespace DesignPattern.CSharp
         -   compacts the surviving objects.
 
     HOE GC DETERMINE WHETHER OBJECTS ARE LIVE:
-    1. Stack roots: Stack variables provided by the just-in-time (JIT) compiler and stack walker
-    2. Garbage collection handles: Handles that point to managed objects and that can be allocated by user code or by the CLR.
-    3. Static data: Static objects in application domains that could be referencing other objects.
+    1. Stack roots : Stack variables provided by the just-in-time (JIT) compiler and stack walker
+    2. Garbage collection handles : Handles that point to managed objects and that can be allocated by user code or by the CLR.
+    3. Static data : Static objects in application domains that could be referencing other objects.
 
     */
 

@@ -24,7 +24,7 @@ namespace zFactoryPattern.Shipping.ShippingProvider
 
             var shippingCost = ShippingCostCalculator.GetCost(o.Recipient.Country, o.Sender.Country, o.TotalWeight);
 
-            return $"Shipping Id: {$"AUS-{Guid.NewGuid()}"} {Environment.NewLine}" +
+            return $"Shipping Id: AUS-{Guid.NewGuid()} {Environment.NewLine}" +
                     $"To: {o.Recipient.To} {Environment.NewLine}" +
                     $"Order total: {o.Total} {Environment.NewLine}" +
                     $"Tax: {TaxOptions} {Environment.NewLine}" +

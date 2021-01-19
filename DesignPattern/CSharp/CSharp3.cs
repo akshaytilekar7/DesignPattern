@@ -70,7 +70,6 @@ namespace DesignPattern.CSharp
         {
             StringDataStore strStore = new StringDataStore { [0] = "One", [1] = "Two", [2] = "Three", [3] = "Four" };
 
-
             Console.WriteLine(strStore["one"]);
             Console.WriteLine(strStore["two"]);
             Console.WriteLine(strStore["Three"]);
@@ -82,9 +81,9 @@ namespace DesignPattern.CSharp
 
 
 /*
- Covariance 
- and contra-variance [4.0]
+ Covariance and contra-variance [4.0]
 
+Covariance
         [List<T> coz : we can add type T or its subtype] 
         [means we can use "more derived type"]
         [use a derived class where a base class is expected]
@@ -92,7 +91,7 @@ namespace DesignPattern.CSharp
     -   refer to how you treat an object
     -   Covariance preserves assignment compatibility and contra-variance reverses it.
 
-    -   Immutable collection classes like lists are covariant
+    -   WRONG AHE (no change)Immutable collection classes like lists are covariant [need to check]
         when you are only allowed to push elements in if they are of type T or its subtype. 
     -   covariance comes into picture when you are working with mutable [liable to change] collections.
 

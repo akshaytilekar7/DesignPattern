@@ -1,7 +1,7 @@
 ﻿/*
     this 
         -   not refer to the function in which it is used or it’s scope 
-            but is determined mostly by the invocation context of function (context.function()) 
+            but is determined mostly by the INVOCATION CONTEXT OF FUNCTION (context.function()) 
             and where it is called
 
             default binding

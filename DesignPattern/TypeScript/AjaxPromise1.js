@@ -15,7 +15,6 @@ promise
 let promiseToCleanRoom = new Promise(function (resolve, reject) {
 
     let isClean = true;
-
     if (isClean) {
         resolve('Clean');
     } else {

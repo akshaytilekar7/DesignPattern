@@ -3,11 +3,11 @@ using zFactoryPattern.Commerce;
 
 namespace zFactoryPattern.Shipping.ShippingProvider
 {
-    public class SwedishSP : ShippingProviderCls
+    public class SwedishSp : ShippingProviderCls
     {
         private readonly string apiKey;
 
-        public SwedishSP(string apiKey, CostCalculate shippingCostCalculator, TaxOptions taxOptions)
+        public SwedishSp(string apiKey, CostCalculate shippingCostCalculator, TaxOptions taxOptions)
         {
             this.apiKey = apiKey;
 

@@ -4,7 +4,7 @@ using System.Collections.Generic;
 #region IComparable 
 /*
 IComparable interface 
-    -  only ine method [int CompareTo(object obj)] (obj is next element
+    -  only ine method [int CompareTo(object obj)] (obj is next element)
        it compares the current object with the object next inline;
        e.g., to sort the list of integers sort method does bubble sort on elements.
 
@@ -17,11 +17,9 @@ IComparable interface
 IComparer
     used when sorting on a class on which you don't have control. (dll)
 
-
 */
 namespace DesignPattern.CSharp
 {
-
     public class SmartPhone : IComparable
     {
         public string Name { get; set; }

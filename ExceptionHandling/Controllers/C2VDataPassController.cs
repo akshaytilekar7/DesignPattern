@@ -8,7 +8,7 @@ namespace ExceptionHandling.Controllers
     [ExceptionHandling]
     public class C2VDataPassController : Controller
     {
-        public void way1_HttpRequestBase()
+        public void way1_HttpRequest()
         {
             string strName = Request["txtName"];
         }

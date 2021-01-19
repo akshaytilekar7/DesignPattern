@@ -8,7 +8,6 @@ var funcName = (params) => {
 
 console.log(funcName(2));  //4
 
-
 // Ex
 const outerThis = this;
 

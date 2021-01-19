@@ -3,7 +3,6 @@
     public delegate void MyCustomDelegate();
     public class Delegate
     {
-
         public MyCustomDelegate InvertedMember1 { get; set; }
         public MyCustomDelegate InvertedMember2 { get; set; }
 

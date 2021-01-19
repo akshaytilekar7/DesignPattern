@@ -108,8 +108,8 @@ List - allows items to have an order (accessing and removing by index) and can a
 /*
 
 HashTable [Non generic version]:
-    -   collection of key/value pairs that are oRGANIZED BASED ON THE HASH CODE OF THE KEY.
-    -   MSDN Dont recommend that you use the Hashtable class for 
+    -   collection of key/value pairs that are ORGANIZED BASED ON THE HASH CODE OF THE KEY.
+    -   MSDN Don't recommend that you use the Hashtable class for 
         new development instead use Dictionary<TKey,TValue>
     -   need to override the Object.GetHashCode and  Object.Equals for IComparer
     -   both methods and interfaces must handle case sensitivity the same way; 

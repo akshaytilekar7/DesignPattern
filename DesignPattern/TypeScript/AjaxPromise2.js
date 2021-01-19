@@ -105,7 +105,6 @@ apiCall = function () {
 $.when(apiCall1, apiCall2).then(function () { }, function () { });
 
 
-
 // LAST VALUE FROM PROMISE
 var counter = 0;
 var lastCounter = 0;

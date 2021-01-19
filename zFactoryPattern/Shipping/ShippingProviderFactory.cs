@@ -31,7 +31,7 @@ namespace zFactoryPattern.Shipping
                             ShippingType = ShippingType.Express
                         };
 
-                        shippingProvider = new SwedishSP("API_KEY", shippingCostCalculator, TaxOptions.PayOnArrival);
+                        shippingProvider = new SwedishSp("API_KEY", shippingCostCalculator, TaxOptions.PayOnArrival);
                         break;
                         #endregion
                     }
