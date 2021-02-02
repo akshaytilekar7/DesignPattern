@@ -2,7 +2,7 @@
 using System.Linq;
 using System.Text.RegularExpressions;
 
-namespace CSharp.Logic2
+namespace CSharp.Logic
 {
     public class WordBreak1
     {

@@ -1,6 +1,6 @@
 ﻿//https://leetcode.com/problems/implement-trie-prefix-tree/
 
-namespace CSharp.Logic1
+namespace CSharp.Logic
 {
     public class TrieNode
     {
