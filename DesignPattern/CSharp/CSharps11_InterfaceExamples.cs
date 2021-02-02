@@ -35,7 +35,7 @@ namespace DesignPattern.CSharp
 
     public class TestInterfaceExamples
     {
-        public static void Main(string[] args)
+        public static void Main1(string[] args)
         {
             ClsInterfaceExamples clsInterfaceExamples = new ClsInterfaceExamples();
             clsInterfaceExamples.Add(5, 3); // class method

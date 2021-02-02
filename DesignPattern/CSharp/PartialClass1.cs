@@ -18,7 +18,7 @@ public class U
 namespace DesignPattern.CSharp
 {
 
-
+    //OffersNotAccepted
     public partial class Circle
     {
         public void NewArea(int a)
