@@ -12,7 +12,7 @@ public class U
 
     public U()
     {
-        Test1.x1
+        var d = Test1.x1;
     }
 }
 namespace DesignPattern.CSharp
