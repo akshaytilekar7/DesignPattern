@@ -31,7 +31,6 @@ Life-care :
 sweden municipalities to make the whole process easy and transparent
     -   services related to Home care or any other requirements 
     -   housing services, handicapped service 
-
     -   we gather all information from user
     -   register his demand/service and 
     -   verify that service
@@ -71,7 +70,7 @@ DOD
     -   is it following all AC
     -   design should be as per sketches
     -   it should be working on dev env
-    -   addressed to all Code reviewed?
+    -   addressed to all code reviewed?
     -   does all unit test should be passed
     -   some team member has to test that story (cross testing)
     -   finally after end of sprint : present that story to stakeholder 
