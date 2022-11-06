@@ -1,7 +1,7 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio Version 16
-VisualStudioVersion = 16.0.29905.134
+# Visual Studio Version 17
+VisualStudioVersion = 17.1.32210.238
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DesignPattern", "DesignPattern\DesignPattern.csproj", "{4D81AF00-2A38-4A3F-A524-5EB217357702}"
 EndProject
@@ -78,6 +78,8 @@ EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LSP", "LSP\LSP.csproj", "{E0D7675C-4334-4731-8D6F-2A02028BCB5D}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DataStructure", "DataStructre\DataStructure.csproj", "{4D48D351-C390-4596-822C-DFDBE3F39FC2}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AdvanceList", "AdvanceList\AdvanceList.csproj", "{DCCE8734-3A81-4F1F-8263-12170E10182C}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -225,6 +227,10 @@ Global
 		{4D48D351-C390-4596-822C-DFDBE3F39FC2}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{4D48D351-C390-4596-822C-DFDBE3F39FC2}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{4D48D351-C390-4596-822C-DFDBE3F39FC2}.Release|Any CPU.Build.0 = Release|Any CPU
+		{DCCE8734-3A81-4F1F-8263-12170E10182C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DCCE8734-3A81-4F1F-8263-12170E10182C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DCCE8734-3A81-4F1F-8263-12170E10182C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DCCE8734-3A81-4F1F-8263-12170E10182C}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
