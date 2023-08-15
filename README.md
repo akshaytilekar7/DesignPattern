@@ -1,15 +1,15 @@
 # DesignPatternCSharp
  C#
 
-singleton  
-repository and unit of work  
-factory    
-strategy  
-state  
-decorator  
-chain of responsibility  
-lazy load  
-builder  
-command  
-observer  
-adapter  
+ - Singleton  
+ - Repository and unit of work  
+ - Factory and Abstract Factory   
+ - Strategy  
+ - State  
+ - Decorator  
+ - Chain of responsibility  
+ - Lazy load  
+ - Builder  
+ - Command  
+ - Observer  
+ - Adapter  
