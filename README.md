@@ -1,6 +1,6 @@
 # DesignPatternCSharp
- C#
 
+ C# Design Patterns
  - Singleton  
  - Repository and unit of work  
  - Factory and Abstract Factory   
@@ -12,4 +12,21 @@
  - Builder  
  - Command  
  - Observer  
- - Adapter  
+ - Adapter
+ - Command
+ - Publisher Subscriber
+
+ C# Important Topics
+  - AsyncAwait
+  - Finalize and Dispose
+  - IEnumerable and List
+  - Expressions
+  - Passing Parameters with Ref and Out
+  - SOLID principles
+  - ExceptionHandling
+  - IDisposable Best Practices
+  - NInject Demo
+
+SQL Important Topics
+  - Table value parameter
+  - ACID and Transactions
