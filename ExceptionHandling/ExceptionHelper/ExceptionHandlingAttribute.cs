@@ -24,7 +24,7 @@ namespace ExceptionHandling.ExceptionHelper
         private void HandleBusinessError(HttpActionExecutedContext actionExecutedContext, BusinessException businessError)
         {
             // 461
-            var errorKey = $"{businessError.ErrorCode.ToString()}";
+            var errorKey = $"{businessError.ErrorCode}";
             var errorMessage = errorKey + " Error occured at : " + DateTime.Now; // GET TRANSLATION FOR ERROR CODE 
             var response = actionExecutedContext.Request
                 .CreateResponse((HttpStatusCode)HTTPStatusCode.BusinessException, new
