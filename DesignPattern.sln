@@ -79,7 +79,9 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LSP", "LSP\LSP.csproj", "{E
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DataStructure", "DataStructre\DataStructure.csproj", "{4D48D351-C390-4596-822C-DFDBE3F39FC2}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AdvanceList", "AdvanceList\AdvanceList.csproj", "{DCCE8734-3A81-4F1F-8263-12170E10182C}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "AdvanceList", "AdvanceList\AdvanceList.csproj", "{DCCE8734-3A81-4F1F-8263-12170E10182C}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RuleEngine", "RuleEngine\RuleEngine\RuleEngine.csproj", "{D6A6EAB6-768F-4F78-8583-5871DE508526}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -231,6 +233,10 @@ Global
 		{DCCE8734-3A81-4F1F-8263-12170E10182C}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{DCCE8734-3A81-4F1F-8263-12170E10182C}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{DCCE8734-3A81-4F1F-8263-12170E10182C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D6A6EAB6-768F-4F78-8583-5871DE508526}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D6A6EAB6-768F-4F78-8583-5871DE508526}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D6A6EAB6-768F-4F78-8583-5871DE508526}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D6A6EAB6-768F-4F78-8583-5871DE508526}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
