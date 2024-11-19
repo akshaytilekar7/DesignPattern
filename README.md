@@ -15,7 +15,7 @@
  - Decouple instantiation from usage
 
 ### Structural
- - Deal with object composition and relationships to build flexible structures
+ - Deal with object composition (assembling objects together) and relationships to build flexible structures
  - Simplify interactions between objects or create scalable structures
  - Rather than extending functionality by creating subclasses (inheritance), object composition (creating complex objects by combining simpler objects) builds functionality by combining and reusing existing objects
  - not like inheritance as this  creates a fixed relationship at compile time
