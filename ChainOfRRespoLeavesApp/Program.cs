@@ -14,7 +14,6 @@ namespace ChainOfRespoLeavesApp
             ILeaveRequestHandler manager = new ProjectManager();
             ILeaveRequestHandler hr = new Hr();
 
-
             // set linking supervisor -- manager -- hr // 2
             supervisor.NextHandler = manager;
             manager.NextHandler = hr;
