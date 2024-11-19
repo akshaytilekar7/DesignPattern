@@ -38,7 +38,9 @@
  - Repository and unit of work  
  - Factory and Abstract Factory   
  - Strategy  
- - State  
+ - State
+   -  State Pattern is particularly useful when an entity (object) behaves differently based on its internal state, and that state can change over time.
+   -  State pattern is about entity using different states often ex Media Plater Stop start resume fast forward 
  - Decorator  
  - Chain of responsibility  
  - Lazy load  
