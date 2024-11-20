@@ -85,13 +85,15 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "RuleEngine", "RuleEngine\Ru
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "StateDesignPattern", "StateDesignPattern", "{EBF56726-ADCA-4190-B4D5-58718B5C87EA}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "StateDesignPattern", "StateDesignPattern\StateDesignPattern.csproj", "{E897218C-6C00-49AD-8A28-D90CCBD6680B}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "StateDesignPattern", "StateDesignPattern\StateDesignPattern.csproj", "{E897218C-6C00-49AD-8A28-D90CCBD6680B}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WithoutStateDesignPattern", "WithoutStateDesignPattern\WithoutStateDesignPattern.csproj", "{AE4F81E7-D52E-4E4F-8E08-EF7BEB7B2869}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "WithoutStateDesignPattern", "WithoutStateDesignPattern\WithoutStateDesignPattern.csproj", "{AE4F81E7-D52E-4E4F-8E08-EF7BEB7B2869}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ChainOfResponsibilityMiddleware", "ChainOfResponsibilityMiddleware\ChainOfResponsibilityMiddleware.csproj", "{9C32D5FF-6840-461F-9EC8-164AE62CD187}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ChainOfResponsibilityMiddleware", "ChainOfResponsibilityMiddleware\ChainOfResponsibilityMiddleware.csproj", "{9C32D5FF-6840-461F-9EC8-164AE62CD187}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ChainOfResponsibilityMiddleware2", "ChainOfResponsibilityMiddleware2\ChainOfResponsibilityMiddleware2.csproj", "{03A7A8E6-B8F2-44D0-9082-7C6867EC8AB9}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ChainOfResponsibilityMiddleware2", "ChainOfResponsibilityMiddleware2\ChainOfResponsibilityMiddleware2.csproj", "{03A7A8E6-B8F2-44D0-9082-7C6867EC8AB9}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PipelineInterceptor", "PipelineInterceptor\PipelineInterceptor.csproj", "{830C2252-C75C-42E1-80FA-EFDC8606753F}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -263,6 +265,10 @@ Global
 		{03A7A8E6-B8F2-44D0-9082-7C6867EC8AB9}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{03A7A8E6-B8F2-44D0-9082-7C6867EC8AB9}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{03A7A8E6-B8F2-44D0-9082-7C6867EC8AB9}.Release|Any CPU.Build.0 = Release|Any CPU
+		{830C2252-C75C-42E1-80FA-EFDC8606753F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{830C2252-C75C-42E1-80FA-EFDC8606753F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{830C2252-C75C-42E1-80FA-EFDC8606753F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{830C2252-C75C-42E1-80FA-EFDC8606753F}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
