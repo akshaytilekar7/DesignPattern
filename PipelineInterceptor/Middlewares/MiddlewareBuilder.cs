@@ -21,6 +21,7 @@ public class MiddlewareBuilder
             return Task.CompletedTask;
         };
 
+        // chain of reponsibility 
         foreach (Func<Delegate, Delegate> middleware in _middlewares.AsEnumerable().Reverse())
             next = middleware(next);
 
@@ -32,6 +33,7 @@ public static class MyMiddlewareExtensions
 {
     public static MiddlewareBuilder UseMiddleware<T>(this MiddlewareBuilder builder) where T : class
     {
+        // same as decorator patterns
         builder.Add(next =>
         {
             var middleware = Activator.CreateInstance(typeof(T), next);
