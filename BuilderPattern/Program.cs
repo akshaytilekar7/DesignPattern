@@ -2,6 +2,18 @@
 using BuilderPattern.Director;
 using System;
 
+class Person
+{
+    public string FirstName { get; set; }
+    public string LastName { get; set; }
+}
+
+static class PersonExt
+{
+    public static string FullName(this Person p) { return $"{p.FirstName} {p.LastName}"; }
+}
+
+
 namespace BuilderPattern
 {
     public class Program

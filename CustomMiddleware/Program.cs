@@ -10,6 +10,8 @@ public static class Program
         pipeline.UseMiddleware<LoggingMiddleware>();
         pipeline.UseMiddleware<UpperCaseMiddleware>();
 
+
+
         var executor = pipeline.Build();
 
         // Execute the pipeline

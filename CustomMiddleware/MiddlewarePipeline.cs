@@ -7,31 +7,35 @@ public class MiddlewarePipeline
 
     public MiddlewarePipeline UseMiddleware<T>() where T : class
     {
-        _middlewares.Add(next =>
+        Func<RequestDelegate, RequestDelegate> middlewareFactory = next =>
         {
-            var middleware = Activator.CreateInstance(typeof(T), next)
-                ?? throw new InvalidOperationException($"Failed to create middleware: {typeof(T)}");
+            // create instance
+            var middleware = Activator.CreateInstance(typeof(T), next);
 
-            var method = typeof(T).GetMethod("InvokeAsync")
-                ?? throw new InvalidOperationException("Middleware must have an InvokeAsync method.");
+            // fetch InvokeAsync method
+            var method = typeof(T).GetMethod("InvokeAsync");
 
-            return context => (Task)method.Invoke(middleware, new object[] { context });
-        });
+            //
+            RequestDelegate del = z => (Task)method.Invoke(middleware, [z]);
+            return del;
+        };
+
+        _middlewares.Add(middlewareFactory);
 
         return this;
     }
 
     public RequestDelegate Build()
     {
-        RequestDelegate next = context =>
+        RequestDelegate dummy = context =>
         {
             Console.WriteLine("End of pipeline reached.");
             return Task.CompletedTask;
         };
 
         foreach (var middleware in _middlewares.AsEnumerable().Reverse())
-            next = middleware(next);
+            dummy = middleware(dummy);
 
-        return next;
+        return dummy;
     }
 }
