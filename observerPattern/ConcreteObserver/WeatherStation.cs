@@ -6,12 +6,7 @@ namespace observerPattern.ConcreteObserver
 {
     public class WeatherStation : IObservable
     {
-        public WeatherStation()
-        {
-            SubscriberList = new List<IObserver>();
-        }
-
-        public List<IObserver> SubscriberList { get; set; }
+        public List<IObserver> SubscriberList { get; set; } = new List<IObserver>();
 
         public void Add(IObserver subscriber)
         {
