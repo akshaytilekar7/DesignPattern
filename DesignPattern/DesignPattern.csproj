@@ -6,16 +6,9 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <Content Include="LC\backtrack DFS BDS\.vs\ProjectSettings.json" />
-    <Content Include="LC\backtrack DFS BDS\.vs\VSWorkspaceState.json" />
-  </ItemGroup>
-
-  <ItemGroup>
-    <None Include="LC\backtrack DFS BDS\.vs\slnx.sqlite" />
-  </ItemGroup>
-
-  <ItemGroup>
-    <Folder Include="LC\backtrack DFS BDS\.vs\backtrack DFS BDS\v16\" />
+    <Compile Remove="LC\**" />
+    <EmbeddedResource Remove="LC\**" />
+    <None Remove="LC\**" />
   </ItemGroup>
 
 </Project>
