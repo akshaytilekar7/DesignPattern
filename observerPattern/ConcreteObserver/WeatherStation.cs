@@ -25,6 +25,11 @@ namespace observerPattern.ConcreteObserver
         {
             foreach (IObserver item in SubscriberList)
                 item.Update();
+
+            // OR
+
+            foreach (IObserver item in SubscriberList)
+                item.Update(GetWeatherDataOnWeatherChange());
         }
 
         public string GetWeatherDataOnWeatherChange()

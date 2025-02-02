@@ -11,7 +11,6 @@ namespace PublisherSubscriber.Publisher
 
         public event SecondChangeHandler SecondChange;
 
-
         public void GetUpdatedTimeOnSecondChange()
         {
             for (; ; )

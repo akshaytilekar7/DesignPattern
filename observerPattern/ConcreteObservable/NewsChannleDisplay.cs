@@ -18,6 +18,12 @@ namespace observerPattern.ConcreteObservable
             var str = "Breaking news!!! \n weather today :" + DateTime.UtcNow + " is " + temp;
             Console.WriteLine(str);
         }
+
+        public void Update(string message)
+        {
+            var str = "Breaking news!!! \n weather today :" + DateTime.UtcNow + " is " + message;
+            Console.WriteLine(str);
+        }
     }
 
 
