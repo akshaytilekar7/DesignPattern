@@ -1,18 +1,17 @@
-﻿using zAbstractFactoryPattern.AbstractFactory;
-using zAbstractFactoryPattern.Models;
+﻿using AbstractFactoryPattern.AbstractFactory;
+using AbstractFactoryPattern.Models;
 
-namespace zAbstractFactoryPattern.ConcreteFactory
+namespace AbstractFactoryPattern.ConcreteFactory;
+
+class SamsungFactory : IMobileFactory
 {
-    class SamsungFactory : IPhoneFactory
+    public ISmart GetSmart()
     {
-        public ISmart GetSmart()
-        {
-            return new GalaxyS2();
-        }
+        return new GalaxyS2();
+    }
 
-        public INormal GetNormal()
-        {
-            return new Primo();
-        }
+    public INormal GetNormal()
+    {
+        return new Primo();
     }
 }

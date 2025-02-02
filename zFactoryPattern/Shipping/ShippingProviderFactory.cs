@@ -1,11 +1,11 @@
 ﻿using System;
-using zFactoryPattern.Shipping.ShippingProvider;
+using FactoryPattern.Shipping.ShippingProvider;
 
-namespace zFactoryPattern.Shipping
+namespace FactoryPattern.Shipping
 {
-    public class ShippingProviderFactory
+    public class ShippingProviderFactory : IShippingProviderFactory
     {
-        public static ShippingProviderCls CreateShippingProvider(string country)
+        public ShippingProviderCls CreateShippingProvider(string country)
         {
             ShippingProviderCls shippingProvider;
 

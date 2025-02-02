@@ -1,7 +1,7 @@
 ﻿using System;
-using zFactoryPattern.Commerce;
+using FactoryPattern.Commerce;
 
-namespace zFactoryPattern.Shipping.ShippingProvider
+namespace FactoryPattern.Shipping.ShippingProvider
 {
     public class AustraliaSP : ShippingProviderCls
     {

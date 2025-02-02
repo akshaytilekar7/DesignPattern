@@ -1,50 +1,49 @@
 ﻿using System;
 
-namespace zFactoryMethodPattern.Shipping.Factories
+namespace FactoryMethodPattern.Shipping.Factories;
+
+public class StandardShippingProviderFactory : IShippingProviderFactory
 {
-    public class StandardShippingProviderFactory : IShippingProviderFactory
+    public ShippingProvider CreateShippingProvider(string country) //override
     {
-        public ShippingProvider CreateShippingProvider(string country) //override
+        ShippingProvider shippingProvider;
+
+        #region Create Shipping Provider
+
+        switch (country)
         {
-            ShippingProvider shippingProvider;
-
-            #region Create Shipping Provider
-
-            switch (country)
-            {
-                case "Australia":
+            case "Australia":
+                {
+                    #region Australia Post Shipping Provider
+                    var shippingCostCalculator = new CostCalculate(250, 500)
                     {
-                        #region Australia Post Shipping Provider
-                        var shippingCostCalculator = new CostCalculate(250, 500)
-                        {
-                            ShippingType = ShippingType.Standard
-                        };
+                        ShippingType = ShippingType.Standard
+                    };
 
-                        shippingProvider = new AustraliaSP("CLIENT_ID", "SECRET", shippingCostCalculator,
-                            TaxOptions.PrePaid);
-                        break;
-                        #endregion
-                    }
+                    shippingProvider = new AustraliaSP("CLIENT_ID", "SECRET", shippingCostCalculator,
+                        TaxOptions.PrePaid);
+                    break;
+                    #endregion
+                }
 
-                case "Sweden":
+            case "Sweden":
+                {
+                    #region Swedish Postal Service Shipping Provider
+                    var shippingCostCalculator = new CostCalculate(50, 100)
                     {
-                        #region Swedish Postal Service Shipping Provider
-                        var shippingCostCalculator = new CostCalculate(50, 100)
-                        {
-                            ShippingType = ShippingType.Express
-                        };
+                        ShippingType = ShippingType.Express
+                    };
 
-                        shippingProvider = new SwedishSP("API_KEY", shippingCostCalculator, TaxOptions.PayOnArrival);
-                        break;
-                        #endregion
-                    }
+                    shippingProvider = new SwedishSP("API_KEY", shippingCostCalculator, TaxOptions.PayOnArrival);
+                    break;
+                    #endregion
+                }
 
-                default:
-                    throw new NotSupportedException("No shipping provider found for origin country");
-            }
-            #endregion
-
-            return shippingProvider;
+            default:
+                throw new NotSupportedException("No shipping provider found for origin country");
         }
+        #endregion
+
+        return shippingProvider;
     }
 }

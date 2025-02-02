@@ -27,11 +27,11 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "IDisposableBestPractices", 
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ChainOfRRespoLeavesApp", "ChainOfRRespoLeavesApp\ChainOfRRespoLeavesApp.csproj", "{3E05CE34-6FDB-4570-B3E1-2C292092B047}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "zFactoryPattern", "zFactoryPattern\zFactoryPattern.csproj", "{C88A166A-C67A-433E-8819-43A01C597188}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "FactoryPattern", "zFactoryPattern\FactoryPattern.csproj", "{C88A166A-C67A-433E-8819-43A01C597188}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "zFactoryMethodPattern", "zFactoryMethodPattern\zFactoryMethodPattern.csproj", "{9D8B6E73-E991-43B7-8A8A-560EBB0D1118}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "FactoryMethodPattern", "zFactoryMethodPattern\FactoryMethodPattern.csproj", "{9D8B6E73-E991-43B7-8A8A-560EBB0D1118}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "zAbstractFactoryPattern", "zAbstractFactoryPattern\zAbstractFactoryPattern.csproj", "{4153618F-DF63-41FD-83A2-2F0CDECB6D93}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "AbstractFactoryPattern", "zAbstractFactoryPattern\AbstractFactoryPattern.csproj", "{4153618F-DF63-41FD-83A2-2F0CDECB6D93}"
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Singleton", "Singleton\Singleton.csproj", "{73941885-F37C-447B-B273-0AF4DDCFCC17}"
 EndProject
@@ -41,15 +41,11 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ObserverPattern", "observer
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "StrategyPattern", "StrategyPattern\StrategyPattern.csproj", "{90CB435F-4C74-4D12-8E93-A6C79CC9BF6D}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "zFactoryPatternModified", "zFactoryPatternModified\zFactoryPatternModified.csproj", "{3C84DFA8-6FCE-4BAB-81AF-C443878AC175}"
-EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CommandPattern", "CommandPattern\CommandPattern.csproj", "{8E818E17-D549-40CD-97BA-8D9F229EC2FC}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CommandPatternDineChef", "CommandPatternDineChef\CommandPatternDineChef.csproj", "{8A267574-53F4-4451-9956-C86FD1812CC7}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CommandPatternRestaurant", "CommandPatternRestaurant\CommandPatternRestaurant.csproj", "{BB5112CC-C3C2-4297-8B4F-8552EF77BBCA}"
-EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DataStructure", "DataStructre\DataStructure.csproj", "{4D48D351-C390-4596-822C-DFDBE3F39FC2}"
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "RuleEngine", "RuleEngine\RuleEngine\RuleEngine.csproj", "{D6A6EAB6-768F-4F78-8583-5871DE508526}"
 EndProject
@@ -85,7 +81,7 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Adaptor", "Adaptor", "{37FB
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "ChainOfResponsibilty", "ChainOfResponsibilty", "{626E182D-EEF4-4CC1-A058-0DE437ECBE05}"
 EndProject
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "CommandDesignPattern", "CommandDesignPattern", "{14D27C34-0349-43F7-B445-650B6204AC11}"
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Command", "Command", "{14D27C34-0349-43F7-B445-650B6204AC11}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Decorator", "Decorator", "{B38186FC-AF1A-4F56-B05E-81EA85CA491D}"
 EndProject
@@ -177,10 +173,6 @@ Global
 		{90CB435F-4C74-4D12-8E93-A6C79CC9BF6D}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{90CB435F-4C74-4D12-8E93-A6C79CC9BF6D}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{90CB435F-4C74-4D12-8E93-A6C79CC9BF6D}.Release|Any CPU.Build.0 = Release|Any CPU
-		{3C84DFA8-6FCE-4BAB-81AF-C443878AC175}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{3C84DFA8-6FCE-4BAB-81AF-C443878AC175}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{3C84DFA8-6FCE-4BAB-81AF-C443878AC175}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{3C84DFA8-6FCE-4BAB-81AF-C443878AC175}.Release|Any CPU.Build.0 = Release|Any CPU
 		{8E818E17-D549-40CD-97BA-8D9F229EC2FC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{8E818E17-D549-40CD-97BA-8D9F229EC2FC}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{8E818E17-D549-40CD-97BA-8D9F229EC2FC}.Release|Any CPU.ActiveCfg = Release|Any CPU
@@ -193,10 +185,6 @@ Global
 		{BB5112CC-C3C2-4297-8B4F-8552EF77BBCA}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{BB5112CC-C3C2-4297-8B4F-8552EF77BBCA}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{BB5112CC-C3C2-4297-8B4F-8552EF77BBCA}.Release|Any CPU.Build.0 = Release|Any CPU
-		{4D48D351-C390-4596-822C-DFDBE3F39FC2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{4D48D351-C390-4596-822C-DFDBE3F39FC2}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{4D48D351-C390-4596-822C-DFDBE3F39FC2}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{4D48D351-C390-4596-822C-DFDBE3F39FC2}.Release|Any CPU.Build.0 = Release|Any CPU
 		{D6A6EAB6-768F-4F78-8583-5871DE508526}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{D6A6EAB6-768F-4F78-8583-5871DE508526}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{D6A6EAB6-768F-4F78-8583-5871DE508526}.Release|Any CPU.ActiveCfg = Release|Any CPU
@@ -263,7 +251,6 @@ Global
 		{9D8B6E73-E991-43B7-8A8A-560EBB0D1118} = {C38E7C74-D265-4447-81C1-E3095AACE8FC}
 		{4153618F-DF63-41FD-83A2-2F0CDECB6D93} = {C38E7C74-D265-4447-81C1-E3095AACE8FC}
 		{04C57D4D-C937-4538-9B14-0B98CF1B2C33} = {E49221D9-1F8E-491B-8758-2F4BF5AE6C38}
-		{3C84DFA8-6FCE-4BAB-81AF-C443878AC175} = {C38E7C74-D265-4447-81C1-E3095AACE8FC}
 		{8E818E17-D549-40CD-97BA-8D9F229EC2FC} = {14D27C34-0349-43F7-B445-650B6204AC11}
 		{8A267574-53F4-4451-9956-C86FD1812CC7} = {14D27C34-0349-43F7-B445-650B6204AC11}
 		{BB5112CC-C3C2-4297-8B4F-8552EF77BBCA} = {14D27C34-0349-43F7-B445-650B6204AC11}

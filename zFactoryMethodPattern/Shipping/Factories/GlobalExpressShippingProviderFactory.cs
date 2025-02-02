@@ -1,10 +1,9 @@
-﻿namespace zFactoryMethodPattern.Shipping.Factories
+﻿namespace FactoryMethodPattern.Shipping.Factories;
+
+public class GlobalExpressShippingProviderFactory : IShippingProviderFactory
 {
-    public class GlobalExpressShippingProviderFactory : IShippingProviderFactory
+    public ShippingProvider CreateShippingProvider(string country) //override
     {
-        public ShippingProvider CreateShippingProvider(string country) //override
-        {
-            return new GlobalExpressShippingProvider();
-        }
+        return new GlobalExpressShippingProvider();
     }
 }

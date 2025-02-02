@@ -1,4 +1,4 @@
-﻿namespace zAbstractFactoryPattern.Models
+﻿namespace AbstractFactoryPattern.Models
 {
     enum enums
     {

@@ -1,7 +1,7 @@
 ﻿using System.Collections.Generic;
 using System.Linq;
 
-namespace zFactoryPattern.Commerce
+namespace FactoryPattern.Commerce
 {
     public class Order
     {

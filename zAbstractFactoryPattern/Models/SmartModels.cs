@@ -1,6 +1,6 @@
-﻿using zAbstractFactoryPattern.AbstractFactory;
+﻿using AbstractFactoryPattern.AbstractFactory;
 
-namespace zAbstractFactoryPattern.Models
+namespace AbstractFactoryPattern.Models
 {
     class Titan : ISmart
     {

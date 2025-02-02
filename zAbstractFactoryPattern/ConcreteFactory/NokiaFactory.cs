@@ -1,9 +1,9 @@
-﻿using zAbstractFactoryPattern.AbstractFactory;
-using zAbstractFactoryPattern.Models;
+﻿using AbstractFactoryPattern.AbstractFactory;
+using AbstractFactoryPattern.Models;
 
-namespace zAbstractFactoryPattern.ConcreteFactory
+namespace AbstractFactoryPattern.ConcreteFactory
 {
-    class NokiaFactory : IPhoneFactory
+    class NokiaFactory : IMobileFactory
     {
         public ISmart GetSmart()
         {

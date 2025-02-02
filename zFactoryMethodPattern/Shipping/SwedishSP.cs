@@ -1,7 +1,7 @@
 ﻿using System;
-using zFactoryMethodPattern.Commerce;
+using FactoryMethodPattern.Commerce;
 
-namespace zFactoryMethodPattern.Shipping
+namespace FactoryMethodPattern.Shipping
 {
     public class SwedishSP : ShippingProvider
     {

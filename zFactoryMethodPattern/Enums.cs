@@ -1,23 +1,22 @@
-﻿namespace zFactoryMethodPattern
+﻿namespace FactoryMethodPattern;
+
+public enum TaxOptions
 {
-    public enum TaxOptions
-    {
-        PrePaid,
-        DutyFree,
-        PayOnArrival
-    }
+    PrePaid,
+    DutyFree,
+    PayOnArrival
+}
 
-    public enum ShippingType
-    {
-        Standard,
-        Express,
-        NextDay
-    }
+public enum ShippingType
+{
+    Standard,
+    Express,
+    NextDay
+}
 
-    public enum ShippingStatus
-    {
-        WaitingForPayment,
-        ReadyForShipment,
-        Shipped
-    }
+public enum ShippingStatus
+{
+    WaitingForPayment,
+    ReadyForShipment,
+    Shipped
 }

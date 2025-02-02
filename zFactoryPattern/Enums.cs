@@ -1,4 +1,4 @@
-﻿namespace zFactoryPattern
+﻿namespace FactoryPattern
 {
     public enum TaxOptions
     {

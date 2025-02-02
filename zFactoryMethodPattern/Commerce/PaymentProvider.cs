@@ -1,9 +1,8 @@
-﻿namespace zFactoryMethodPattern.Commerce
+﻿namespace FactoryMethodPattern.Commerce;
+
+public enum PaymentProvider
 {
-    public enum PaymentProvider
-    {
-        Paypal,
-        CreditCard,
-        Invoice
-    }
+    Paypal,
+    CreditCard,
+    Invoice
 }

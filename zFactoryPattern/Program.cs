@@ -1,8 +1,8 @@
 ﻿using System;
-using zFactoryPattern.Commerce;
-using zFactoryPattern.Shipping;
+using FactoryPattern.Commerce;
+using FactoryPattern.Shipping;
 
-namespace zFactoryPattern
+namespace FactoryPattern
 {
     class Program
     {
@@ -39,7 +39,7 @@ namespace zFactoryPattern
             //var cart = new ShoppingCart(order);
             //var shippingLabel = cart.Finalize();
 
-            var shippingProvider = ShippingProviderFactory.CreateShippingProvider(order.Sender.Country);
+            var shippingProvider = new ShippingProviderFactory().CreateShippingProvider(order.Sender.Country);
             order.ShippingStatus = ShippingStatus.ReadyForShippment;
             var shippingLabel = shippingProvider.GenerateShippingLabelFor(order);
 

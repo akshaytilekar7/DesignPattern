@@ -1,7 +1,6 @@
-﻿namespace zAbstractFactoryPattern.AbstractFactory
+﻿namespace AbstractFactoryPattern.AbstractFactory;
+
+interface ISmart
 {
-    interface ISmart
-    {
-        string Name();
-    }
+    string Name();
 }

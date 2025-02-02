@@ -1,59 +1,59 @@
 ﻿using System;
-using zFactoryMethodPattern.Commerce;
-using zFactoryMethodPattern.Shipping.Factories;
+using FactoryMethodPattern.Commerce;
+using FactoryMethodPattern.Shipping.Factories;
 
-namespace zFactoryMethodPattern
+namespace FactoryMethodPattern;
+
+class Program
 {
-    class Program
+    // 1. separate client from creation of object
+    // 2. ALLOW MORE FLEXIBLE AND EXTENSIBLE
+    // 3. application only care about instance of ShippingProviderFactory
+    //  and not care about EXACTLY WHICH shipping Provider it uses
+
+    // DIFF :
+    // simple factory has all decision inside its method only, whereas in this pattern
+    // CREATOR CAN OVERRIDE default factory method implementations
+
+    static void Main(string[] args)
     {
-        // 1. separate client from creation of object
-        // 2. ALLOW MORE FLEXIBLE AND EXTENSIBLE
-        // 3. application only care about instance of ShippingProviderFactory and not care about EXACTLY WHICH shipping Provider it uses
+        var aus = "Australia";
+        var swe = "Sweden";
 
-        // DIFF :
-        // simple factory has all decision inside its method only, whereas in this pattern
-        // CREATOR CAN OVERRIDE default factory method implementations
+        #region Create Order
+        var recipientCountry = aus;
+        var senderCountry = aus;
+        var totalWeight = 10;
 
-        static void Main(string[] args)
+        var order = new Order
         {
-            var aus = "Australia";
-            var swe = "Sweden";
+            Recipient = new Address { To = "Filip Ekberg", Country = recipientCountry },
+            Sender = new Address { To = "Someone else", Country = senderCountry },
+            TotalWeight = totalWeight
+        };
 
-            #region Create Order
-            var recipientCountry = aus;
-            var senderCountry = aus;
-            var totalWeight = 10;
+        order.LineItems.Add(new Item("CSHARP_SMORGASBORD", "C# Smorgasbord", 100m), 1);
+        order.LineItems.Add(new Item("CONSULTING", "Building a website", 100m), 1);
+        #endregion
+        order.ShippingStatus = ShippingStatus.ReadyForShipment;
 
-            var order = new Order
-            {
-                Recipient = new Address { To = "Filip Ekberg", Country = recipientCountry },
-                Sender = new Address { To = "Someone else", Country = senderCountry },
-                TotalWeight = totalWeight
-            };
+        //var cart = new ShoppingCart(order, new StandardShippingProviderFactory());
+        //var shippingLabel = cart.Finalize();
 
-            order.LineItems.Add(new Item("CSHARP_SMORGASBORD", "C# Smorgasbord", 100m), 1);
-            order.LineItems.Add(new Item("CONSULTING", "Building a website", 100m), 1);
-            #endregion
-            order.ShippingStatus = ShippingStatus.ReadyForShipment;
+        IShippingProviderFactory factory = null;
 
-            //var cart = new ShoppingCart(order, new StandardShippingProviderFactory());
-            //var shippingLabel = cart.Finalize();
+        // OUT OF STATE TRANSPORT
+        if (order.Recipient != order.Sender)
+            factory = new GlobalExpressShippingProviderFactory();
+        else
+            factory = new StandardShippingProviderFactory();
 
-            IShippingProviderFactory factory = null;
+        var obj = factory.CreateShippingProvider(order.Sender.Country);
 
-            // OUT OF STATE TRANSPORT
-            if (order.Recipient != order.Sender)
-                factory = new GlobalExpressShippingProviderFactory();
-            else
-                factory = new StandardShippingProviderFactory();
+        var shippingLabel = obj.GenerateShippingLabelFor(order);
 
-            var obj = factory.CreateShippingProvider(order.Sender.Country);
+        Console.WriteLine(shippingLabel);
+        Console.ReadLine();
 
-            var shippingLabel = obj.GenerateShippingLabelFor(order);
-
-            Console.WriteLine(shippingLabel);
-            Console.ReadLine();
-
-        }
     }
 }

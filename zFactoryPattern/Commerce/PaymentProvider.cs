@@ -1,4 +1,4 @@
-﻿namespace zFactoryPattern.Commerce
+﻿namespace FactoryPattern.Commerce
 {
     public enum PaymentProvider
     {
