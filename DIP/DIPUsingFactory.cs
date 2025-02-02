@@ -51,7 +51,7 @@ public class LogService
 }
 
 // Usage
-class Program
+class Program12
 {
     static void Main()
     {

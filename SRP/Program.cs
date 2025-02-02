@@ -21,7 +21,7 @@ internal class Program
     static void Main(string[] args)
     {
         BaseClass baseClass = new ChildClass(); // valid its LSP
-        ChildClass childClass = new BaseClass(); // CTE need explicit cast then RTE
+        // ChildClass childClass = new BaseClass(); // CTE need explicit cast then RTE
 
         Console.ReadLine();
         Console.WriteLine("Hello, World!");

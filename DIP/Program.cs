@@ -2,7 +2,7 @@
 {
     internal class Program
     {
-        static void Main1(string[] args)
+        static void Mainas1(string[] args)
         {
             Console.WriteLine("Hello, World!");
         }
