@@ -5,12 +5,12 @@ namespace AbstractFactoryPattern.ConcreteFactory
 {
     class NokiaFactory : IMobileFactory
     {
-        public ISmart GetSmart()
+        public ISmart GetAndroid()
         {
             return new Lumia();
         }
 
-        public INormal GetNormal()
+        public INormal GetIPhone()
         {
             return new Asha();
         }

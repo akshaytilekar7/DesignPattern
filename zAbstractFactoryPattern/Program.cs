@@ -1,25 +1,25 @@
 using System;
+using AbstractFactoryPattern.AbstractFactory;
 using AbstractFactoryPattern.ConcreteFactory;
 using AbstractFactoryPattern.Models;
 
-namespace AbstractFactoryPattern
+namespace AbstractFactoryPattern;
+
+class Program
 {
-    class Program
+
+    static void Main(string[] args)
     {
-        static void Main(string[] args)
-        {
-            PhoneMakerFactory factory = new PhoneMakerFactory();
+        PhoneMakerFactory factory = new PhoneMakerFactory();
+        IMobileFactory htc = factory.GetProducts(enums.HTC);
 
-            var samsung = new SamsungFactory();
-            samsung.GetSmart();
-            samsung.GetNormal();
+        htc.GetAndroid();
+        htc.GetIPhone();
 
-            var htc = factory.GetProducts(enums.HTC);
-            htc.GetSmart();
-            htc.GetNormal();
+        var samsung = new SamsungFactory();
+        samsung.GetAndroid();
+        samsung.GetIPhone();
 
-
-            Console.Read();
-        }
+        Console.Read();
     }
 }

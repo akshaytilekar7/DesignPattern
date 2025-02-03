@@ -2,6 +2,6 @@
 
 interface IMobileFactory
 {
-    ISmart GetSmart();
-    INormal GetNormal();
+    ISmart GetAndroid();
+    INormal GetIPhone();
 }

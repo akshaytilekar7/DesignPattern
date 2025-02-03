@@ -5,12 +5,12 @@ namespace AbstractFactoryPattern.ConcreteFactory;
 
 class SamsungFactory : IMobileFactory
 {
-    public ISmart GetSmart()
+    public ISmart GetAndroid()
     {
         return new GalaxyS2();
     }
 
-    public INormal GetNormal()
+    public INormal GetIPhone()
     {
         return new Primo();
     }
