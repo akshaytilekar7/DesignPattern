@@ -2,5 +2,5 @@
 
 public interface ICheckbox
 {
-    void Render();
+    void CheckValue();
 }

@@ -1,15 +1,13 @@
 ﻿using DecoratorPatternOrder.Component;
-using System;
-using System.Linq;
+using System.Collections.Generic;
 
 namespace DecoratorPatternOrder.ConcreteComponents
 {
-    public class RegularOrder : Order
+    public class RegularOrder : IOrderService
     {
-        public override double CalculateTotalOrderPrice()
+        public string CalculateTotalOrderPrice(List<Product> products)
         {
-            Console.WriteLine("Calculating the total price of a regular order");
-            return Products.Sum(x => x.Price);
+            return nameof(RegularOrder);
         }
     }
 }

@@ -1,21 +1,20 @@
 ﻿using DecoratorPatternOrder.Component;
-using System;
+using System.Collections.Generic;
 
 namespace DecoratorPatternOrder.Decorator
 {
-    public class OrderDecorator : Order
+    public class OrderDecorator : IOrderService
     {
-        protected Order Order;
+        protected IOrderService Order;
 
-        public OrderDecorator(Order order)
+        public OrderDecorator(IOrderService order)
         {
             this.Order = order;
         }
 
-        public override double CalculateTotalOrderPrice()
+        public virtual string CalculateTotalOrderPrice(List<Product> products)
         {
-            Console.WriteLine($"Calculating the total price in a decorator class");
-            return Order.CalculateTotalOrderPrice();
+            return Order.CalculateTotalOrderPrice(products);
         }
     }
 }

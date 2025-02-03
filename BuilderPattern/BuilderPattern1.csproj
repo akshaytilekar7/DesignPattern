@@ -45,7 +45,7 @@
   <ItemGroup>
     <Compile Include="Builder\AndroidPhoneBuilder.cs" />
     <Compile Include="Builder\WindowsPhoneBuilder.cs" />
-    <Compile Include="Builder\IPhoneBuilder.cs" />
+    <Compile Include="Builder\IMobileBuilder.cs" />
     <Compile Include="Director\Manufacturer.cs" />
     <Compile Include="PartsHelper.cs" />
     <Compile Include="Product\Mobile.cs" />

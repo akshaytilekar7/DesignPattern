@@ -1,6 +1,8 @@
-﻿using DecoratorPatternOrder.ConcreteComponents;
+﻿using DecoratorPatternOrder.Component;
+using DecoratorPatternOrder.ConcreteComponents;
 using DecoratorPatternOrder.ConcreteDecorators;
 using System;
+using System.Collections.Generic;
 
 namespace DecoratorPatternOrder
 {
@@ -8,16 +10,18 @@ namespace DecoratorPatternOrder
     {
         static void Main(string[] args)
         {
+            var lst = new List<Product>();
+
             var regularOrder = new RegularOrder();
-            Console.WriteLine(regularOrder.CalculateTotalOrderPrice());
+            Console.WriteLine(regularOrder.CalculateTotalOrderPrice(lst));
             Console.WriteLine();
 
             var preOrder = new PreOrder(new RegularOrder());
-            Console.WriteLine(preOrder.CalculateTotalOrderPrice());
+            Console.WriteLine(preOrder.CalculateTotalOrderPrice(lst));
             Console.WriteLine();
 
             var premiumPreOrder = new PremiumPreOrder(new PreOrder(new RegularOrder()));
-            Console.WriteLine(premiumPreOrder.CalculateTotalOrderPrice());
+            Console.WriteLine(premiumPreOrder.CalculateTotalOrderPrice(lst));
 
             Console.ReadKey();
 

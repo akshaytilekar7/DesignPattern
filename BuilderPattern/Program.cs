@@ -22,7 +22,7 @@ namespace BuilderPattern
         {
             Manufacturer newManufacturer = new Manufacturer();
             // LETS HAVE THE BUILDER CLASS READY
-            IPhoneBuilder phoneBuilder = null;
+            IMobileBuilder phoneBuilder = null;
 
             // NOW LET US CREATE AN ANDROID PHONE
             phoneBuilder = new AndroidPhoneBuilder();
@@ -49,7 +49,7 @@ namespace BuilderPattern
  Creational pattern
  USE WHEN : construction process is very complex and do we need decoupling
  help us to separate construction of complex object from its representation
- so that same Construction process can create different representation
+ so that same construction process can create different representation
  
     SEPARATE THE CONSTRUCTION OF A COMPLEX OBJECT FROM ITS REPRESENTATION 
     SO THAT THE SAME CONSTRUCTION PROCESS CAN CREATE DIFFERENT REPRESENTATIONS. 

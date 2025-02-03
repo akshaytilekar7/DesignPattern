@@ -2,7 +2,7 @@
 
 namespace BuilderPattern.Builder
 {
-    public interface IPhoneBuilder
+    public interface IMobileBuilder
     {
         void BuildScreen();
         void BuildBattery();

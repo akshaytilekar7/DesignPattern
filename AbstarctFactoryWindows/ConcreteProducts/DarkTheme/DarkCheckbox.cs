@@ -4,5 +4,5 @@ namespace AbstarctFactoryWindows.ConcreteProducts.DarkTheme;
 
 public class DarkCheckbox : ICheckbox
 {
-    public void Render() => Console.WriteLine("Rendering Dark Checkbox");
+    public void CheckValue() => Console.WriteLine("Rendering Dark Checkbox");
 }

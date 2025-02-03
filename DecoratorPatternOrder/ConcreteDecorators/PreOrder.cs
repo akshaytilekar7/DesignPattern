@@ -1,20 +1,21 @@
 ﻿using DecoratorPatternOrder.Component;
 using DecoratorPatternOrder.Decorator;
 using System;
-using System.Linq;
+using System.Collections.Generic;
 
 namespace DecoratorPatternOrder.ConcreteDecorators
 {
     public class PreOrder : OrderDecorator
     {
-        public PreOrder(Order order) : base(order)
-        {
-        }
+        private readonly IOrderService order;
 
-        public override double CalculateTotalOrderPrice()
+        public PreOrder(IOrderService order) : base(order)
         {
-            Console.WriteLine("Calculating the total price of a preOrder.");
-            return Products.Sum(x => x.Price) + 100;
+            this.order = order;
+        }
+        public override string CalculateTotalOrderPrice(List<Product> products)
+        {
+            return nameof(PreOrder) + " " + base.CalculateTotalOrderPrice(products);
         }
     }
 }

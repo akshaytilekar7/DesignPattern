@@ -2,10 +2,10 @@
 
 namespace BuilderPattern.Builder
 {
-    class AndroidPhoneBuilder : IPhoneBuilder
+    class AndroidPhoneBuilder : IMobileBuilder
     {
         readonly Mobile _phone;
-        Mobile IPhoneBuilder.Phone => _phone;
+        Mobile IMobileBuilder.Phone => _phone;
 
         public AndroidPhoneBuilder()
         {
