@@ -5,7 +5,7 @@ namespace DecoratorPatternPizza.ConcreteDecorators
 {
     public class Cheese : PizzaDecorator
     {
-        public Cheese(Pizza pizza) : base(pizza)
+        public Cheese(IPizzaService pizza) : base(pizza)
         {
         }
 
@@ -13,7 +13,7 @@ namespace DecoratorPatternPizza.ConcreteDecorators
         {
             var x = PizzaDeco.GetDescription();
             var y = this.GetType().Name; // CHEESE
-            return $"{ x }, {y}";
+            return $"{x}, {y}";
         }
 
         public override double CalculateCost()

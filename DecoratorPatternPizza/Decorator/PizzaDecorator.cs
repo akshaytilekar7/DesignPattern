@@ -2,19 +2,19 @@
 
 namespace DecoratorPatternPizza.Decorator
 {
-    public class PizzaDecorator : Pizza
+    public class PizzaDecorator : IPizzaService
     {
-        protected Pizza PizzaDeco;
-        public PizzaDecorator(Pizza pizza)
+        protected IPizzaService PizzaDeco;
+        public PizzaDecorator(IPizzaService pizza)
         {
             PizzaDeco = pizza;
         }
-        public override string GetDescription()
+        public virtual string GetDescription()
         {
             return PizzaDeco.GetDescription();
         }
 
-        public override double CalculateCost()
+        public virtual double CalculateCost()
         {
             return PizzaDeco.CalculateCost();
         }

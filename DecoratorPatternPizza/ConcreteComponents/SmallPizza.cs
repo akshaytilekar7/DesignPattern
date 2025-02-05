@@ -2,15 +2,15 @@
 
 namespace DecoratorPatternPizza.ConcreteComponents
 {
-    public class SmallPizza : Pizza
+    public class SmallPizza : IPizzaService
     {
-        public override string GetDescription()
+        public string GetDescription()
         {
 
             return $"{this.GetType().Name}"; //SMALL
         }
 
-        public override double CalculateCost()
+        public double CalculateCost()
         {
             return 3.00;
         }

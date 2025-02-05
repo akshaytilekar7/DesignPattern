@@ -9,7 +9,7 @@ namespace DecoratorPatternPizza
     {
         static void Main(string[] args)
         {
-            Pizza p = new Ham(new Cheese(new LargePizza())); // L
+            IPizzaService p = new Ham(new Cheese(new LargePizza())); // L
 
 
             Console.WriteLine(p.GetDescription());

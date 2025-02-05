@@ -5,7 +5,7 @@ namespace DecoratorPatternPizza.ConcreteDecorators
 {
     public class Ham : PizzaDecorator
     {
-        public Ham(Pizza pizza) : base(pizza)
+        public Ham(IPizzaService pizza) : base(pizza)
         {
         }
 
