@@ -9,9 +9,11 @@ namespace ChainOfRespoLeavesApp.ConcreteHandler
         public void HandleRequest(LeaveRequest request)
         {
             if (request.LeaveDays <= 10)
+            {
                 Console.WriteLine("Leave request:- Employee: {0}, Leave days: {1} - approved by supervisor", request.Employee, request.LeaveDays);
-            else
-                NextHandler.HandleRequest(request);
+                return;
+            }
+            NextHandler?.HandleRequest(request);
         }
     }
 }
