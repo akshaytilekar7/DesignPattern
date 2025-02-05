@@ -26,13 +26,13 @@ namespace BuilderPattern
 
             // NOW LET US CREATE AN ANDROID PHONE
             phoneBuilder = new AndroidPhoneBuilder();
-            newManufacturer.ConstructInSequence(phoneBuilder);
+            newManufacturer.Build (phoneBuilder);
             Console.WriteLine(phoneBuilder.Phone);
 
             Console.WriteLine();
             // NOW LET US CREATE A WINDOWS PHONE
             phoneBuilder = new WindowsPhoneBuilder();
-            newManufacturer.ConstructInSequence(phoneBuilder);
+            newManufacturer.Build(phoneBuilder);
             Console.WriteLine(phoneBuilder.Phone);
 
             Console.ReadKey();

@@ -4,7 +4,7 @@ namespace BuilderPattern.Director
 {
     public class Manufacturer
     {
-        public void ConstructInSequence(IMobileBuilder phoneBuilder)
+        public void Build(IMobileBuilder phoneBuilder)
         {
             phoneBuilder.BuildBattery();
             phoneBuilder.BuildOs();

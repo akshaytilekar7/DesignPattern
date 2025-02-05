@@ -16,7 +16,7 @@ public class Application
 
     public void RenderUI()
     {
-        _button.Render();
+        _button.RenderButton();
         _checkbox.CheckValue();
     }
 }
