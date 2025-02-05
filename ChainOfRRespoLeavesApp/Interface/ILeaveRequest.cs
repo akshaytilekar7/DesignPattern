@@ -1,8 +1,8 @@
 ﻿namespace ChainOfRespoLeavesApp.Interface
 {
-    public interface ILeaveRequestHandler
+    public interface ILeaveRequest
     {
         void HandleRequest(LeaveRequest request);
-        ILeaveRequestHandler NextHandler { get; set; }
+        ILeaveRequest NextHandler { get; set; }
     }
 }

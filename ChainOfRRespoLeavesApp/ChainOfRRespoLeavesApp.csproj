@@ -44,8 +44,9 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="ConcreteHandler\HR.cs" />
-    <Compile Include="Interface\ILeaveRequestHandler.cs" />
+    <Compile Include="Interface\ILeaveRequest.cs" />
     <Compile Include="Interface\LeaveRequest.cs" />
+    <Compile Include="Interface\LeaveRequestBuilder.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="ConcreteHandler\ProjectManager.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />

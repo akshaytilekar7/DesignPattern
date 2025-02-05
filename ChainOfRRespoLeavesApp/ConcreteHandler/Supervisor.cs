@@ -3,9 +3,9 @@ using System;
 
 namespace ChainOfRespoLeavesApp.ConcreteHandler
 {
-    public class Supervisor : ILeaveRequestHandler
+    public class Supervisor : ILeaveRequest
     {
-        public ILeaveRequestHandler NextHandler { get; set; }
+        public ILeaveRequest NextHandler { get; set; }
         public void HandleRequest(LeaveRequest request)
         {
             if (request.LeaveDays <= 10)

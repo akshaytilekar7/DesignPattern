@@ -1,97 +1,53 @@
 ﻿// Abstract Product
 using System;
-
-public interface IDatabaseConnection
-{
-    void Connect();
-    void Disconnect();
-}
-
-public class SqlServerConnection : IDatabaseConnection
-{
-    public void Connect() { Console.WriteLine("Connecting to SQL Server..."); }
-    public void Disconnect() { Console.WriteLine("Disconnecting from SQL Server..."); }
-}
-
-public class MySqlConnection : IDatabaseConnection
-{
-    public void Connect() { Console.WriteLine("Connecting to MySQL..."); }
-    public void Disconnect() { Console.WriteLine("Disconnecting from MySQL..."); }
-}
-
-// Abstract Factory
-public interface IDatabaseConnectionFactory
-{
-    IDatabaseConnection CreateConnection();
-}
-
-// Concrete Factories
-public class SqlServerConnectionFactory : IDatabaseConnectionFactory
-{
-    public IDatabaseConnection CreateConnection() { return new SqlServerConnection(); }
-}
-
-public class MySqlConnectionFactory : IDatabaseConnectionFactory
-{
-    public IDatabaseConnection CreateConnection() { return new MySqlConnection(); }
-}
-
-// Client Code
-public class DatabaseManager
-{
-    private readonly IDatabaseConnection _connection;
-
-    public DatabaseManager(IDatabaseConnectionFactory factory)
-    {
-        _connection = factory.CreateConnection();
-    }
-
-    public DatabaseManager(IDatabaseConnection databaseConnection)
-    {
-        _connection = databaseConnection;
-    }
-
-    public void PerformDatabaseOperations()
-    {
-        _connection.Connect();
-        // Perform database operations
-        _connection.Disconnect();
-    }
-}
+using System.Collections.Generic;
 
 public class Application
 {
-    public static void Main1(string[] args)
+    public class MixedDataComparer : IComparer<object>
     {
-        string dbType = "SQLServer";
+        public int Compare(object x, object y)
+        {
+            if (x == null || y == null)
+                return 0; // Treat nulls as equal
 
-        IDatabaseConnection factory;
+            if (x is int intX && y is int intY)
+                return intX.CompareTo(intY);
 
-        if (dbType == "SQLServer")
-            factory = new SqlServerConnection();
-        else if (dbType == "MySQL")
-            factory = new MySqlConnection();
-        else
-            throw new Exception("Unknown database type");
+            if (x is DateTime dtX && y is DateTime dtY)
+                return dtX.CompareTo(dtY);
 
-        var dbManager = new DatabaseManager(factory);
-        dbManager.PerformDatabaseOperations();
+            if (x is string strX && y is string strY)
+                return strX.CompareTo(strY);
+
+            // Handle string-to-number comparison
+            //if (x is string strNumX && int.TryParse(strNumX, out int parsedX))
+            //    return parsedX.CompareTo(y);
+
+            //if (y is string strNumY && int.TryParse(strNumY, out int parsedY))
+            //    return parsedY.CompareTo(x);
+
+            // Default to string comparison
+            return x.ToString().CompareTo(y.ToString());
+        }
     }
 
     public static void Main(string[] args)
     {
-        string dbType = "SQLServer"; 
 
-        IDatabaseConnectionFactory factory;
+        var list = new List<object> { 10, "5", DateTime.Now, "hello", 3, "2023-01-01" };
 
-        if (dbType == "SQLServer")
-            factory = new SqlServerConnectionFactory();
-        else if (dbType == "MySQL")
-            factory = new MySqlConnectionFactory();
-        else
-            throw new Exception("Unknown database type");
+        foreach (var item in list)
+            Console.Write(item + " ");
+        
+        Console.WriteLine("");
 
-        var dbManager = new DatabaseManager(factory);
-        dbManager.PerformDatabaseOperations();
+        list.Sort(new MixedDataComparer());
+
+        foreach (var item in list)
+            Console.Write(item + " ");
+
+        Console.WriteLine("");
+        Console.ReadLine(); 
     }
 }

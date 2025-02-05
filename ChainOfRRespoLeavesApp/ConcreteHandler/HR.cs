@@ -3,9 +3,9 @@ using System;
 
 namespace ChainOfRespoLeavesApp.ConcreteHandler
 {
-    public class Hr : ILeaveRequestHandler
+    public class Hr : ILeaveRequest
     {
-        public ILeaveRequestHandler NextHandler { get; set; }
+        public ILeaveRequest NextHandler { get; set; }
 
         public void HandleRequest(LeaveRequest request)
         {
