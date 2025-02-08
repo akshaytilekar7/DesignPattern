@@ -105,6 +105,8 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Enumerator", "Enumerator\En
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Enumerator2", "Enumerator2\Enumerator2.csproj", "{74C763F9-CEA6-487D-B640-879BBE5387F5}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Generics Examples", "Generics Examples\Generics Examples.csproj", "{615B9D50-57E1-410B-AE64-6209C4B7FC36}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -271,6 +273,10 @@ Global
 		{74C763F9-CEA6-487D-B640-879BBE5387F5}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{74C763F9-CEA6-487D-B640-879BBE5387F5}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{74C763F9-CEA6-487D-B640-879BBE5387F5}.Release|Any CPU.Build.0 = Release|Any CPU
+		{615B9D50-57E1-410B-AE64-6209C4B7FC36}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{615B9D50-57E1-410B-AE64-6209C4B7FC36}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{615B9D50-57E1-410B-AE64-6209C4B7FC36}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{615B9D50-57E1-410B-AE64-6209C4B7FC36}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -310,6 +316,7 @@ Global
 		{DD330CCF-B94A-4165-8866-C6A6A8CF3084} = {38377495-9018-4655-90F0-3DCEE9DE242D}
 		{FCFDF9B5-C121-4472-B9C7-D7F61359D21F} = {C1F75BE6-7894-4D93-87A6-C080AD5EB3CE}
 		{74C763F9-CEA6-487D-B640-879BBE5387F5} = {C1F75BE6-7894-4D93-87A6-C080AD5EB3CE}
+		{615B9D50-57E1-410B-AE64-6209C4B7FC36} = {C1F75BE6-7894-4D93-87A6-C080AD5EB3CE}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {8098D428-5190-4588-AB42-BD8F51F1F97C}
