@@ -25,8 +25,6 @@ class Program
         appleStock.Price = 160.00m; // Both investors will be notified again
 
 
-       
-
         Console.WriteLine("Done,,,,,,,,,,");
         Console.ReadLine();
     }

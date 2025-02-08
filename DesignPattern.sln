@@ -91,15 +91,19 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Obsolate", "Obsolate", "{A4
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Observer", "Observer", "{E49221D9-1F8E-491B-8758-2F4BF5AE6C38}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AbstarctFactoryWindows", "AbstarctFactoryWindows\AbstarctFactoryWindows.csproj", "{666C99B6-1C13-4EC3-8F79-A2972431D3ED}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "AbstarctFactoryWindows", "AbstarctFactoryWindows\AbstarctFactoryWindows.csproj", "{666C99B6-1C13-4EC3-8F79-A2972431D3ED}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FactoryPatternNew", "FactoryPatternNew\FactoryPatternNew.csproj", "{5CC2EB95-0911-4B2B-BEEB-1B1F4FABF447}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "FactoryPatternNew", "FactoryPatternNew\FactoryPatternNew.csproj", "{5CC2EB95-0911-4B2B-BEEB-1B1F4FABF447}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Builder", "Builder", "{38377495-9018-4655-90F0-3DCEE9DE242D}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BuilderPattern2", "BuilderPattern2\BuilderPattern2.csproj", "{EA6076C8-07D0-4F35-8359-C4ABB6094FE3}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BuilderPattern2", "BuilderPattern2\BuilderPattern2.csproj", "{EA6076C8-07D0-4F35-8359-C4ABB6094FE3}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BuilderPattern3", "BuilderPattern3\BuilderPattern3.csproj", "{DD330CCF-B94A-4165-8866-C6A6A8CF3084}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BuilderPattern3", "BuilderPattern3\BuilderPattern3.csproj", "{DD330CCF-B94A-4165-8866-C6A6A8CF3084}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Enumerator", "Enumerator\Enumerator.csproj", "{FCFDF9B5-C121-4472-B9C7-D7F61359D21F}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Enumerator2", "Enumerator2\Enumerator2.csproj", "{74C763F9-CEA6-487D-B640-879BBE5387F5}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -259,6 +263,14 @@ Global
 		{DD330CCF-B94A-4165-8866-C6A6A8CF3084}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{DD330CCF-B94A-4165-8866-C6A6A8CF3084}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{DD330CCF-B94A-4165-8866-C6A6A8CF3084}.Release|Any CPU.Build.0 = Release|Any CPU
+		{FCFDF9B5-C121-4472-B9C7-D7F61359D21F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FCFDF9B5-C121-4472-B9C7-D7F61359D21F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FCFDF9B5-C121-4472-B9C7-D7F61359D21F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FCFDF9B5-C121-4472-B9C7-D7F61359D21F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{74C763F9-CEA6-487D-B640-879BBE5387F5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{74C763F9-CEA6-487D-B640-879BBE5387F5}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{74C763F9-CEA6-487D-B640-879BBE5387F5}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{74C763F9-CEA6-487D-B640-879BBE5387F5}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -296,6 +308,8 @@ Global
 		{5CC2EB95-0911-4B2B-BEEB-1B1F4FABF447} = {C38E7C74-D265-4447-81C1-E3095AACE8FC}
 		{EA6076C8-07D0-4F35-8359-C4ABB6094FE3} = {38377495-9018-4655-90F0-3DCEE9DE242D}
 		{DD330CCF-B94A-4165-8866-C6A6A8CF3084} = {38377495-9018-4655-90F0-3DCEE9DE242D}
+		{FCFDF9B5-C121-4472-B9C7-D7F61359D21F} = {C1F75BE6-7894-4D93-87A6-C080AD5EB3CE}
+		{74C763F9-CEA6-487D-B640-879BBE5387F5} = {C1F75BE6-7894-4D93-87A6-C080AD5EB3CE}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {8098D428-5190-4588-AB42-BD8F51F1F97C}
