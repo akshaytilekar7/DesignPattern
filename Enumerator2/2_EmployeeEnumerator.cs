@@ -4,12 +4,12 @@ namespace Enumerator2;
 public class EmployeeEnumerator : IEnumerator<Employee>
 {
     private readonly bool flag;
-    private Employee[] list { get; set; }
-    private int Index { get; set; } = -1;
+    private Employee[] array { get; set; }
+    private int index { get; set; } = -1;
 
     public EmployeeEnumerator(Employee[] employees, bool flag)
     {
-        list = employees;
+        array = employees;
         this.flag = flag;
     }
 
@@ -17,10 +17,10 @@ public class EmployeeEnumerator : IEnumerator<Employee>
     {
         get
         {
-            if (Index == -1 || Index >= list.Length)
+            if (index == -1 || index >= array.Length)
                 throw new InvalidOperationException();
 
-            return list[Index];
+            return array[index];
         }
     }
 
@@ -28,10 +28,10 @@ public class EmployeeEnumerator : IEnumerator<Employee>
     {
         get
         {
-            if (Index == -1 || Index >= list.Length)
+            if (index == -1 || index >= array.Length)
                 throw new InvalidOperationException();
 
-            return list[Index];
+            return array[index];
         }
     }
 
@@ -39,10 +39,10 @@ public class EmployeeEnumerator : IEnumerator<Employee>
 
     public bool MoveNext()
     {
-        while (Index < list.Length)
+        while (index < array.Length)
         {
-            Index++;
-            if (Index < list.Length && list[Index].IsActive == flag)
+            index++;
+            if (index < array.Length && array[index].IsActive == flag)
                 return true;
         }
         return false;
@@ -50,8 +50,8 @@ public class EmployeeEnumerator : IEnumerator<Employee>
 
     public void Reset()
     {
-        Index = 0;
-        list = Array.Empty<Employee>();
+        //index = -1;
+        //array = Array.Empty<Employee>();
     }
 
 }

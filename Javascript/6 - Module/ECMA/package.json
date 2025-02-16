@@ -1,0 +1,12 @@
+{
+  "name": "ecma",
+  "version": "1.0.0",
+  "description": "",
+  "main": "test.js",
+  "type": "module", 
+  "scripts": {
+    "test": "test"
+  },
+  "author": "",
+  "license": "ISC"
+}
