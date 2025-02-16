@@ -6,4 +6,9 @@ public class Employee
     public string Name { get; set; }
     public bool IsActive { get; set; }
 
+    public override string ToString()
+    {
+        return Id + " " + Name + " " + IsActive;
+    }
+
 }

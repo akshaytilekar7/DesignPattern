@@ -12,13 +12,20 @@ public class Program
          new Employee() { Id = 3,  Name = "C", IsActive = true},
         };
 
-        EmployeeEnumerable list = new EmployeeEnumerable(employees, false);
-        foreach (var item in list)
-            Console.WriteLine(item.Id + " " + item.Name);
+        EmployeeEnumerable list = new EmployeeEnumerable(employees, true);
+        var iterator = list.GetEnumerator();
+
+        while (iterator.MoveNext())  
+            Console.WriteLine(iterator.Current.ToString());  
+
+        //foreach (var item in list)
+        //    Console.WriteLine(item.Id + " " + item.Name);
 
         Console.WriteLine("");
 
-        foreach (var item in list)
-            Console.WriteLine(item.Id + " " + item.Name);
+        //foreach (var item in list)
+        //    Console.WriteLine(item.Id + " " + item.Name);
+
+        Console.ReadKey();
     }
 }
