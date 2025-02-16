@@ -45,7 +45,7 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CommandPatternDineChef", "C
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CommandPatternRestaurant", "Command\CommandPatternRestaurant\CommandPatternRestaurant.csproj", "{BB5112CC-C3C2-4297-8B4F-8552EF77BBCA}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "RuleEngine", "RuleEngine\RuleEngine\RuleEngine.csproj", "{D6A6EAB6-768F-4F78-8583-5871DE508526}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "RuleEngine", "RuleEngine\RuleEngine.csproj", "{D6A6EAB6-768F-4F78-8583-5871DE508526}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "StateDesignPattern", "StateDesignPattern", "{EBF56726-ADCA-4190-B4D5-58718B5C87EA}"
 EndProject
