@@ -1,6 +1,6 @@
-﻿namespace ObserverDesingPattens;
+﻿namespace ObserverDesignPattens;
 
-using ObserverDesingPattens.Contract;
+using ObserverDesignPattens.Contract;
 using System;
 using System.Collections.Generic;
 

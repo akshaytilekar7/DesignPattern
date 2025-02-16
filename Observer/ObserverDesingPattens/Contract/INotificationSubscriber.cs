@@ -1,4 +1,4 @@
-﻿namespace ObserverDesingPattens.Contract;
+﻿namespace ObserverDesignPattens.Contract;
 
 public interface INotificationSubscriber
 {

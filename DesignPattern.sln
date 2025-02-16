@@ -67,7 +67,7 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "LislovSP", "SOLID\LislovSP\
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DIP", "SOLID\DIP\DIP.csproj", "{4109B8E7-CDC0-4270-9A2E-E24A90D13062}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ObserverDesingPattens", "Observer\ObserverDesingPattens\ObserverDesingPattens.csproj", "{03592DD7-5BF1-4514-AEC1-F10729632C08}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ObserverDesignPattens", "Observer\ObserverDesingPattens\ObserverDesignPattens.csproj", "{03592DD7-5BF1-4514-AEC1-F10729632C08}"
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CovarianceAndContrvariance", "DotNet\CovarianceAndContrvariance\CovarianceAndContrvariance.csproj", "{586BFE1C-4FF2-4445-BF72-304D9C57A2A0}"
 EndProject

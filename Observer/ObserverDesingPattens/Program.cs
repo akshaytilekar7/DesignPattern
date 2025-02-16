@@ -1,6 +1,6 @@
-﻿using ObserverDesingPattens.Contract;
+﻿using ObserverDesignPattens.Contract;
 
-namespace ObserverDesingPattens;
+namespace ObserverDesignPattens;
 
 class Program
 {
