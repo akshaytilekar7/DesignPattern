@@ -2,28 +2,16 @@
 
 public class Order
 {
-    public virtual void ProcessPayment()
-    {
-        Console.WriteLine("Processing payment for a regular order.");
-    }
+    public virtual void ProcessPayment() => Console.WriteLine("Processing payment for a regular order.");
 
-    public virtual void ShipOrder()
-    {
-        Console.WriteLine("Order shipped.");
-    }
+    public virtual void ShipOrder() => Console.WriteLine("Order shipped.");
 }
 
 public class PreOrder : Order
 {
-    public override void ProcessPayment()
-    {
-        Console.WriteLine("Payment will be processed when the product is available.");
-    }
+    public override void ProcessPayment() => Console.WriteLine("Payment will be processed when the product is available.");
 
-    public override void ShipOrder()
-    {
-        throw new NotSupportedException("Pre-orders cannot be shipped yet!");
-    }
+    public override void ShipOrder() => throw new NotSupportedException("Pre-orders cannot be shipped yet!");
 }
 
 public class OrderService

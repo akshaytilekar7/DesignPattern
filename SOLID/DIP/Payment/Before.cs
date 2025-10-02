@@ -1,10 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
-namespace DIP.PaymentBefore;
+﻿namespace DIP.PaymentBefore;
 
 // High-level module (business logic)
 public class PaymentService

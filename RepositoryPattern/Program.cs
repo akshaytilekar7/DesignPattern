@@ -29,7 +29,8 @@ namespace RepositoryPattern
             GetCustomer(new Guid());
         }
 
-        // Unit of work [shares a single database context and serves one purpose; to make sure that when we use multiple repositories.]
+        // Unit of work [shares a single database context and serves one purpose; .
+        // to make sure that when we use multiple repositories.]
         public Program(IUnitOfWork unitOfWork)
         {
             this.unitOfWork = unitOfWork;
@@ -60,7 +61,7 @@ namespace RepositoryPattern
         public void Create()
         {
             AddressRepository.Add(new Address());
-            AddressRepository.SaveChanges();
+            //AddressRepository.SaveChanges();
         }
         public void GetCustomer(Guid? id)
         {

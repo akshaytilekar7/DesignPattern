@@ -1,6 +1,4 @@
-﻿using Microsoft.Extensions.Logging;
-
-namespace DeocrateDI.Interface;
+﻿namespace DeocrateDI.Interface;
 
 public interface IPaymentService
 {

@@ -1,8 +1,7 @@
-﻿namespace RepositoryPattern.Models
+﻿namespace RepositoryPattern.Models;
+
+public class Address
 {
-    public class Address
-    {
-        public int AddressId { get; set; }
-        public string City { get; set; }
-    }
+    public int AddressId { get; set; }
+    public string City { get; set; }
 }

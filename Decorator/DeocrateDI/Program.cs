@@ -17,12 +17,12 @@ internal class Program
 
         // traditional way not useful
 
-        // services.AddScoped<IPaymentService, PaymentService>();
-        //services.AddScoped<IPaymentService>(provider =>
-        //{
-        //    var dbConext = provider.GetRequiredService<AppDbContext>(); 
-        //    return new CachingPaymentService(new PaymentService(dbConext));
-        //});
+        services.AddScoped<IPaymentService, PaymentService>();
+        services.AddScoped<IPaymentService>(provider =>
+        {
+            var dbConext = provider.GetRequiredService<AppDbContext>();
+            return new CachingPaymentService(new PaymentService(dbConext));
+        });
 
         // BEST WAY
         services.AddScoped<IPaymentService, PaymentService>();

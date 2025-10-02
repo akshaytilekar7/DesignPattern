@@ -4,7 +4,7 @@ public class Program
 {
     public static void Main(string[] args)
     {
-        Console.WriteLine("ENDDDDDDD");
+        Console.WriteLine("The End..");
         Console.ReadLine();
     }
 }

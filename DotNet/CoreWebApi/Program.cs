@@ -80,7 +80,7 @@ app.UseExceptionHandler(errorApp =>
     });
 });
 
-app.UseMiddleware<WeatherForecast>();
+//app.UseMiddleware<WeatherForecast>();
 app.UseHttpsRedirection(); // Force HTTPS
 app.UseCors("AllowSpecificOrigin"); // Enable CORS
 app.UseAuthentication(); // Enable Authentication
