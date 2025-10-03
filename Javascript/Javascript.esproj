@@ -1,5 +1,1 @@
-<Project Sdk="Microsoft.VisualStudio.JavaScript.Sdk/1.0.784122">
-  <ItemGroup>
-    <Folder Include="3 - Functions\Function Currying\" />
-  </ItemGroup>
-</Project>
+<Project Sdk="Microsoft.VisualStudio.JavaScript.Sdk/1.0.784122" />

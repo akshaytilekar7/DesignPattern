@@ -1,10 +1,16 @@
-// Advance
+﻿// Advance
 
 // sort()
 // Sorts the elements of an array in place and returns the sorted array
 // Note: By default, it converts elements to strings and sorts them lexicographically.
 const arr = [3, 1, 2];
 arr.sort(); // [1, 2, 3]
+
+const nums = [10, 2, 1];
+nums.sort();  // ['10', '1', '2']
+
+// Fix
+nums.sort((a, b) => a - b);  // [1, 2, 10] ✅
 
 // reverse(): Reverses the array in place and returns the reversed array.
 const arr = [1, 2, 3];

@@ -1,7 +1,7 @@
-﻿// Methid overrrifing
+﻿// Methid overriding
 
 
-// new JS is the same as C# for overidding and polymorphism as we have class exttends keyword
+// new JS is the same as C# for overidding and polymorphism as we have class extends keyword
 /*
 
 📌 Summary

@@ -18,7 +18,11 @@ const obj = {
 };
 
 //  2.  Constructor Functions
-function Person(name) { this.name = name; }
+// Before ES6 classes, this was the main way.
+function Person(name) {
+    this.name = name;
+}
+
 const p = new Person("Pooja");
 
 // 3.   Object.create() (Prototype-based instantiation):
@@ -32,7 +36,9 @@ const derived = Object.create(base);
 
 // 4 ES 6 syntax
 class Person {
-    constructor(name) { this.name = name; }
+    constructor(name) {
+        this.name = name;
+    }
 }
 const p2 = new Person("Bob");
 
